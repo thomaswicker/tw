@@ -1,0 +1,193 @@
+/* % IMPORT OF GLOBALS % */
+
+@import '../global/mixins.scss';
+@import '../global/vars.scss';
+
+/*
+   ____ ____  ___ ____  ____  
+  / ___|  _ \|_ _|  _ \/ ___| 
+ | |  _| |_) || || | | \___ \ 
+ | |_| |  _ < | || |_| |___) |
+  \____|_| \_\___|____/|____/ 
+                                                                                                                                                                                                                                                                                                                
+*/
+
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important; 
+} 
+
+
+/* % Rows for columns % */
+
+.row {
+  margin: 0px 0px 0px 0px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;  
+  letter-spacing: normal;
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  &:first-child {
+    margin-top: -40px;
+  }
+}
+
+
+/* % General styling each column definition % */
+
+[class^="sm-"],
+[class*="sm-"],
+[class^="md-"],
+[class*="md-"],
+[class^="lg-"],
+[class*="lg-"],
+[class^="xl-"],
+[class*="xl-"],
+[class^="all-"],
+[class*="all-"] {
+  @include border-box;
+  margin-top: 5px;
+  vertical-align: top;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+
+/* % Small grid definitions % */
+
+@for $sum from 1 through $grid-cols {
+  @for $i from 1 through $sum {
+    .sm-#{$i}-#{$sum} {
+      @media screen and (max-width: 40em) {
+        @include col($i, $sum);
+      }
+    }
+  }
+}
+
+
+/* % Small grid definitions with display:none applied % */
+
+@for $sum from 1 through $grid-cols {
+  @for $i from 1 through $sum {
+    .sm-hidden {
+      @media screen and (max-width: 40em) {
+        display: none;
+      }
+    }
+  }
+}
+
+
+/* % Medium grid definitions % */
+@for $sum from 1 through $grid-cols {
+  @for $i from 1 through $sum {
+    .md-#{$i}-#{$sum} {
+      @media screen and (min-width: 40.063em) and (max-width: 64em) {
+        @include col($i, $sum);
+      }
+    }
+  }
+}
+
+
+/* % Medium grid definitions with display:none applied % */
+@for $sum from 1 through $grid-cols {
+  @for $i from 1 through $sum {
+    .md-hidden {
+      @media screen and (min-width: 40.063em) and (max-width: 64em) {
+        display: none;
+      }
+    }
+  }
+}
+
+
+/* % Large grid definitions % */
+
+@for $sum from 1 through $grid-cols {
+  @for $i from 1 through $sum {
+    .lg-#{$i}-#{$sum} {
+      @media screen and (min-width: 64.063em) and (max-width: 90em) {
+        @include col($i, $sum);
+      }
+    }
+  }
+}
+
+// Large grid sizes with display:none applied
+@for $sum from 1 through $grid-cols {
+  @for $i from 1 through $sum {
+    .lg-hidden {
+      @media screen and (min-width: 64.063em) and (max-width: 90em) {
+        display: none;
+      }
+    }
+  }
+}
+
+
+/* % Extra large grid definitions % */
+
+@for $sum from 1 through $grid-cols {
+  @for $i from 1 through $sum {
+    .xl-#{$i}-#{$sum} {
+      @media screen and (min-width: 90.063em) {
+        @include col($i, $sum);
+      }
+    }
+  }
+}
+
+
+/* % Extra large grid definitions with display:none applied % */
+
+@for $sum from 1 through $grid-cols {
+  @for $i from 1 through $sum {
+    .xl-hidden {
+      @media screen and (min-width: 90.063em) {
+        display: none;
+      }
+    }
+  }
+}
+
+/* % Extra large grid definitions % */
+
+@for $sum from 1 through $grid-cols {
+  @for $i from 1 through $sum {
+    .all-#{$i}-#{$sum} {
+      @media screen and (min-width: 0em) {
+        @include col($i, $sum);
+      }
+    }
+  }
+}
+
+  .row div, .row h2 {
+
+    &.color1 {
+      background-color: lighten($color-primary, 10%);
+      height: 40px;
+    }
+
+    &.color2 {
+      background-color: darken($medium-gray, 10%);
+      height: 40px;
+    }
+
+    &.color3 {
+      background-color: green;
+      height: 40px;
+    }
+  }
+

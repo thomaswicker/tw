@@ -1,0 +1,138 @@
+@import '../global/vars.scss';
+@import '../global/mixins.scss';
+
+// @if $use-buttons == true{
+
+/*
+  ____  _   _ _____ _____ ___  _   _ ____  
+ | __ )| | | |_   _|_   _/ _ \| \ | / ___| 
+ |  _ \| | | | | |   | || | | |  \| \___ \ 
+ | |_) | |_| | | |   | || |_| | |\  |___) |
+ |____/ \___/  |_|   |_| \___/|_| \_|____/ 
+                                                                                                                                                                                                                                                                                    
+*/
+
+.btn, .button, button, {
+  @include inline-block();
+  min-width: 3em;
+  @include margin;
+  @include padding(1em, 1.5em, 1em, 1.5em);
+  @include border-radius(0em);
+  @include font($font: $font-1, $style: normal, $size: $font-1-size, $weight: normal);
+  font-family: $font-1;
+  font-weight: 700;
+  text-align: center;
+  border: 0em;
+  background: $color-primary;
+  color: $white;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    background: darken($color-primary, 15%);
+  }
+
+  &:focus {
+    background: darken($off-white, 20%);
+    background-image: 0;
+    outline: none;
+  }
+
+  &.primary {
+    background: $button-primary;
+    color: $white;
+
+    &:hover {
+      background: darken($button-primary, 15%);
+    }
+  }
+
+  &.secondary {
+    background: $button-secondary;
+    color: $white;
+
+    &:hover {
+      background: darken($button-secondary, 15%);
+    }
+  }
+
+  &.fire {
+    background: $button-fire;
+    color: $white;
+
+    &:hover {
+      background: darken($button-fire, 15%);
+    }
+  }
+
+  &.earth {
+    background: $green-potion;
+    color: $white;
+
+    &:hover {
+      background: darken($green-potion, 10%);
+    }
+  }
+
+  &.wind {
+    background: $button-wind;
+    color: $dark-gray;
+
+    &:hover {
+      background: darken($button-wind, 10%);
+    }
+  }
+
+  &.water {
+    background: $button-water;
+    color: $white;
+
+    &:hover {
+      background: darken($button-water, 10%);
+    }
+  }
+
+  &.dark {
+    background: $button-dark;
+    color: $white;
+
+    &:hover {
+      background: darken($button-dark, 10%);
+    }
+  }
+  
+
+  // Grayed out button state
+
+  &:disabled,
+  &.js-disabled,
+  &.disabled {
+    cursor: default;
+    background: $light-gray;
+    color: $off-white;
+    pointer-events: none;
+
+    &:hover,
+    &:active {
+      background: $dark-gray;
+      color: $light-gray;
+    }
+  }
+
+  // Button that spans/fills the width of the container
+
+  &.full {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  // Creates a miniature size button
+
+  &.mini {
+    min-width: 0;
+    @include padding(10px);
+    @include font($font: $font-1, $style: normal, $size: ($font-1-size * .75), $weight: normal);
+
+  }
+}

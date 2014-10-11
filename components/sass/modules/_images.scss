@@ -1,0 +1,63 @@
+@import '../global/vars.scss';
+@import '../global/mixins.scss';
+
+/*
+  ___ __  __    _    ____ _____ ____  
+ |_ _|  \/  |  / \  / ___| ____/ ___| 
+  | || |\/| | / _ \| |  _|  _| \___ \ 
+  | || |  | |/ ___ \ |_| | |___ ___) |
+ |___|_|  |_/_/   \_\____|_____|____/ 
+                                                                                                                                                                                                                                                   
+*/
+
+/**
+ * Demo: jsfiddle.net/inuitcss/yMtur
+ */
+/**
+ * Fluid images.
+ */
+img{
+    max-width:100%;
+}
+
+
+/**
+ * Non-fluid images if you specify `width` and/or `height` attributes.
+ */
+img[width],
+img[height]{
+    max-width:none;
+}
+
+
+/**
+ * Rounded images.
+ */
+.img-round { 
+    @include border-radius(50%); 
+}
+
+/**
+ * Image placement variations.
+ */
+.img-right{
+    float:right;
+    @include margin(0em 0em 1em 1em);
+}
+
+.img-left{
+    float:left;
+    @include margin(0em 1em 1em 0em);
+}
+.img-center{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/**
+ * Images in `figure` elements.
+ */
+figure > img{
+    display:block;
+}

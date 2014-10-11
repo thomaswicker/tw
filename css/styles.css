@@ -1,0 +1,58 @@
+/*
+Syntax error: File to import not found or unreadable: cssreset.
+              Load paths:
+                /Users/thomaswicker/Desktop/Dropbox/Sites/tw2/components/sass
+                /Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/frameworks/blueprint/stylesheets
+                /Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 63 of /Users/thomaswicker/Desktop/Dropbox/Sites/tw2/components/sass/styles.scss
+
+Backtrace:
+/Users/thomaswicker/Desktop/Dropbox/Sites/tw2/components/sass/styles.scss:63
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:45:in `import'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/compiler.rb:126:in `timed'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/compiler.rb:138:in `block in compile'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/logger.rb:45:in `red'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/compiler.rb:137:in `compile'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/compiler.rb:101:in `each'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/compiler.rb:101:in `block in run'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/compiler.rb:126:in `timed'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/compiler.rb:100:in `run'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/commands/update_project.rb:45:in `perform'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/commands/base.rb:18:in `execute'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/bin/compass:30:in `block in <top (required)>'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/bin/compass:44:in `call'
+/Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/bin/compass:44:in `<top (required)>'
+/Users/thomaswicker/.rbenv/versions/2.1.2/bin/compass:23:in `load'
+/Users/thomaswicker/.rbenv/versions/2.1.2/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: cssreset.\A               Load paths:\A                 /Users/thomaswicker/Desktop/Dropbox/Sites/tw2/components/sass\A                 /Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/frameworks/blueprint/stylesheets\A                 /Users/thomaswicker/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.7/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 63 of /Users/thomaswicker/Desktop/Dropbox/Sites/tw2/components/sass/styles.scss"; }

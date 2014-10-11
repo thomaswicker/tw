@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]>
+    <script type="text/javascript">
+        window.location = "http://www.thomaswicker.com/browsers.html";
+    </script>
+<![endif]-->
+
+<html ng-app="twApp">
+	<head>
+	<meta charset="UTF-8">
+	<title>Welcome to Thomas Wicker</title>
+
+  	<!-- To ensure proper rendering and style for mobile devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	 <!-- ANCIENT SCROLLS -->
+
+	<link rel="stylesheet" href="css/application.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- MAGICAL SPELLS -->
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js"></script>
+<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>    
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script> -->
+
+</head>
+
+<body>
+
+	<section class="superhero row">
+
+		<div class="pixel-me sm-12-12 md-4-12 lg-3-12 xl-3-12">
+			<img src="img/pixel_me.png" alt="Pixel Icon of Thomas Wicker">
+		</div><!-- END pixel-me -->
+		
+		<div class="my-info sm-12-12 md-8-12 lg-8-12 xl-8-12">
+			<h1 class="header">Thomas Wicker</h1>
+			<h2>Front End Developer/Designer</h2>
+			<p>UI/UX designer, front-end developer, HTML & CSS ninja, entrepreneur, fine artist, photographer, father. Extreme passion for new tech: #html5, #css3, #sass, #jquery, #javascript, #rails</p>
+		</div><!-- END my-info -->
+
+			
+		</div><!-- END search -->
+
+	</section><!-- END superhero -->
+
+	<header class="main-header sm-12-12 md-12-12 lg-12-12 xl-12-12" role="navigation">
+	    <a href="#" id="brand"></a>
+	    <nav id="magic-nav">
+	      <a href="#" id="menu-icon">
+	        <span></span>
+	        <span></span>
+	        <span></span>
+	      </a>
+	      <section class="main-nav">
+		       <ul class="left" ng-controller="HeaderController">
+			      <li ng-class="{ active: isActive('/')}" class="active" ><a href="#">Home</a></li>
+			      <li ng-class="{ active: isActive('/about')}"  ng-class="{ active: isActive('/about')}" class=""><a href="#about">About</a></li>
+			      <li ng-class="{ active: isActive('/portfolio')}"  class=""><a href="#portfolio">Portfolio</a></li>
+			      <li ng-class="{ active: isActive('/photography')}"  class=""><a href="#photography">Photography</a></li>
+			      <li ng-class="{ active: isActive('/resume')}"  class=""><a href="#resume">Resume</a></li>
+			      <li ng-class="{ active: isActive('/contact')}"  class=""><a href="#contact">Contact</a></li>
+			    </ul>
+			</section>	    
+	    </nav>
+	 </header>
+
+	<section ng-controller="mainController" class="body-main sm-12-12 md-12-12 lg-12-12 xl-12-12" id="main">
+		<!-- Injecting Angular partials here -->
+		<div class="main-content" ng-view></div>
+
+	</section><!-- END body-main -->
+
+<!-- MORE MAGICAL SPELLS -->
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="components/js/script.js"></script>
+<script src="js/magic_nav.js"></script>
+<script src="js/modal.js"></script>
+
+<script>
+	
+</script>
+
+<script>
+  $(document).foundation();
+</script>
+
+<!-- LIVERELOAD -->
+
+<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+
+</body>
+</html>

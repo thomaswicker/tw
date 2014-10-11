@@ -1,0 +1,47 @@
+@import '../global/vars.scss';
+@import '../global/mixins.scss';
+
+/*
+  _     ___ ____ _____ ____  
+ | |   |_ _/ ___|_   _/ ___| 
+ | |    | |\___ \ | | \___ \ 
+ | |___ | | ___) || |  ___) |
+ |_____|___|____/ |_| |____/ 
+                                                                                                                                                                                                                                          
+*/
+
+/**
+ * Remove vertical spacing from nested lists.
+ */
+
+li {
+
+}
+
+/**
+ * Have a numbered `ul` without the semantics implied by using an `ol`.
+ */
+/*ul*/.numbered-list{
+    list-style-type: decimal;
+}
+
+.bulleted-list{
+
+}
+
+.bulleted-list{
+    list-style:none;
+    margin-left:0;
+    border-top-width:1px;
+
+    > li{
+        border-bottom-width:1px;
+        padding: $base-spacing-unit;
+    }
+}
+
+.bulleted-list_link{
+    display: block;
+    padding: $base-spacing-unit;
+    margin: $base-spacing-unit;
+}

@@ -1,0 +1,30 @@
+/* ========================================================
+   BEGIN NAV SCSS
+   ======================================================== */
+ 
+.main-header {
+	position: absolute;
+	top: 205px;
+
+	@include mq(sm) {
+		top: 255px;
+	}
+}
+
+.main-nav {
+	position: absolute;
+	left: 0px;
+
+	ul li a{
+	    font-size: .95rem;
+		font-family: $font-2;
+		font-weight: 300;
+		color: $white;
+		text-transform: uppercase;
+	}
+}
+
+/* ========================================================
+   END NAV SCSS
+   ======================================================== */
+   

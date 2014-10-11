@@ -1,0 +1,44 @@
+@import '../global/mixins.scss';
+@import '../global/vars.scss';
+
+/*
+  __  __    _    ___ _   _ 
+ |  \/  |  / \  |_ _| \ | |
+ | |\/| | / _ \  | ||  \| |
+ | |  | |/ ___ \ | || |\  |
+ |_|  |_/_/   \_\___|_| \_|
+                                                                                                                                                                                                                                       
+*/
+body {
+    font: $font-1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-height: 100%;
+    background-color: $site-background;
+    letter-spacing: normal;
+
+    //sets the initial padding top to compensate for header nav bar
+}
+
+.container {
+    padding: 120px 0px 0px 0px;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include mq(sm) {
+		width: 100%;
+	}
+}
+
+code, .code {
+    display: block;
+    line-height: 1.4em;
+    color: darken($color-primary, 10%);
+    letter-spacing: normal;
+    font-family: $font-4;
+    font-weight: $font-weight-normal;
+    margin: 1.2em 0em 0em 0em;
+    padding: 0em 1.3em 0em 1.3em;
+    border-left: 3px solid darken($color-primary, 10%);
+}

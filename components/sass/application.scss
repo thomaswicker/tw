@@ -1,0 +1,77 @@
+/*
+  ____       _   _             
+ |  _ \ ___ | |_(_) ___  _ __  
+ | |_) / _ \| __| |/ _ \| '_ \ 
+ |  __/ (_) | |_| | (_) | | | |
+ |_|   \___/ \__|_|\___/|_| |_|
+                                                                                                                                                                                                                                                                                                                                                                                          
+*/
+
+/* {{{ YOU WILL BE ASSIMILATED }}} */
+
+/**
+ * COMPASS.............Import for compass
+ *
+ * ######### BASE #########
+ ~
+ * RESET...............Resetting all styles to default
+ * NORMALIZE...........Normalize.css
+ * MAIN................General catch all for generic styles
+ * TYPE................Font declarations
+ * GRIDS...............Grid system
+
+ * ######### GLOBAL #########
+ ~
+ * HELPERS.............A series of helper classes to use arbitrarily
+ * MEDIA...............Media queries
+ * MIXINS..............Mixins to be used by other SASS
+ * VARS................Variable definitions to be used by other SASS
+ 
+ * ######### modules #########
+ ~
+ * BUTTONS.............Button classes
+ * FORMS...............Form classes
+ * HEADINGS............Headings classes
+ * ICONS...............Icons classes
+ * IMAGES..............Image classes
+ * LISTS...............Styling for order and unordered lists
+ * NAV.................Starter nav styles 
+ * RULES...............Styling for <hr> tags
+ * SPRITES.............Specific styling for sprites
+ * TABLES..............Table classes
+
+ */
+
+@charset "UTF-8";
+
+/* ## Base styles ## */
+@import "base/reset";
+@import "base/normalize";
+@import "base/main";
+@import "base/grids";
+@import "base/type";
+@import "base/helpers";
+
+/* ## modules styles ## */
+@import "modules/buttons";
+@import "modules/forms";
+@import "modules/headings";
+@import "modules/icons";
+@import "modules/images";
+@import "modules/lists";
+@import "modules/modals";
+@import "modules/nav";
+@import "modules/rules";
+@import "modules/tables";
+@import "modules/styleguide";
+
+
+/* ## App specific SCSS ## */
+
+@import "core";
+@import "nav";
+@import "superhero";
+@import "about";
+@import "overrides";
+
+

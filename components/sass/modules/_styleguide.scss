@@ -1,0 +1,110 @@
+@import '../global/vars.scss';
+@import '../global/mixins.scss';
+
+/*
+  ____ _______   ___     _____    ____ _   _ ___ ____  _____ 
+ / ___|_   _\ \ / / |   | ____|  / ___| | | |_ _|  _ \| ____|
+ \___ \ | |  \ V /| |   |  _|   | |  _| | | || || | | |  _|  
+  ___) || |   | | | |___| |___  | |_| | |_| || || |_| | |___ 
+ |____/ |_|   |_| |_____|_____|  \____|\___/|___|____/|_____|
+                                                                                                                                                                                                                                                                                                                                          
+*/
+
+.swatch {
+  display: block;
+  padding: 15px 10px 15px 10px;
+  @include border-radius(0px);
+}
+
+.swatch-color {
+  padding: 15px 0px 15px 0px;
+  border: 1px solid $light-gray;
+
+  &.none {
+    background-color: $none;
+  }
+
+  &.white {
+    background-color: $white;
+  }
+
+  &.off-white {
+    background-color: $off-white;
+  }
+
+  &.light-gray {
+    background-color: $light-gray;
+  }
+
+  &.medium-gray {
+    background-color: $medium-gray;
+  }
+
+  &.dark-gray {
+    background-color: $dark-gray;
+  }
+
+  &.black {
+    background-color: $black;
+  }
+
+  &.red-potion {
+    background-color: $red-potion;
+  }
+
+  &.green-potion {
+    background-color: $green-potion;
+  }
+
+  &.blue-potion {
+    background-color: $blue-potion;
+  }
+
+  &.orange-potion {
+    background-color: $orange-potion;
+  }
+
+  &.yellow-potion {
+    background-color: $yellow-potion;
+  }
+
+  &.purple-potion {
+    background-color: $purple-potion;
+  }
+}
+
+.swatch-info {
+  padding: 10px 0px 10px 0px;
+  border: 1px solid $light-gray;
+  border-top: none;
+  background: $white;
+
+  span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    color: $medium-gray;
+    @include font($font: $font-1, $style: normal, $size: 1rem, $weight: 200);
+
+    &:first-child {
+      color: $dark-gray;
+      @include font($font: $font-1, $style: normal, $size: 1rem, $weight: 400);
+    }
+  }
+
+
+}
+
+.typography {
+  p {
+    line-height: 1.4em;
+  }
+}
+
+.subheader {
+  margin-bottom: 1.8em;
+}
+
+
+

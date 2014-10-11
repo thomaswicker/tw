@@ -1,0 +1,105 @@
+@import '../global/vars.scss';
+@import '../global/mixins.scss';
+
+/*
+  _______   ______  _____ 
+ |_   _\ \ / /  _ \| ____|
+   | |  \ V /| |_) |  _|  
+   | |   | | |  __/| |___ 
+   |_|   |_| |_|   |_____|
+                                                                                                                                                                                                                                                                    
+*/
+
+
+.uppercase { text-transform: uppercase !important; }
+.lowercase { text-transform: uppercase !important; }
+
+.font-1 {
+  font-family: $font-1;
+}
+
+.font-2 {
+  font-family: $font-2;
+}
+
+.font-3 {
+  font-family: $font-3;
+}
+
+.font-4 {
+  font-family: $font-4;
+}
+
+
+// Font Size Helper Classes
+
+.text-xs { font-size: $font-size-tiny; }
+.text-sm { font-size: $font-size-sm; }
+.text-md { font-size: $font-size-md; }
+.text-lg { font-size: $font-size-lg; }
+.text-xl { font-size: $font-size-xl; }
+.text-jumbo { font-size: $font-size-jumbo; }
+
+
+// Font Weight Helper Classes
+
+.text-thin {
+  font-weight: 200;
+  color: $dark-gray;
+}
+
+.text-normal {
+  font-weight: 300;
+  color: $dark-gray;
+}
+
+.text-bold {
+  font-weight: 500;
+  color: $dark-gray;
+}
+
+.text-ultra {
+  font-weight: 600;
+  color: $dark-gray;
+}
+
+
+// Font Color Helper Classes
+
+.text-fire { color: $red-potion; }
+.text-earth { color: $green-potion; }
+.text-wind { color: $light-gray; }
+.text-water { color: $blue-potion; }
+
+.text-xlight { color: $light-gray; }
+.text-light { color: $light-gray; }
+.text-medium { color: $medium-gray; }
+.text-dark { color: $dark-gray; }
+
+
+// Body Text Color Helper Classes
+
+.intro-text {
+    @include font($font: $font-2, $style: normal, $size: 1.3rem, $weight: $font-weight-light);
+    line-height: ($base-line-height * 1.4);
+    letter-spacing: normal;
+}
+
+.body-text {
+    @include font($font: $font-1, $style: normal, $size: $body-text, $weight: $font-weight-normal);
+    line-height: $base-line-height * 1.25;
+    letter-spacing: normal;
+}
+
+.body-text-small {
+    @include font($font: $font-1, $style: normal, $size: $body-text-small, $weight: $font-weight-normal);
+    line-height: $base-line-height;
+    letter-spacing: normal;
+}
+
+.body-text-large {
+    @include font($font: $font-1, $style: normal, $size: $body-text-large, $weight: $font-weight-normal);
+    line-height: $base-line-height;
+    letter-spacing: normal;
+}
+
