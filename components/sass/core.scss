@@ -70,15 +70,20 @@ html, body {
 
 .social-media-box-container {
 	width: 338px;
-	height: 50px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0px;
+	padding: 0px 20px 0px 20px;
 }
 
 .social-feed {
+	padding: .5em 1.2em 0em 1.2em;
+
 	h2 {
 		padding: 1.2em 0em 0em 1em;
+	}
+
+	aside {
+		padding: .5em 1.2em 0em 1.2em;
 	}
 }
 
