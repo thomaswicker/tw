@@ -5,7 +5,7 @@ var behanceAPI = function() {
 	var baseURL = "http://www.behance.net/v2/";
 	var userProjects = new Array();
 	var offsetPage = 1; // optionally you can set up which page to start
-	var numPages = 2; // Set up the max of pages to retrieve from behance (Each page gets 10 itens max).
+	var numPages = 3; // Set up the max of pages to retrieve from behance (Each page gets 10 itens max).
 
 	function setKey(k) {
 		key = k;	

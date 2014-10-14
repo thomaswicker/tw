@@ -19,3 +19,7 @@ html, body {
 	font-weight: $font-weight-light;	
 	text-transform: uppercase;
 }
+
+.active-page {
+	border: 2px solid red !important;
+}
