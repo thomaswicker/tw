@@ -15,6 +15,13 @@
 	position: absolute;
 	left: 0px;
 
+	@include mq(sm) {
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		position: relative;
+	}
+
 	ul li a{
 	    font-size: .95rem;
 		font-family: $font-2;

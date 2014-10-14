@@ -2,16 +2,6 @@
    BEGIN OVERRIDES SCSS
    ======================================================== */
    
-#magic-nav {
-
-	ul {
-		@include mq(sm) {
-			width: 100%;
-			position: fixed !important;
-			top: 305px;
-		}
-	}
-}
 
 /* ========================================================
    END OVERRIDES SCSS

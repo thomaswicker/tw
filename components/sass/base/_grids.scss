@@ -55,7 +55,6 @@ img {
 [class^="all-"],
 [class*="all-"] {
   @include border-box;
-  margin-top: 5px;
   vertical-align: top;
   letter-spacing: normal;
   text-align: left;
