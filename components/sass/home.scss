@@ -1,7 +1,14 @@
 /* ========================================================
    BEGIN HOME PAGE SCSS
    ======================================================== */
-   
+ 
+ #body-main {
+	position: absolute;
+    z-index: 101;
+  	background-color: $white;
+  	top: 250px;
+ }
+
 .body-main-left {
 	float: left;
 	margin: 40px 0px 0px 0px;

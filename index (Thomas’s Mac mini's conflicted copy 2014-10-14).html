@@ -1,0 +1,62 @@
+---
+layout: default
+title: "Home"
+permalink: /
+---
+
+
+<section class="body-main sm-12-12 md-12-12 lg-12-12 xl-12-12" id="main">
+  
+  <div class="main-content" ng-view>
+
+    <div class="body-main-left sm-12-12 md-8-12 lg-9-12 xl-9-12">
+      <h2 class="header">Thoughts & Brain Puking</h2>
+        <ul class="post-list">
+          {% for post in site.posts %}
+            <li>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+
+              <p>{{ post.content }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+
+        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </div><!-- END body-main-left -->
+
+    <aside class="body-main-right sm-12-12 md-4-12 lg-3-12 xl-3-12">
+
+      <div class="social-media-box all-12-12">
+        <ul class="social-media-box-container">
+          <li><a href="https://www.facebook.com/thomasjwicker" target="blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/thomasjwicker" target="blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/thomaswicker" target="blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/thomaswicker" target="blank"><i class="fa fa-github-alt"></i></a></li>
+          <li><a href="https://dribbble.com/thomasjwicker" target="blank"><i class="fa fa-dribbble"></i></a></li>
+          <li><a href="http://www.codepen.io/thomasjwicker" target="blank"><i class="fa fa-codepen"></i></a></li>
+          <li><a href="http://instagram.com/thomasjwicker" target="blank"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div><!-- END social-media-box -->
+
+      <div class="social-feed all-12-12">
+        <h2 class="header">Social Ramblings</h2>
+        <aside>
+          <a class="twitter-timeline"
+              href="https://twitter.com/thomasjwicker"
+              data-widget-id="392388763487182849"
+              data-chrome="nofooter noborders transparent"
+              data-tweet-limit="7">
+            Tweets by @thomasjwicker
+            </a>
+       </aside>
+       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div><!-- END body-main-right -->
+
+    </aside><!-- END social-feed -->
+
+  </div>
+
+</section><!-- END body-main -->

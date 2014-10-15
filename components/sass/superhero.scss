@@ -8,7 +8,9 @@
     background-image: url('../img/bg_code.jpg');
     background-size: cover;
     background-color: $black;
-	
+	position: fixed;
+    z-index: 100;
+
 	//small range (0px --> 640px)
     @include mq(sm) {
 		height: 340px;
@@ -22,7 +24,7 @@
 		}
 
     	img {
-    		padding: 3.2em 0em 0em 0em;
+    		padding: .6em 0em 0em 0em;
     		width: 155px;
 
             @include mq(lg) {
@@ -50,7 +52,7 @@
 		}
 
     	h1 {
-    		padding: 2.2em 0em 0em 1em;
+    		padding: 1.2em 0em 0em 1em;
     		font-size: 2.2rem;
 			font-family: $font-1;
 			font-weight: 600;    		
@@ -118,7 +120,7 @@
     padding: 0px 0px 10px 0px;
     text-align: center;
     background: rgba(darken($color-primary, 20%), 0.85);
-    z-index: 1000000;
+    z-index: 200;
 
     @include mq(sm) {
         display: none;

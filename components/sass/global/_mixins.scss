@@ -206,7 +206,7 @@
 --------------
 % */
 
-@mixin font($font, $style: normal, $size: 1rem, $weight: normal) {
+@mixin font($font, $style: normal, $size: 1rem, $weight: $font-weight-normal) {
   font-family: $font, Helvetica, Arial, sans-serif;
   font-style:  $style;
   font-weight: $weight;

@@ -1,0 +1,23 @@
+$(document).ready(function() {
+  $('.adobe').css('width', '100%');
+  $('.html').css('width', '100%');
+  $('.haml').css('width', '85%');
+  $('.css').css('width', '100%');
+  $('.sass').css('width', '95%');
+  $('.jquery').css('width', '70%');
+  $('.javascript').css('width', '55%');
+  $('.bootstrap').css('width', '90%');
+  $('.wordpress').css('width', '85%');
+  $('.ui').css('width', '100%');
+  $('.ux').css('width', '90%');
+  $('.rwd').css('width', '85%');
+  $('.mobile').css('width', '85%');
+  $('.rapidproto').css('width', '95%');
+  $('.commandline').css('width', '65%');
+  $('.git').css('width', '85%');
+  $('.zurb').css('width', '85%');
+  $('.rails').css('width', '50%');
+  $('.php').css('width', '50%');
+  $('.angular').css('width', '60%');
+  $('.zurb').css('width', '60%');
+});
