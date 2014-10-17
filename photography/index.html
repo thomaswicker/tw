@@ -1,11 +1,36 @@
 ---
-layout: default
+layout: photography-template
 title: "Photography"
 permalink: photography/
 ---
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-<section id="body-photography" class="sm-12-12 md-12-12 lg-12-12 xl-12-12">
-  
-   <h1>PHOTOGRAPHY PAGES</h1> 
+<section id="body-photography" class="all-12-12 ">
 
-</section><!-- END body-main -->
+	<div id="body-photography-inner" class="">
+
+		<ul id="instagram-feed"></ul>
+
+		<script type="text/javascript">
+
+		$( document ).ready(function() {
+			$.ajax({
+			  type: "GET",
+			  dataType: "jsonp",
+			  cache: false,
+			  url: "https://api.instagram.com/v1/users/187394513/media/recent/?access_token=187394513.a49120b.31f135cc4f874ad48a05eb5c60df46a8",
+			  success: function(data) {
+			    for (var i = 0; i < 50; i++) {
+			    $("#instagram-feed").append("<li><a target='_blank' href='" + data.data[i].link +"'><img src='" + data.data[i].images.low_resolution.url +"'></img></a></li>");
+			    }
+			  }
+			});
+		});
+
+		</script>
+
+	</div><!-- END body-photography-inner -->
+</section><!-- END body-photography -->
+
+<!-- access token 187394513.a49120b.31f135cc4f874ad48a05eb5c60df46a8 -->
+<!-- client id a49120b34007434ab4ef0c21e1522753 -->

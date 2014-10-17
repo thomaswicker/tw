@@ -7,9 +7,7 @@
                                                                                                                                                                                                                                                                                                                                                                                           
 */
 
-
-/**
- * COMPASS.............Import for compass
+/*
  *
  * ######### BASE #########
  ~
@@ -22,7 +20,6 @@
  * ######### GLOBAL #########
  ~
  * HELPERS.............A series of helper classes to use arbitrarily
- * MEDIA...............Media queries
  * MIXINS..............Mixins to be used by other SASS
  * VARS................Variable definitions to be used by other SASS
  
@@ -66,7 +63,6 @@
 
 
 /* ## App specific SCSS ## */
-
 @import "core";
 @import "nav";
 @import "superhero";
@@ -76,7 +72,6 @@
 @import "photography";
 @import "resume";
 @import "contact";
-
 @import "overrides";
 
 

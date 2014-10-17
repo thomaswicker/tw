@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5 ,h6 {
 
  
 h1 {
-  @include font($font: $font-1, $style: normal, $size: $h1-size, $weight: normal);
+  @include font($font: $font-2, $style: normal, $size: $h1-size, $weight: normal);
   
   &.subheader {
     text-transform: uppercase;
@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-  @include font($font: $font-1, $style: normal, $size: $h2-size, $weight: $font-weight-normal);
+  @include font($font: $font-2, $style: normal, $size: $h2-size, $weight: $font-weight-normal);
 
   &.subheader {
     text-transform: uppercase;
@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-  @include font($font: $font-1, $style: normal, $size: $h3-size, $weight: $font-weight-normal);
+  @include font($font: $font-2, $style: normal, $size: $h3-size, $weight: $font-weight-normal);
 
   &.subheader {
     text-transform: uppercase;
@@ -51,7 +51,7 @@ h3 {
   }}
 
 h4 {
-  @include font($font: $font-1, $style: normal, $size: $h4-size, $weight: $font-weight-normal);
+  @include font($font: $font-2, $style: normal, $size: $h4-size, $weight: $font-weight-normal);
 
   &.subheader {
     text-transform: uppercase;
@@ -61,7 +61,7 @@ h4 {
   }}
 
 h5 {
-  @include font($font: $font-1, $style: normal, $size: $h5-size, $weight: $font-weight-normal);
+  @include font($font: $font-2, $style: normal, $size: $h5-size, $weight: $font-weight-normal);
 
   &.subheader {
     text-transform: uppercase;
@@ -71,7 +71,7 @@ h5 {
   }}
 
 h6 {
-  @include font($font: $font-1, $style: normal, $size: $h6-size, $weight: $font-weight-normal);
+  @include font($font: $font-2, $style: normal, $size: $h6-size, $weight: $font-weight-normal);
 
   &.subheader {
     text-transform: uppercase;

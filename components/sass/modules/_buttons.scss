@@ -16,7 +16,7 @@
   @include inline-block();
   min-width: 3em;
   @include margin;
-  @include padding(1em, 1.5em, 1em, 1.5em);
+  @include padding(1em, 1.25em, 1em, 1.25em);
   @include border-radius(0em);
   @include font($font: $font-1, $style: normal, $size: $font-1-size, $weight: normal);
   font-family: $font-1;
@@ -27,6 +27,7 @@
   color: $white;
   cursor: pointer;
   text-transform: uppercase;
+  transition: background 0.4s ease;
 
   &:hover {
     background: darken($color-primary, 15%);
@@ -76,7 +77,7 @@
 
   &.wind {
     background: $button-wind;
-    color: $dark-gray;
+    color: $white;
 
     &:hover {
       background: darken($button-wind, 10%);
@@ -127,12 +128,17 @@
     text-align: center;
   }
 
-  // Creates a miniature size button
+  &.small {
+    min-width: 0;
+    @include padding(12px 17px 12px 17px);
+    @include font($font: $font-1, $style: normal, $size: ($font-1-size * .85), $weight: normal);
 
+  }
+
+  // Creates a miniature size button
   &.mini {
     min-width: 0;
-    @include padding(10px);
+    @include padding(10px 15px 10px 15px);
     @include font($font: $font-1, $style: normal, $size: ($font-1-size * .75), $weight: normal);
-
   }
 }

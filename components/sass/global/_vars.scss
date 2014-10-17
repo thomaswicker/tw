@@ -53,9 +53,9 @@ $body-text-large: ($font-1-size *1.1);
 
 /* % HEADERS % */
 $h1-size: 2.2rem;
-$h2-size: 1.8rem;
-$h3-size: 1.7rem;
-$h4-size: 1.6rem;
+$h2-size: 1.9rem;
+$h3-size: 1.6rem;
+$h4-size: 1.5rem;
 $h5-size: 1.4rem;
 $h6-size: 1.2rem;
 
@@ -103,15 +103,15 @@ $black:             #000000;
 
 // Standard color palette
 $red-potion:        #ff372c;
-$green-potion:      #9fde00;
+$green-potion:      #8CE600;
 $blue-potion:       #2a98c6;
 $orange-potion:     #f28f38;
 $yellow-potion:     #fff62e;
 $purple-potion:     #cabee6;
 
 // Set your global app/site variables here
-$color-primary:     darken($blue-potion, 10%);
-$color-secondary:   $blue-potion;
+$color-primary:     $blue-potion;
+$color-secondary:   $green-potion;
 
 // Element color styling variables
 $link:              $green-potion;
@@ -125,7 +125,7 @@ $button-primary: $color-primary;
 $button-secondary: $color-secondary;
 $button-fire: $red-potion;
 $button-earth: $green-potion;
-$button-wind: $xlight-gray;
+$button-wind: $light-gray;
 $button-water: $blue-potion;
 $button-dark: $dark-gray;
 

@@ -10,9 +10,18 @@
   padding-bottom: 75px;
 }
 
+#body-portfolio-inner {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 0px 35px 0px; 
+  position: relative;
+  background-color: $white;
+}
+
 #thumbnails {
 	position: relative;
-	top: 50px;
+	top: 0px;
 }
 
 .item {

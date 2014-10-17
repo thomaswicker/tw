@@ -13,19 +13,17 @@
 	 <!-- ANCIENT SCROLLS -->
 
 	<link rel="stylesheet" href="/css/application.css">
-	<link rel="stylesheet" href="/bower_components/fancybox/source/jquery.fancybox.css">
-
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
-<!-- 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 
 	<!-- MAGICAL SPELLS -->
-<!-- 	<script src="bower_components/angular/angular.min.js"></script>
-	<script src="bower_components/angular-route/angular-route.min.js"></script> -->
-<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>    
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script> -->
+	<!-- 	<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/angular-route/angular-route.min.js"></script> -->
+	<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>    
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script> -->
     <link rel="canonical" href="http://thomaswicker.com/portfolio/">
 
 </head>
@@ -42,22 +40,22 @@
       <li><a href="http://instagram.com/thomasjwicker" target="blank"><i class="fa fa-instagram"></i></a></li>
     </ul>
   </div><!-- END social-media-box -->
-
-  <section class="superhero row">
+      <section class="superhero row">
 
     <div class="pixel-me sm-12-12 md-4-12 lg-3-12 xl-3-12">
       <img src="/img/pixel_me.png" alt="Pixel Icon of Thomas Wicker">
     </div><!-- END pixel-me -->
     
     <div class="my-info sm-12-12 md-8-12 lg-8-12 xl-8-12">
-      <h1 class="header">Thomas Wicker</h1>
-      <h2>Front End Developer/Designer</h2>
-      <p>UI/UX designer, front-end developer, HTML & CSS ninja, entrepreneur, fine artist, photographer, father. Extreme passion for new tech: #html5, #css3, #sass, #jquery, #javascript, #rails</p>
+      <h1 class="header">PORTFOLIO</h1>
+      <p class="resume">View my current portfolio on <span class="font-weight-bold">Behance.net</span></p>
+      <button class="btn primary mini">
+        <a href="https://www.behance.net/thomaswicker" target="blank">Click Here</a>
+      </button>
     </div><!-- END my-info -->
 
   </section><!-- END superhero -->
-
-  <header class="main-header sm-12-12 md-12-12 lg-12-12 xl-12-12" role="navigation">
+      <header class="main-header sm-12-12 md-12-12 lg-12-12 xl-12-12" role="navigation">
       <a href="#" id="brand"></a>
       <nav id="magic-nav">
         <a href="#" id="menu-icon">
@@ -77,27 +75,25 @@
       </section> 
       </nav>
    </header>
-
+    
           <div id="details">
     <div class="modules">
       <button class="closeBTN btn primary full" data-modal-close>CLOSE PREVIEW</button>
       <article></article>
     </div>
   </div>
+
 <section id="body-portfolio" class="sm-12-12 md-12-12 lg-12-12 xl-12-12">
+  <div id="body-portfolio-inner" class="sm-12-12 md-12-12 lg-12-12 xl-12-12">
 
-  <h1>PORTFOLIO PAGES</h1>
+    <div id="thumbnails" class="sm-12-12 md-12-12 lg-12-12 xl-12-12">
+      <ul>
+        <div id ="container" class="projects"></div>
+      </ul>
+    </div>
+  </div><!-- END body-portfolio-inner -->
 
-
-  <div id="thumbnails" class="sm-12-12 md-12-12 lg-12-12 xl-12-12">
-    <ul>
-      <div id ="container" class="projects"></div>
-    </ul>
-  </div>
-
-
-
-</section><!-- END body-main -->
+</section><!-- END body-portfolio -->
 
 <script src="/js/behance.js"></script>
 

@@ -13,19 +13,17 @@
 	 <!-- ANCIENT SCROLLS -->
 
 	<link rel="stylesheet" href="/css/application.css">
-	<link rel="stylesheet" href="/bower_components/fancybox/source/jquery.fancybox.css">
-
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
-<!-- 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 
 	<!-- MAGICAL SPELLS -->
-<!-- 	<script src="bower_components/angular/angular.min.js"></script>
-	<script src="bower_components/angular-route/angular-route.min.js"></script> -->
-<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>    
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script> -->
+	<!-- 	<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/angular-route/angular-route.min.js"></script> -->
+	<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>    
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script> -->
     <link rel="canonical" href="http://thomaswicker.com/contact/">
 
 </head>
@@ -42,22 +40,20 @@
       <li><a href="http://instagram.com/thomasjwicker" target="blank"><i class="fa fa-instagram"></i></a></li>
     </ul>
   </div><!-- END social-media-box -->
-
-  <section class="superhero row">
+      <section class="superhero row">
 
     <div class="pixel-me sm-12-12 md-4-12 lg-3-12 xl-3-12">
       <img src="/img/pixel_me.png" alt="Pixel Icon of Thomas Wicker">
     </div><!-- END pixel-me -->
     
     <div class="my-info sm-12-12 md-8-12 lg-8-12 xl-8-12">
-      <h1 class="header">Thomas Wicker</h1>
+      <h1 class="header">CONTACT ME</h1>
       <h2>Front End Developer/Designer</h2>
       <p>UI/UX designer, front-end developer, HTML & CSS ninja, entrepreneur, fine artist, photographer, father. Extreme passion for new tech: #html5, #css3, #sass, #jquery, #javascript, #rails</p>
     </div><!-- END my-info -->
 
   </section><!-- END superhero -->
-
-  <header class="main-header sm-12-12 md-12-12 lg-12-12 xl-12-12" role="navigation">
+      <header class="main-header sm-12-12 md-12-12 lg-12-12 xl-12-12" role="navigation">
       <a href="#" id="brand"></a>
       <nav id="magic-nav">
         <a href="#" id="menu-icon">
@@ -78,11 +74,69 @@
       </nav>
    </header>
 
-        <section id="body-contact" class="sm-12-12 md-12-12 lg-12-12 xl-12-12">
+        <section id="body-contact" class="all-12-12">
+	
+	<section id="body-contact-inner">
 
-  <h1>CONTACT PAGES</h1>
+	 	<div class="body-contact-left sm-12-12 md-4-12 lg-3-12 xl-3-12">
+	 		
+	 		<h4>Contact Information</h4>
+			<p>Thomas Wicker</p>
+			<p>Aurora / CO 80014</p>
 
-</section><!-- END body-main -->
+			<h4>Telephone</h4>
+			<a href="tel:7209846998">720.984.6998</a></p>
+			
+			<button class="btn primary mini">
+				<a href="mailto:design@thomaswicker.com">Email Me</a>
+			</button>
+
+			<div class="google-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24571.598854494034!2d-104.8441364!3d39.662094100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c880a27879cbb%3A0x52429aef1755f930!2sAurora%2C+CO+80014!5e0!3m2!1sen!2sus!4v1413480283525" frameborder="0" style="border:0"></iframe>
+			</div><!-- END .google-map -->
+
+	 	</div><!-- END .body-contact-left -->
+
+	 	<div class="body-contact-right sm-12-12 md-8-12 lg-9-12 xl-9-12">
+
+			<form name="contact" action="//forms.brace.io/design@thomaswicker.com" >
+
+				<h2 class="contact-header">Send me an Email</h2>
+				
+				<p class="contact-blurb">Whether it's design or development, websites, ui/ux, apps, or photography — I'd love to work with you. I'm always pursuing the next opportunity for either full time or contact work. Just hit me up with the form below and include as many details as you can about your project — it will help me get back to you sooner.</p>
+
+				<div class="form-group"> 
+					<label id="formLabel" for="name">Name:</label>
+					<input type="text" class="form-control" name="name" id="name" placeholder="Enter your name"  title="Please enter your name."/>
+				</div>
+
+				<div class="form-group">
+					<label class="formLabel" for="phone"/>Phone:</label>
+					<input name="phone" type='tel' id="phone" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' placeholder="Enter your phone #" title="Please enter a valid phone number." title='Phone Number (Format: +99(99)9999-9999)'>
+				</div>
+
+				<div class="form-group">
+					<label id="formLabel" for="email"/>Email:</label>
+					<input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" title="Please enter a valid email address."/>
+				</div>
+
+				<div class="form-group">
+					<label class="formLabel" for="comments" id="comments">Comments:</label>
+					<textarea class="form-control" name="comments" id="comments"></textarea>
+				</div>
+
+				<div class="contact-button-container">
+					<button type="submit" name="submit" value="Send" class="btn earth small">Send</button>
+					<button type="reset" name="reset" value="Reset" class="btn wind small">Reset</button>
+				</div>
+
+			</form>
+
+		</div><!-- END .body-contact-right -->
+
+	</section><!-- END .body-contact-inner -->
+
+</section><!-- END #body-contact -->
 
     <footer class="site-footer">
 
@@ -143,7 +197,6 @@
 </footer>
 
 
-	<script src="/js/behance.js"></script>
 	<script src="/js/magic_nav.js"></script>
     <script src="/js/script.js"></script>
 

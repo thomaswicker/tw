@@ -126,6 +126,7 @@ nav {
     float: left;
     padding: 15px 15px 18px 15px;
     border-right: 1px solid $medium-gray;
+    transition: background 0.4s ease;
 
     @include mq(md) {
       padding: 15px 10px 18px 10px;
