@@ -16,7 +16,24 @@
 	<script src="{{ site.baseurl }}/js/behance.js"></script>
 	<script src="{{ site.baseurl }}/js/magic_nav.js"></script>
     <script src="{{ site.baseurl }}/js/script.js"></script>
+    <script src="{{ site.baseurl }}/bower_components/masonry/dist/masonry.pkgd.min.js"></script>
 
+    <script>
+    $(window).load(function() {
+
+           //JS BELOW IS FOR MASONRY INITIALIZATION
+          $('.masonry').masonry({
+               itemSelector : '.item',
+               isAnimated: true,
+               animationOptions: {
+                    duration: 700,
+                    easing: 'linear',
+                    queue: false
+               }
+          });
+      });
+
+    </script>
 	<script type="text/javascript">
       	var loc = window.location.href;
         if(loc=== "{{ site.baseurl }}/") {
@@ -33,6 +50,7 @@
              $("#contactBTN").addClass("current");
          } 
 	</script>
+
   </body>
 
 </html>

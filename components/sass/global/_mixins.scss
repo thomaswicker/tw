@@ -279,12 +279,11 @@
         @media only screen and (min-width: $lg-start) and (max-width: $lg-end) { @content; }
     }
 
-    @if $query == xl{
-        @media only screen and (min-width: $xl-start) and (max-width: $xl-end) { @content; }
+    @if $query == lg-l{
+        @media (min-width: $lg-start) and (max-width: $lg-end) and (orientation : landscape) { @content; }
     }
 
     @if $query == jumbo{
         @media only screen and (min-width: $jumbo-start) { @content; }
     } 
 }
-

@@ -32,8 +32,6 @@ function loadProject(projectID) {
  behanceAPI.getProjectDetails(projectID, function(loadModules) {
   var moduleHTML = "";
 
-
-
   for(var i=0; i<loadModules.modules.length; i++) {
    if(loadModules.modules[i].src!=undefined) {
     moduleHTML += "<img src='" + loadModules.modules[i].src + "'>";
