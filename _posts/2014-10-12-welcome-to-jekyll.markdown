@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2014-10-12 23:36:49
 categories: jekyll update
+published: false
 ---
 
 <h1>Hello!!</h1>
@@ -27,4 +28,50 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
 [jekyll]:      http://jekyllrb.com
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-help]: https://github.com/jekyll/jekyll-help
+
  -->
+
+### LINKS
+[an example](http://example.com/ "Title")
+
+
+### Showing Code Blocks
+
+{% highlight html %}
+<div id="my-info-contact">
+	<p class="name-block">Thomas J. Wicker</p>
+	<p class="title-block">UI/UX & Front End Developer</p>          
+	<a href= "mailto:design@thomaswicker.com">design@thomaswicker.com</a>
+	<a href= "http://www.thomaswicker.com">www.thomaswicker.com</a>
+	<a href= "http://www.linkedin.com/in/thomaswicker" target="blank">linkedin profile</a>
+	<button class="btn earth mini"><a href="{{ site.baseurl }}/contact">Available for Contract</a></button>
+</div><!--END my-info-contact -->
+{% endhighlight %}
+
+
+##Two ways of writing images
+
+![Gulp](/images/gulp_logo.png)
+
+<img src="/images/gulp_logo.png">
+
+
+First Level Header
+======
+
+
+
+A Second Level Header
+---------------------
+
+
+
+### Block Quotes code below
+
+> This is a blockquote.
+> 
+> This is the second paragraph in the blockquote.
+>
+> ## This is an H2 in a blockquote
+
+… you can [get the PDF]({{ site.url }}/assets/mydoc.pdf) directly.

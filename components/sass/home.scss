@@ -2,54 +2,167 @@
    BEGIN HOME PAGE SCSS
    ======================================================== */
  
- #body-main {
+ #body-home {
 	position: absolute;
     z-index: 101;
-  	background-color: $white;
   	top: 250px;
+ 	background-color: #F4F7F8;
+ 	padding-bottom: 75px;
  }
 
-.body-main-left {
-	float: left;
-	margin: 40px 0px 0px 0px;
-	padding: 0px 0px 0px 50px;
+#body-home-inner {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-color: $white;
 
-	h2:first-child {
-		padding: 0px 0px 40px 0px;
+	@include mq(md) {
+		width: 90%;
+	}
+
+	@include mq(sm) {
+		width: 95%;
+	}
+}
+
+.body-home-left {
+	float: left;
+	padding: 30px 30px 0px 0px;
+	
+	@include mq(md) {
+		padding: 30px 0px 0px 0px;
+	}
+
+	@include mq(sm) {
+		padding: 30px 0px 0px 0px;
+	}	
+}
+
+.body-home-right {
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 30px 0px 0px 0px;
+	height: auto;
+ 	background-color: #F4F7F8;
+}
+
+#lastfm-container {
+	float: left;
+	border: 2px solid darken($green-potion, 10%);	
+	background-color: $white;	
+
+	#lastfm-title {
+		float: left;
+		width: 100%;
+		height: 50px;
+		border-bottom: 1px solid darken($green-potion, 10%);	
+		padding: 8px 0px 0px 0px;
+		background-color: $white;	
+
+		#lastfm-title-left {
+			float: left;
+			width: 60px;
+			height: 50px;
+			text-align: center;
+
+			img {
+				width: 40px;
+			}
+		}
+
+		#lastfm-title-right {
+			float: left;
+			width: calc(100% - 60px);
+			height: 50px;
+
+			h4 {
+				@include font($font-2, normal, $font-size-md, $font-weight-semibold);
+				padding: 10px 0px 0px 5px;
+				color: darken($green-potion, 10%);	
+			}
+		}
 	}
 }
 
 .lastfm-song {
 	float: left;
 	width: 100%;
-	padding: 7px 0px 7px 10px;
-	border-bottom: 1px solid $light-gray;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 1px solid $xlight-gray;
+	background-color: $white;	
+
+	&.lastfm-song:nth-child(odd) {
+	    background-color: lighten($light-gray, 22%);
+	}
 
 	h4 {
-		@include font($font-2, normal, .9rem, $font-weight-light !important);
+		@include font($font-2, normal, .9rem, $font-weight-light);
 		color: $color-primary;
 	}
-}
 
-.body-main-right {
-	float: left;
-	margin: 0px 0px 0px 0px;
-	height: auto;
-	border-left: 1px solid $light-gray;
-	border-bottom: 1px solid $light-gray;
-	padding: 0px;
+	span {
+		@include font($font-1, italic, .9rem, $font-weight-normal);
+		color: $dark-gray;
+	}
+
+	a {
+		@include font($font-1, normal, .9rem, $font-weight-semibold);
+		color: darken($green-potion, 10%);
+		padding-left: 22px;
+
+	}
 }
 
 .social-feed {
-	padding: 0em 2.75em 0em .75em;
-	margin: 1em 0em 0em 0em;
+	float: left;
+	padding: 0px 0px 0px 0px;
+	margin: 1.2em 0em 0em 0em;
+	border: 2px solid $color-primary;	
+	background-color: $white;	
 
 	h2 {
-		padding: 1.2em 0em 0em 1em;
+		padding: 0px 0px 0px 0px;
 	}
 
 	aside {
-		padding: .5em 1.2em 0em 1.2em;
+		padding: 0px 0px 0px 0px;
+	}
+
+	#twitter-feed {
+		width: 80%;
+		margin-left: 20px;
+	}
+
+	#twitter-title {
+		float: left;
+		width: 100%;
+		height: 50px;
+		border-bottom: 1px solid $color-primary;	
+		padding: 8px 0px 0px 0px;
+		
+		#twitter-title-left {
+			float: left;
+			width: 60px;
+			height: 50px;
+			text-align: center;
+
+			img {
+				width: 40px;
+			}
+		}
+
+		#twitter-title-right {
+			float: left;
+			width: calc(100% - 60px);
+			height: 50px;
+
+			h4 {
+				@include font($font-2, normal, $font-size-md, $font-weight-semibold);
+				padding: 10px 0px 0px 5px;
+				color: $color-primary;	
+			}
+		}
 	}
 }
 

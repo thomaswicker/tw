@@ -1,51 +1,54 @@
-//requires
+//gulp requires
 var gulp = require('gulp'),
-    gutil = require('gulp-util'),
-    compass = require('gulp-compass'),
-    connect = require('gulp-connect'),
+    sass = require('gulp-ruby-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    minifycss = require('gulp-minify-css'),
     uglify = require('gulp-uglify'),
-    concat = require('gulp-concat');
-    // ftp = require('gulp-ftp');
+    concat = require('gulp-concat'),
+    rename = require("gulp-rename"),
+    livereload = require('gulp-livereload');
 
-//sources
+//source variables
 var jsSources = ['components/js/*.js'];
 var sassSources = ['components/sass/application.scss'];
-var htmlSources = ['/*.html'];
-//var jsonSources = ['js/*.json'];
+var htmlSources = ['index.html', 'about/index.html', 'contact/index.html', 'portfolio/index.html', 'photography/index.html', 'resume/index.html', '_layouts/*.html', '_includes/*.html'];
 
-//gulp task definitions
+
+//gulp javascript tasks
 gulp.task('js', function() {
-  gulp.src(jsSources)
-    .pipe(concat('script.js'))
-    //.pipe(browserify())
+  return gulp.src(jsSources)
+    .pipe(concat('application.js'))
     .pipe(uglify())
     .pipe(gulp.dest('js'))
-    .pipe(connect.reload())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('js'))
 });
 
+//gulp sass tasks
 gulp.task('sass', function() {
-  gulp.src(sassSources)
-    .pipe(compass({
-      sass: 'components/sass',
-      image: 'img',
-      style: 'compressed'
-    })
-    .on('error', gutil.log))
-    .pipe(gulp.dest('css'))
-    .pipe(connect.reload())
+  return gulp.src(sassSources)
+     .pipe(sass({ style: 'expanded' }))
+        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
+        .pipe(gulp.dest('css'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(minifycss())
+        .pipe(gulp.dest('css'));
 });
 
-gulp.task('watch', function() {
-  gulp.watch(jsSources, ['js']);
-  gulp.watch('components/sass/**/*.scss', ['sass']);
-  //gulp.watch(jsonSources, ['json']);
-});
-
+//gulp html tasks
 gulp.task('html', function () {
-  	gulp.src(htmlSources)
-  		.pipe(connect.reload())
-  		//.pipe(minifyHTML())
+    gulp.src(htmlSources)
 });
+
+//gulp watch tasks
+gulp.task('watch', function() {
+  livereload.listen();
+  gulp.watch(jsSources, ['js']).on('change', livereload.changed);
+  gulp.watch('components/sass/**/*.scss', ['sass']).on('change', livereload.changed);
+  gulp.watch('components/css/application.min.css', ['css']).on('change', livereload.changed);
+  gulp.watch(htmlSources, ['html']).on('change', livereload.changed);
+});
+
 
 //runs all tasks through one command of 'gulp'
-gulp.task('default', ['js', 'sass', 'watch']);
+gulp.task('default', ['js', 'sass', 'html', 'watch']);
