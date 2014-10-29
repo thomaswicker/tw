@@ -1,15 +1,43 @@
 /* ========================================================
    BEGIN SUPERHERO SCSS
    ======================================================== */
-   
+
+$superhero-home: rgba(42,152,215,0.75);
+$superhero-about: rgba(160,110,175,0.75);
+$superhero-portfolio: rgba(133,185,51,0.9);
+$superhero-photography: rgba(170,31,35,0.75);
+$superhero-resume: rgba(225,178,37,0.75);
+$superhero-contact: rgba(241,96,63,0.85);
+
+
 .superhero {
 	width: 100%;
 	height: 290px;
     background-image: url('../img/bg_code.jpg');
-    background-size: cover;
+    background-size: 100%;
     background-color: $black;
 	position: fixed;
     z-index: 100;
+
+    &.about {
+        background-image: url('../img/bg_code_about.jpg');
+    }
+
+    &.portfolio {
+        background-image: url('../img/bg_code_portfolio.jpg');
+    }
+
+    &.photography {
+        background-image: url('../img/bg_code_photography.jpg');
+    }
+
+    &.resume {
+        background-image: url('../img/bg_code_resume.jpg');
+    }
+
+    &.contact {
+        background-image: url('../img/bg_code_contact.jpg');
+    }
 
     #download-resume-btns {
         float: left;
@@ -129,6 +157,28 @@
 			}
     	}
 
+        p.quote {
+            margin: -.5em 0em .5em 0em;
+            padding: .7em 1em 0em 2.3em;
+            font-size: 1rem;
+            font-family: $font-1;
+            font-weight: 400;
+            line-height: 1.3rem;
+            color: $white;
+
+            @include mq(md) {
+                font-size: .9rem;
+                font-weight: 300;
+                margin: .2em 0em .4em 2.35em;
+                padding: 0em 2em 0em 0em;
+                line-height: 1.3rem;
+            }
+
+            @include mq(sm) {
+                display: none;
+            }
+        }
+
         button {
             margin: .1em 0em 0em 2.85em;
 
@@ -137,6 +187,13 @@
                 color: $white;
                 text-transform: uppercase;
             }      
+        }
+
+        small {
+            @include font($font-1, italic, .8rem, $font-weight-normal);
+            color: $color-primary;
+            font-style: italic;
+            padding: .2em 0em 0em 2em;
         }
     }
 }
@@ -149,7 +206,7 @@
     border-bottom: 1px solid $light-gray;
     padding: 0px 0px 10px 0px;
     text-align: center;
-    background: rgba(darken($color-primary, 20%), 0.85);
+    background: $superhero-home;
     z-index: 200;
 
     @include mq(sm) {
@@ -164,19 +221,63 @@
         text-align: center;
         margin: 10px 7px 0px 0px;
         padding: 7px 0px 0px 0px;
-        border: 1px solid $light-gray;
+        border: 1px solid rgba(255,255,255,0.75);
     
         &:first-child {
             margin: 8px 7px 0px 0px;    
         }
 
         &:hover {
-            background-color: $color-primary;
+            background-color: darken($superhero-home, 25%);
+
+            i {
+                color: $white;
+            }
         }
 
         i {
             font-size: 1.6rem;
             color: $white;
+        }
+    }
+
+    &.about {
+        background: $superhero-about;
+
+        a:hover {
+            background: darken($superhero-about, 30%);
+        }
+    }
+
+    &.portfolio {
+        background: $superhero-portfolio;
+
+        a:hover {
+            background: darken($superhero-portfolio, 25%);
+        }
+    }
+
+    &.photography {
+        background: $superhero-photography;
+
+        a:hover {
+            background: darken($superhero-photography, 25%);
+        }
+    }
+
+    &.resume {
+        background: $superhero-resume;
+
+        a:hover {
+            background: darken($superhero-resume, 25%);
+        }
+    }
+
+    &.contact {
+        background: $superhero-contact;
+
+        a:hover {
+            background: darken($superhero-contact, 25%);
         }
     }
 }

@@ -1,7 +1,22 @@
 /* ========================================================
    BEGIN NAV SCSS
    ======================================================== */
- 
+#nav {
+
+}
+
+.nav-header {
+  background: rgba(lighten($black, 10%), 0.9);
+}
+
+.sticky {  
+    position: fixed !important;  
+    top: 0px !important;
+    left: 0px !important;  
+    z-index: 10000000;  
+    border-top: 0;  
+}  
+
 .main-header {
 	position: absolute;
 	top: 205px;
