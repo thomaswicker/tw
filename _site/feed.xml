@@ -4,11 +4,47 @@
     <title>thomaswicker.com</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://thomaswicker.com/</link>
-    <atom:link href="http://thomaswicker.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 29 Oct 2014 02:10:43 -0600</pubDate>
-    <lastBuildDate>Wed, 29 Oct 2014 02:10:43 -0600</lastBuildDate>
+    <link>http://thomaswicker.comhttp://thomaswicker.com/test/</link>
+    <atom:link href="http://thomaswicker.comhttp://thomaswicker.com/test/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 29 Oct 2014 17:22:01 -0600</pubDate>
+    <lastBuildDate>Wed, 29 Oct 2014 17:22:01 -0600</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Playing with Responsive SVG for a map of the US</title>
+        <description>&lt;h6 id=&quot;my-mission-if-i-chose-to-accept-it&quot;&gt;My mission, if I chose to accept it…&lt;/h6&gt;
+&lt;p&gt;The task was to covert an old Flash map of the US into responsive SVG. I accepted the challenge… (well I had to because it’s what they pay me for but that’s beside the point). The Flash map was built in the early 2000’s and was used to display a list of Client X’s school’s by state. It 700px fixed width and for obvious reasons.. didn’t work on mobile. It was also a complete pain to update as the data file was based on XML and was poorly architected.  &lt;/p&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;725&quot; data-theme-id=&quot;3524&quot; data-slug-hash=&quot;cibur&quot; data-default-tab=&quot;result&quot; data-user=&quot;thomasjwicker&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/thomasjwicker/pen/cibur/&quot;&gt;Responsive SVG &amp;amp; SASS Map of the US&lt;/a&gt; by Thomas Wicker (&lt;a href=&quot;http://codepen.io/thomasjwicker&quot;&gt;@thomasjwicker&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p class=&quot;margin top lg&quot;&gt;Quite honestly I haven&#39;t played with SVG all that much. Most of my clients or contracts tend to be for large corporations or enterprise size businesses. Using all the latest and greatest tools with said clients generally isn&#39;t an option. However with this project the minimum browser support was generously set for IE9 so I was able to dip my toes in. I&#39;ve used SVG for some simple image or icon replacement on various sites, but that&#39;s pretty much the extent of it. I certainly had not played much with responsive SVG. I started off with firing up Illustrator and cranking out indivdual SVGs for each state in anticipation of absolutely positioning each state on a canvas and stitching them all together.&lt;/p&gt;
+
+&lt;p&gt;Knowing that one of SVGs strong suits is responsiveness, I thought this would just be an afterthought… I was wrong. Upon sizing the window up and down, the states would respond correctly but it would create a gap between them as I got to smaller sizes. Setting the top, right, bottom left styles to percentage didn’t work. I tried a couple of methods using jQuery to calculate the size of each SVG and keep them stitched together when sizing, that didn’t work. After hours of reading through blog posts and Stack Overflow, nothing was solving my problem. I decided to export the whole US map as one SVG and try to attack it from that direction, that worked!&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 29 Oct 2014 09:22:40 -0600</pubDate>
+        <link>http://thomaswicker.comhttp://thomaswicker.com/test/svg/responsive/sass/codepen/2014/10/29/responsive-svg-map.html</link>
+        <guid isPermaLink="true">http://thomaswicker.comhttp://thomaswicker.com/test/svg/responsive/sass/codepen/2014/10/29/responsive-svg-map.html</guid>
+        
+        <category>svg</category>
+        
+        <category>responsive</category>
+        
+        <category>sass</category>
+        
+        <category>codepen</category>
+        
+        
+        <category>svg</category>
+        
+        <category>responsive</category>
+        
+        <category>sass</category>
+        
+        <category>codepen</category>
+        
+      </item>
     
       <item>
         <title>What I Learned About GulpJS</title>
@@ -201,8 +237,12 @@
 
 </description>
         <pubDate>Tue, 21 Oct 2014 07:14:49 -0600</pubDate>
-        <link>http://thomaswicker.com/javascript/gulp/2014/10/21/what-I-have-learned-about-gulp.html</link>
-        <guid isPermaLink="true">http://thomaswicker.com/javascript/gulp/2014/10/21/what-I-have-learned-about-gulp.html</guid>
+        <link>http://thomaswicker.comhttp://thomaswicker.com/test/javascript/gulp/2014/10/21/what-I-have-learned-about-gulp.html</link>
+        <guid isPermaLink="true">http://thomaswicker.comhttp://thomaswicker.com/test/javascript/gulp/2014/10/21/what-I-have-learned-about-gulp.html</guid>
+        
+        <category>javascript</category>
+        
+        <category>gulp</category>
         
         
         <category>javascript</category>

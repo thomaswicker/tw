@@ -23,7 +23,7 @@
 	}
 
 	@include mq(sm) {
-		width: 90%;
+		width: 85%;
 		padding: 65px 0px 35px 0px; 
 	}
 
@@ -39,8 +39,12 @@
 	}
 
 	h2 {
-		@include font($font-2, normal, $font-size-lg, $font-weight-light);
+		@include font($font-2, normal, $font-size-xl, $font-weight-light);
 		margin: 20px 0px 20px 0px;
+
+		@include mq(sm) {
+			@include font($font-2, normal, $font-size-lg, $font-weight-light);
+		}
 	}
 
 	h3 {

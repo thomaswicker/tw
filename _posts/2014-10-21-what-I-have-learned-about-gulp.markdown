@@ -4,6 +4,9 @@ title:  "What I Learned About GulpJS"
 date:   2014-10-21 13:14:49
 published: true
 categories: javascript gulp
+tags:
+- javascript
+- gulp
 ---
 
 

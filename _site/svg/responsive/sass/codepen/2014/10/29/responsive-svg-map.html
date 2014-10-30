@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="UTF-8">
+    <title>Playing with Responsive SVG for a map of the US</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  	<!-- To ensure proper rendering and style for mobile devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	 <!-- ANCIENT SCROLLS -->
+	<link rel="stylesheet" href="http://thomaswicker.com/test/css/application.min.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="canonical" href="http://thomaswicker.comhttp://thomaswicker.com/test/svg/responsive/sass/codepen/2014/10/29/responsive-svg-map.html">
+
+	<!-- MAGICAL SPELLS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+</head>
+
+  <body>
+
+      <div class="social-media-box">
+    <ul class="social-media-box-container">
+      <li><a href="https://www.facebook.com/thomasjwicker" target="blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/thomasjwicker" target="blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/thomaswicker" target="blank"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/thomaswicker" target="blank"><i class="fa fa-github-alt"></i></a></li>
+      <li><a href="http://www.codepen.io/thomasjwicker" target="blank"><i class="fa fa-codepen"></i></a></li>
+      <li><a href="http://instagram.com/thomasjwicker" target="blank"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+  </div><!-- END social-media-box -->
+      <section class="superhero row">
+
+    <div class="pixel-me sm-12-12 md-4-12 lg-3-12 xl-3-12">
+      <img src="http://thomaswicker.com/test/img/pixel_me.png" alt="Pixel Icon of Thomas Wicker">
+    </div><!-- END pixel-me -->
+    
+    <div class="my-info sm-12-12 md-8-12 lg-8-12 xl-8-12">
+      <h1 class="header">Thomas Wicker</h1>
+      <h2>Front End Developer/Designer</h2>
+      <p>UI/UX designer, front-end developer, HTML & CSS ninja, entrepreneur, fine artist, photographer, father. Extreme passion for new tech: #html5, #css3, #sass, #jquery, #javascript, #rails</p>
+    </div><!-- END my-info -->
+
+  </section><!-- END superhero -->
+      <header class="nav-header main-header sm-12-12 md-12-12 lg-12-12 xl-12-12" role="navigation">
+      <a href="#" id="brand"></a>
+      <nav id="magic-nav">
+        <a href="#" id="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <section class="main-nav">
+           <ul class="left">
+            <li class="" id="homeBTN"><a href="http://thomaswicker.com/test">Home</a></li>
+            <li class="" id="aboutBTN"><a href="http://thomaswicker.com/test/about">About</a></li>
+            <li class="" id="portfolioBTN"><a href="http://thomaswicker.com/test/portfolio">Portfolio</a></li>
+            <li class="" id="photographyBTN"><a href="http://thomaswicker.com/test/photography">Photography</a></li>
+            <li class="" id="resumeBTN"><a href="http://thomaswicker.com/test/resume">Resume</a></li>
+            <li class="" id="contactBTN"><a href="http://thomaswicker.com/test/contact">Contact</a></li>
+          </ul>
+      </section> 
+      </nav>
+   </header>
+
+        <section id="body-posts" class="all-12-12">
+
+	<div id="body-posts-inner" class="all-12-12">
+
+		<a class="btn secondary mini" href="http://thomaswicker.com/test">Back to Home</a>
+
+		<div class="post">
+
+			<header class="post-header">
+				<h1 class="post-title">Playing with Responsive SVG for a map of the US</h1>
+				<p class="post-meta">Oct 29, 2014</p>
+			</header>
+
+			<article class="post-content">
+				<h6 id="my-mission-if-i-chose-to-accept-it">My mission, if I chose to accept it…</h6>
+<p>The task was to covert an old Flash map of the US into responsive SVG. I accepted the challenge… (well I had to because it’s what they pay me for but that’s beside the point). The Flash map was built in the early 2000’s and was used to display a list of Client X’s school’s by state. It 700px fixed width and for obvious reasons.. didn’t work on mobile. It was also a complete pain to update as the data file was based on XML and was poorly architected.  </p>
+
+<p class="codepen" data-height="725" data-theme-id="3524" data-slug-hash="cibur" data-default-tab="result" data-user="thomasjwicker">See the Pen <a href="http://codepen.io/thomasjwicker/pen/cibur/">Responsive SVG &amp; SASS Map of the US</a> by Thomas Wicker (<a href="http://codepen.io/thomasjwicker">@thomasjwicker</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async="" src="//codepen.io/assets/embed/ei.js"></script>
+
+<p class="margin top lg">Quite honestly I haven't played with SVG all that much. Most of my clients or contracts tend to be for large corporations or enterprise size businesses. Using all the latest and greatest tools with said clients generally isn't an option. However with this project the minimum browser support was generously set for IE9 so I was able to dip my toes in. I've used SVG for some simple image or icon replacement on various sites, but that's pretty much the extent of it. I certainly had not played much with responsive SVG. I started off with firing up Illustrator and cranking out indivdual SVGs for each state in anticipation of absolutely positioning each state on a canvas and stitching them all together.</p>
+
+<p>Knowing that one of SVGs strong suits is responsiveness, I thought this would just be an afterthought… I was wrong. Upon sizing the window up and down, the states would respond correctly but it would create a gap between them as I got to smaller sizes. Setting the top, right, bottom left styles to percentage didn’t work. I tried a couple of methods using jQuery to calculate the size of each SVG and keep them stitched together when sizing, that didn’t work. After hours of reading through blog posts and Stack Overflow, nothing was solving my problem. I decided to export the whole US map as one SVG and try to attack it from that direction, that worked!</p>
+
+
+			</article>
+
+			<div id="disqus_thread"></div>
+		    <script type="text/javascript">
+		        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		        var disqus_shortname = 'thomasjwicker'; // required: replace example with your forum shortname
+
+		        /* * * DON'T EDIT BELOW THIS LINE * * */
+		        (function() {
+		            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		        })();
+		    </script>
+		    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+			</div>
+
+		</section>
+
+	</section>		
+
+
+    <footer class="site-footer">
+  
+	<script src="http://thomaswicker.com/test/js/magic_nav.js"></script>
+    <script src="http://thomaswicker.com/test/js/application.min.js"></script>
+
+</footer>
+
+
+	<script type="text/javascript">
+      	var loc = window.location.href;
+        if(loc=== "http://thomaswicker.com/test/") {
+             $("#homeBTN").addClass("current");
+         } else if (loc=== "http://thomaswicker.com/test/about/") {
+             $("#aboutBTN").addClass("current");
+         } else if (loc=== "http://thomaswicker.com/test/portfolio/") {
+             $("#portfolioBTN").addClass("current");
+         } else if (loc=== "http://thomaswicker.com/test/photography/") {
+             $("#photographyBTN").addClass("current");
+         } else if (loc=== "http://thomaswicker.com/test/resume/") {
+             $("#resumeBTN").addClass("current");
+         } else if (loc=== "http://thomaswicker.com/test/contact/") {
+             $("#contactBTN").addClass("current");
+         } 
+	</script>
+
+  </body>
+
+</html>

@@ -10,14 +10,15 @@ layout: default
     <div class="body-home-left sm-12-12 md-12-12 lg-8-12 xl-9-12">
     
       <ul class="post-list all-12-12">
-        {% for post in site.posts %}
+        {% for post in site.posts limit:2 %}
         <li>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
 
-          <p>{{ post.content }}</p>
+          <p>{{ post.content | truncatewords: 350 }}</p>
+          <a href="{{ post.url }}">Read more...</a>
         </li>
         {% endfor %}
       </ul><!-- END .post-list -->
@@ -26,47 +27,85 @@ layout: default
 
     <aside class="body-home-right sm-hidden md-hidden lg-4-12 xl-3-12">
 
+      <div id="archives-container" class="all-12-12">
+       
+        <div id="archives-title">
+
+          <div id="archives-title-left">
+            <img src="{{ site.baseurl }}/img/archives_logo.png" alt="Site Archives">
+          </div><!-- END .archives-title-left -->
+
+          <div id="archives-title-middle">
+            <h4>Last 3 posts</h4>
+          </div><!-- END .archives-title-middle -->
+
+
+          <div id="archives-title-right">
+            <a class="btn fire mini" href="{{ site.baseurl }}/archives">View All</a>
+          </div><!-- END .archives-title-left -->
+
+        </div><!-- END .archives-title -->
+
+        <ul>
+          {% for post in site.posts limit:3 %}
+
+            {% unless post.next %}
+            {% else %}
+              {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+              {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+              {% if year != nyear %}
+                <h3>{{ post.date | date: '%Y' }}</h3>
+              {% endif %}
+            {% endunless %}
+
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+
+      </div>  
+
       <div id="lastfm-container" class="all-12-12">
-          <div id="lastfm-title">
+       
+        <div id="lastfm-title">
 
-            <div id="lastfm-title-left">
-              <img src="{{ site.baseurl }}/img/spotify_logo.png" alt="Spotify Logo">
-            </div>
+          <div id="lastfm-title-left">
+            <img src="{{ site.baseurl }}/img/spotify_logo.png" alt="Spotify Logo">
+          </div>
 
-            <div id="lastfm-title-right">
-              <h4>Recently listened to:</h4>
-            </div>
-          </div><!-- END #lastfm-title -->
+          <div id="lastfm-title-right">
+            <h4>Recently listened to:</h4>
+          </div>
+        </div><!-- END #lastfm-title -->
 
-          <ul id="lastfm"></ul><!-- END #lastfm -->
-            
-        </div><!-- END #lastfm-container -->
-
-        <div class="social-feed all-12-12">
+        <ul id="lastfm"></ul><!-- END #lastfm -->
           
-            <div id="twitter-title">
+      </div><!-- END #lastfm-container -->
 
-            <div id="twitter-title-left">
-              <img src="{{ site.baseurl }}/img/twitter_logo.png" alt="Twitter Logo">
-            </div>
+      <div class="social-feed all-12-12">
+        
+          <div id="twitter-title">
 
-            <div id="twitter-title-right">
-              <h4>Twitter Feed:</h4>
-            </div>
-          </div><!-- END #twitter-title -->
+          <div id="twitter-title-left">
+            <img src="{{ site.baseurl }}/img/twitter_logo.png" alt="Twitter Logo">
+          </div>
 
-          <aside id="twitter-feed">
-            <a class="twitter-timeline"
-            href="https://twitter.com/thomasjwicker"
-            data-widget-id="392388763487182849"
-            data-chrome="noheader nofooter noborders transparent"
-            data-tweet-limit="7">
-            Tweets by @thomasjwicker
-            </a>
-          </aside>
+          <div id="twitter-title-right">
+            <h4>Twitter Feed:</h4>
+          </div>
+        </div><!-- END #twitter-title -->
 
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div><!-- END .social-feed -->
+        <aside id="twitter-feed">
+          <a class="twitter-timeline"
+          href="https://twitter.com/thomasjwicker"
+          data-widget-id="392388763487182849"
+          data-chrome="noheader nofooter noborders transparent"
+          data-tweet-limit="7">
+          Tweets by @thomasjwicker
+          </a>
+        </aside>
+
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div><!-- END .social-feed -->
 
     </aside><!-- END .body-home-right -->
 

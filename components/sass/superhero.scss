@@ -194,6 +194,10 @@ $superhero-contact: rgba(241,96,63,0.85);
             color: $color-primary;
             font-style: italic;
             padding: .2em 0em 0em 2em;
+
+            @include mq(sm) {
+                display: none;
+            }
         }
     }
 }

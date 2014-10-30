@@ -8319,6 +8319,11 @@ html, body {
   font-style: italic;
   padding: .2em 0em 0em 2em;
 }
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  .superhero .my-info small {
+    display: none;
+  }
+}
 
 .social-media-box {
   position: fixed;
@@ -8444,10 +8449,75 @@ html, body {
 
 .body-home-right {
   float: left;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 20px 0px;
   padding: 30px 0px 0px 0px;
   height: auto;
   background-color: #F4F7F8;
+}
+
+#archives-container {
+  float: left;
+  border: 2px solid #ff372c;
+  background-color: #ffffff;
+  margin: 0em 0em 1.2em 0em;
+}
+#archives-container ul {
+  width: 90%;
+}
+#archives-container ul li {
+  float: left;
+  width: 95%;
+  padding: 10px 20px 15px 20px;
+  line-height: 1.3rem;
+  border-bottom: 1px solid #bcbcbc;
+}
+#archives-container ul li a {
+  color: #444444;
+  text-decoration: none;
+}
+#archives-container ul li a:hover {
+  color: #ff372c;
+  text-decoration: underline;
+}
+#archives-container ul li:last-child {
+  border-bottom: none;
+}
+#archives-container #archives-title {
+  float: left;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ff372c;
+  padding: 8px 0px 0px 0px;
+  background-color: #ffffff;
+}
+#archives-container #archives-title #archives-title-left {
+  float: left;
+  width: 60px;
+  height: 50px;
+  text-align: center;
+}
+#archives-container #archives-title #archives-title-left img {
+  width: 40px;
+}
+#archives-container #archives-title #archives-title-middle {
+  float: left;
+  width: calc(100% - 170px);
+  height: 50px;
+}
+#archives-container #archives-title #archives-title-middle h4 {
+  font-family: "Lato", sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding: 10px 0px 0px 5px;
+  color: #ff372c;
+}
+#archives-container #archives-title #archives-title-right {
+  float: left;
+  width: 110px;
+  height: 50px;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
 }
 
 #lastfm-container {
@@ -8600,7 +8670,7 @@ html, body {
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   #body-about-inner {
-    width: 90%;
+    width: 85%;
     padding: 65px 0px 35px 0px;
   }
 }
@@ -8618,8 +8688,16 @@ html, body {
   font-family: "Lato", sans-serif, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   margin: 20px 0px 20px 0px;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-about-inner h2 {
+    font-family: "Lato", sans-serif, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.7rem;
+  }
 }
 #body-about-inner h3 {
   float: left;
@@ -8727,6 +8805,11 @@ html, body {
   position: relative;
   background-color: #ffffff;
 }
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-portfolio-inner {
+    padding: 44px 0px 35px 0px;
+  }
+}
 
 #thumbnails {
   position: relative;
@@ -8739,6 +8822,7 @@ html, body {
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   .item img {
     width: 100%;
+    border-bottom: 5px solid #ffffff;
   }
 }
 
@@ -8761,18 +8845,22 @@ html, body {
 }
 
 .modules {
-  width: 100%;
+  width: 50%;
   height: auto;
   position: relative;
   margin-left: auto;
   margin-right: auto;
   top: 10%;
-  width: 50%;
   z-index: 1001;
   overflow: scroll;
   background-color: #ffffff;
   text-align: center;
   padding-bottom: 50px;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  .modules {
+    width: 90%;
+  }
 }
 .modules article img {
   margin-top: 30px;
@@ -9601,8 +9689,16 @@ CUSTOMISATIONS
   font-family: "Lato", sans-serif, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   margin: -10px 0px 0px 0px;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #my-resume-container-details-right #my-objective h2 {
+    font-family: "Lato", sans-serif, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.7rem;
+  }
 }
 #my-resume-container-details-right #my-objective p {
   float: left;
@@ -9615,6 +9711,12 @@ CUSTOMISATIONS
 #my-resume-container-skills #skills-categories {
   float: left;
   width: 100%;
+}
+#my-resume-container-skills #skills-categories h2 {
+  font-family: "Lato", sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.7rem;
 }
 #my-resume-container-skills #skills-categories .legend {
   border: 1px solid #bcbcbc;
@@ -10090,7 +10192,7 @@ CUSTOMISATIONS
   font-family: "Lato", sans-serif, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 1.7rem;
+  font-size: 2.2rem;
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   .body-contact-right .contact-header {
@@ -10213,6 +10315,10 @@ CUSTOMISATIONS
   #body-posts-inner h2 {
     font-size: 1.4rem !important;
   }
+}
+
+.codepen-demo {
+  padding: 10px 0px 60px 0px;
 }
 
 .post-list {
@@ -10446,4 +10552,136 @@ CUSTOMISATIONS
 
 /* ========================================================
    END POSTS SCSS
+   ======================================================== */
+/* ========================================================
+   BEGIN ARCHIVES PAGE SCSS
+   ======================================================== */
+#body-archives {
+  position: absolute;
+  z-index: 101;
+  top: 250px;
+  background-color: #ffffff;
+  padding-bottom: 75px;
+}
+
+#body-archives-inner {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: #ffffff;
+}
+#body-archives-inner h2.main-title {
+  margin-top: 40px;
+  font-family: "Lato", sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.2rem;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-archives-inner h2.main-title {
+    margin-top: 80px;
+    font-family: "Lato", sans-serif, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  #body-archives-inner {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-archives-inner {
+    width: 85%;
+  }
+}
+#body-archives-inner li.post-content {
+  padding: 20px 0px 30px 0px;
+  background-color: #ffffff;
+  border-bottom: 1px dotted #bcbcbc;
+}
+#body-archives-inner li.post-content a.post-title {
+  display: block;
+  width: 100%;
+  font-family: "Lato", sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.45rem;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  line-height: 1.5rem;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-archives-inner li.post-content a.post-title {
+    font-family: "Lato", sans-serif, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+  }
+}
+#body-archives-inner li.post-content small.post-date {
+  display: block;
+  width: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #a3a3a3;
+  margin-bottom: 15px;
+}
+#body-archives-inner li.post-content p.post-body {
+  display: block;
+  width: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+}
+#body-archives-inner li.post-content a.post-link {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  padding: 8px 10px 8px 10px;
+  text-decoration: none;
+}
+#body-archives-inner li.post-content pre {
+  background-color: #eef8fb;
+}
+#body-archives-inner li.post-content pre code {
+  padding: 25px 20px 20px 30px;
+  color: #14475d;
+  font-weight: 500;
+  font-size: .9em;
+  border: none;
+  text-wrap: unrestricted;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-archives-inner li.post-content img {
+    max-width: 80px !important;
+  }
+}
+#body-archives-inner li.post-content blockquote p {
+  font-family: "Lato", sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 2.0rem;
+  border-left: 5px solid #bcbcbc;
+  padding-left: 30px;
+}
+#body-archives-inner li.post-content div.highlight {
+  margin-bottom: 30px;
+}
+#body-archives-inner li.post-content:last-child {
+  border-bottom: none;
+}
+
+/* ========================================================
+   END ARCHIVES PAGE SCSS
    ======================================================== */
