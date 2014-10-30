@@ -28,6 +28,8 @@ permalink: portfolio/
 
 <script type="text/javascript">
 
+$(document).ready(function() {
+
   var username = "thomaswicker";
 
   function loadProject(projectID) {
@@ -43,7 +45,6 @@ permalink: portfolio/
   });
 }
 
-$(document).ready(function() {
   // Set behance api key
   behanceAPI.setKey(behancekey);
 
