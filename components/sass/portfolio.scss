@@ -33,8 +33,11 @@
 		min-width: 220px;
 
 		@include mq(sm) {
-			width: 100%;
-      border-bottom: 5px solid $white;
+      float: left;
+			width: calc(50% - 10px);
+      min-width: 110px;
+      border: 5px solid $black;
+      background-color: $black;
 		} 
 	}
 }

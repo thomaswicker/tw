@@ -11,19 +11,15 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	 <!-- ANCIENT SCROLLS -->
-	<link rel="stylesheet" href="http://thomaswicker.com/test/css/application.min.css">
+	<link rel="stylesheet" href="http://thomaswicker.com/css/application.min.css">
 
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="canonical" href="http://thomaswicker.comhttp://thomaswicker.com/test/">
-
-	<!-- MAGICAL SPELLS -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+    <link rel="canonical" href="http://thomaswicker.comhttp://thomaswicker.com/">
 
 </head>
 
   <body>
+
+  <span id="main-container">
 
       <div class="social-media-box">
     <ul class="social-media-box-container">
@@ -33,12 +29,12 @@
       <li><a href="https://github.com/thomaswicker" target="blank"><i class="fa fa-github-alt"></i></a></li>
       <li><a href="http://www.codepen.io/thomasjwicker" target="blank"><i class="fa fa-codepen"></i></a></li>
       <li><a href="http://instagram.com/thomasjwicker" target="blank"><i class="fa fa-instagram"></i></a></li>
-    </ul>
-  </div><!-- END social-media-box -->
+    </ul><!-- END .social-media-box-container -->
+  </div><!-- END .social-media-box -->
       <section class="superhero row">
 
     <div class="pixel-me sm-12-12 md-4-12 lg-3-12 xl-3-12">
-      <img src="http://thomaswicker.com/test/img/pixel_me.png" alt="Pixel Icon of Thomas Wicker">
+      <img src="http://thomaswicker.com/img/pixel_me.png" alt="Pixel Icon of Thomas Wicker">
     </div><!-- END pixel-me -->
     
     <div class="my-info sm-12-12 md-8-12 lg-8-12 xl-8-12">
@@ -46,6 +42,8 @@
       <h2>Front End Developer/Designer</h2>
       <p>UI/UX designer, front-end developer, HTML & CSS ninja, entrepreneur, fine artist, photographer, father. Extreme passion for new tech: #html5, #css3, #sass, #jquery, #javascript, #rails</p>
     </div><!-- END my-info -->
+
+    <div class="last-updated"><span>Last Updated: </span>30 Oct 2014</div>
 
   </section><!-- END superhero -->
       <header class="nav-header main-header sm-12-12 md-12-12 lg-12-12 xl-12-12" role="navigation">
@@ -58,13 +56,14 @@
         </a>
         <section class="main-nav">
            <ul class="left">
-            <li class="" id="homeBTN"><a href="http://thomaswicker.com/test">Home</a></li>
-            <li class="" id="aboutBTN"><a href="http://thomaswicker.com/test/about">About</a></li>
-            <li class="" id="portfolioBTN"><a href="http://thomaswicker.com/test/portfolio">Portfolio</a></li>
-            <li class="" id="photographyBTN"><a href="http://thomaswicker.com/test/photography">Photography</a></li>
-            <li class="" id="resumeBTN"><a href="http://thomaswicker.com/test/resume">Resume</a></li>
-            <li class="" id="contactBTN"><a href="http://thomaswicker.com/test/contact">Contact</a></li>
+            <li class="" id="homeBTN"><a href="http://thomaswicker.com">Home</a></li>
+            <li class="" id="aboutBTN"><a href="http://thomaswicker.com/about">About</a></li>
+            <li class="" id="portfolioBTN"><a href="http://thomaswicker.com/portfolio">Portfolio</a></li>
+            <li class="" id="photographyBTN"><a href="http://thomaswicker.com/photography">Photography</a></li>
+            <li class="" id="resumeBTN"><a href="http://thomaswicker.com/resume">Resume</a></li>
+            <li class="" id="contactBTN"><a href="http://thomaswicker.com/contact">Contact</a></li>
           </ul>
+          
       </section> 
       </nav>
    </header>
@@ -80,21 +79,21 @@
         <li>
           <span class="post-meta">Oct 29, 2014</span>
           <h2>
-            <a class="post-link" href="http://thomaswicker.com/test/svg/responsive/sass/codepen/2014/10/29/responsive-svg-map.html">Playing with Responsive SVG for a map of the US</a>
+            <a class="post-link" href="http://thomaswicker.com/svg/responsive/sass/codepen/2014/10/29/responsive-svg-map.html">Playing with Responsive SVG for a map of the US</a>
           </h2>
 
           <p><h6 id="my-mission-if-i-chose-to-accept-it">My mission, if I chose to accept it…</h6> <p>The task was to covert an old Flash map of the US into responsive SVG. I accepted the challenge… (well I had to because it’s what they pay me for but that’s beside the point). The Flash map was built in the early 2000’s and was used to display a list of Client X’s school’s by state. It 700px fixed width and for obvious reasons.. didn’t work on mobile. It was also a complete pain to update as the data file was based on XML and was poorly architected. </p> <p class="codepen" data-height="725" data-theme-id="3524" data-slug-hash="cibur" data-default-tab="result" data-user="thomasjwicker">See the Pen <a href="http://codepen.io/thomasjwicker/pen/cibur/">Responsive SVG &amp; SASS Map of the US</a> by Thomas Wicker (<a href="http://codepen.io/thomasjwicker">@thomasjwicker</a>) on <a href="http://codepen.io">CodePen</a>.</p> <script async="" src="//codepen.io/assets/embed/ei.js"></script> <p class="margin top lg">Quite honestly I haven't played with SVG all that much. Most of my clients or contracts tend to be for large corporations or enterprise size businesses. Using all the latest and greatest tools with said clients generally isn't an option. However with this project the minimum browser support was generously set for IE9 so I was able to dip my toes in. I've used SVG for some simple image or icon replacement on various sites, but that's pretty much the extent of it. I certainly had not played much with responsive SVG. I started off with firing up Illustrator and cranking out indivdual SVGs for each state in anticipation of absolutely positioning each state on a canvas and stitching them all together.</p> <p>Knowing that one of SVGs strong suits is responsiveness, I thought this would just be an afterthought… I was wrong. Upon sizing the window up and down, the states would respond correctly but it would create a gap between them as I got to smaller sizes. Setting the top, right, bottom left styles to percentage didn’t work. I tried a couple of methods using jQuery to calculate the size of each SVG and keep them stitched together when sizing, that didn’t work. After hours of reading through blog posts and Stack Overflow, nothing was solving my problem....</p>
-          <a href="/svg/responsive/sass/codepen/2014/10/29/responsive-svg-map.html">Read more...</a>
+          <a id="read-more" class="btn mini secondary" href="/svg/responsive/sass/codepen/2014/10/29/responsive-svg-map.html">Read more...</a>
         </li>
         
         <li>
           <span class="post-meta">Oct 21, 2014</span>
           <h2>
-            <a class="post-link" href="http://thomaswicker.com/test/javascript/gulp/2014/10/21/what-I-have-learned-about-gulp.html">What I Learned About GulpJS</a>
+            <a class="post-link" href="http://thomaswicker.com/javascript/gulp/2014/10/21/what-I-have-learned-about-gulp.html">What I Learned About GulpJS</a>
           </h2>
 
           <p><div class="post-img-right img-md"> <img src="/images/gulp_logo.png" /> </div> <p>Some time back.. before the age of my SASS enlightment, I was writng in pure CSS, pure Javascript, no compiling, no minifying, nothing. Fast forward a few years and I had finally jumped on the SASS bandwagon, far later than I should’ve I admit. This is what got me interested in the world of task running and the need for code compiling. I’d heard of GruntJS through Meetups and friends, but honestly it scared me somewhat. I wasn’t quite comfortable with Javascript at that point and really much more of a GUI type guy. </p> <p>I am a frequent listener of the <a href="http://www.shoptalkshow.com/" title="Shoptalk Show">Shoptalk Show</a> and during one of those episodes head them discuss an app called <a href="https://incident57.com/codekit/" title="Codekit App">Codekit</a> which could do compilation/minification of SASS, JS, etc. I downloaded it and fell in love quickly. I purchased a license and began integrating it heavily into all my projects. It was a beautiful and clean UI, solid functionality and for the most part unobtrussive to my workflow. </p> <p>I used <a href="https://incident57.com/codekit/" title="Codekit App">Codekit</a> for almost a year before I decided to feed my inner geek and give GruntJS a shot. I was getting more comfortable with Javascript and just starting to play with command line. I sat down one night and spun my wheels for several hours researching on Stack Overflow and reading blog posts about how to set it all up. After about 2 more nights of hammering away I finally produced a decent grunt.js file that I could use with my projects. Albeit there were a few hiccups switching off of <a href="https://incident57.com/codekit/" title="Codekit App">Codekit</a>, I made it work. The switch made handing off files to other developers easier as they didn’t have to have a <a href="https://incident57.com/codekit/" title="Codekit App">Codekit</a> license, retain the same <a href="https://incident57.com/codekit/" title="Codekit App">Codekit</a> config, etc. They could just Git my files and run Grunt. I continuing using Grunt for about 6 months until I heard about a new kid on the block, <a href="http://www.gulpjs.com" title="GulpJS">Gulp</a>. </p> <blockquote> <p>Gulp.js is a task runner...</p>
-          <a href="/javascript/gulp/2014/10/21/what-I-have-learned-about-gulp.html">Read more...</a>
+          <a id="read-more" class="btn mini secondary" href="/javascript/gulp/2014/10/21/what-I-have-learned-about-gulp.html">Read more...</a>
         </li>
         
       </ul><!-- END .post-list -->
@@ -108,7 +107,18 @@
         <div id="archives-title">
 
           <div id="archives-title-left">
-            <img src="http://thomaswicker.com/test/img/archives_logo.png" alt="Site Archives">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 141.592 140.856" enable-background="new 0 0 141.592 140.856" xml:space="preserve">
+            <g>
+              <g>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#F1613F" cx="72.386" cy="69.737" r="63.256"/>
+              </g>
+            </g>
+            <path fill="#FFFFFF" d="M67.298,55.002l-5.001,5.001l-14.519-0.001v28.592c-0.001,2.902-2.353,5.254-5.255,5.254v0.001
+              c-0.733,0-1.326-0.595-1.326-1.328c0-0.731,0.593-1.326,1.326-1.326c1.435-0.002,2.6-1.165,2.601-2.601V57.349H61.2l4.999-4.999
+              l35.825,0.001v-5.138H64.293l-3.321-4.069H37.233v49.26c0,2.169,1.76,3.928,3.929,3.928c0.057,0,0.111-0.015,0.167-0.017
+              c0.014,0.001,0.028,0.017,0.04,0.017h66.17V55.002H67.298z"/>
+            </svg>
           </div><!-- END .archives-title-left -->
 
           <div id="archives-title-middle">
@@ -117,7 +127,7 @@
 
 
           <div id="archives-title-right">
-            <a class="btn fire mini" href="http://thomaswicker.com/test/archives">View All</a>
+            <a class="btn fire mini" href="http://thomaswicker.com/archives">View All</a>
           </div><!-- END .archives-title-left -->
 
         </div><!-- END .archives-title -->
@@ -148,7 +158,100 @@
         <div id="lastfm-title">
 
           <div id="lastfm-title-left">
-            <img src="http://thomaswicker.com/test/img/spotify_logo.png" alt="Spotify Logo">
+
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 141.592 140.856" enable-background="new 0 0 141.592 140.856" xml:space="preserve">
+              <g>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#7AB542" cx="72.386" cy="69.824" r="63.518"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#7BB642" cx="72.386" cy="69.388" r="62.492"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#7CB642" cx="72.386" cy="68.952" r="61.466"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#7DB742" cx="72.386" cy="68.517" r="60.441"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#7EB742" cx="72.386" cy="68.081" r="59.415"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#7FB842" cx="72.386" cy="67.645" r="58.389"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#80B842" cx="72.386" cy="67.209" r="57.364"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#81B942" cx="72.386" cy="66.773" r="56.338"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#82B942" cx="72.386" cy="66.338" r="55.312"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#82BA42" cx="72.386" cy="65.902" r="54.286"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#83BA42" cx="72.386" cy="65.466" r="53.261"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#84BB42" cx="72.386" cy="65.03" r="52.235"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#85BB42" cx="72.386" cy="64.595" r="51.209"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#86BC42" cx="72.386" cy="64.159" r="50.184"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#87BC42" cx="72.386" cy="63.723" r="49.158"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#88BD41" cx="72.386" cy="63.287" r="48.132"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#89BD41" cx="72.386" cy="62.851" r="47.106"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#8ABE41" cx="72.386" cy="62.416" r="46.081"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#8BBE41" cx="72.386" cy="61.98" r="45.055"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#8CBF41" cx="72.386" cy="61.544" r="44.029"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#8CBF41" cx="72.386" cy="61.108" r="43.003"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#8DC041" cx="72.386" cy="60.672" r="41.978"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#8EC041" cx="72.386" cy="60.237" r="40.952"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#8FC141" cx="72.386" cy="59.801" r="39.926"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#90C141" cx="72.386" cy="59.365" r="38.901"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#91C241" cx="72.386" cy="58.929" r="37.875"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#92C241" cx="72.386" cy="58.494" r="36.849"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#93C341" cx="72.386" cy="58.058" r="35.823"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#94C341" cx="72.386" cy="57.622" r="34.798"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#95C441" cx="72.386" cy="57.186" r="33.772"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#96C441" cx="72.386" cy="56.75" r="32.746"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#97C540" cx="72.386" cy="56.315" r="31.72"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#97C540" cx="72.386" cy="55.879" r="30.695"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#98C640" cx="72.386" cy="55.443" r="29.669"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#99C740" cx="72.386" cy="55.007" r="28.643"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#9AC740" cx="72.386" cy="54.572" r="27.618"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#9BC840" cx="72.386" cy="54.136" r="26.592"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#9CC940" cx="72.386" cy="53.7" r="25.566"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#9DC940" cx="72.386" cy="53.264" r="24.54"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#9ECA40" cx="72.386" cy="52.828" r="23.515"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#9FCB40" cx="72.386" cy="52.393" r="22.489"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#A0CB40" cx="72.386" cy="51.957" r="21.463"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#A0CC40" cx="72.386" cy="51.521" r="20.437"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#A1CD40" cx="72.386" cy="51.085" r="19.412"/>
+              </g>
+              <g>
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="#7BA43F" d="M118.806,57.032c-0.019,4.599-4.841,7.415-8.88,5.13
+                    c-2.739-1.55-5.543-2.955-8.464-4.125C95.66,55.71,89.647,54.145,83.5,53.061c-4.278-0.755-8.589-1.254-12.923-1.515
+                    c-4.506-0.271-9.016-0.303-13.529-0.069c-5.171,0.268-10.301,0.835-15.364,1.929c-1.868,0.403-3.714,0.912-5.562,1.406
+                    c-1.133,0.303-2.249,0.341-3.378,0.011c-2.47-0.723-4.173-2.936-4.246-5.527c-0.071-2.517,1.482-4.857,3.922-5.662
+                    c1.786-0.589,3.62-1.052,5.454-1.476c4.541-1.05,9.146-1.699,13.787-2.122c4.928-0.45,9.865-0.595,14.806-0.453
+                    c12.172,0.348,24.107,2.128,35.657,6.116c4.709,1.626,9.242,3.644,13.55,6.158c1.536,0.896,2.567,2.159,2.959,3.906
+                    C118.729,56.178,118.751,56.608,118.806,57.032z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="#7BA43F" d="M61.309,71.218c-7.255,0.03-14.687,0.93-21.946,3.084
+                    c-1.183,0.351-2.37,0.375-3.529-0.095c-1.886-0.764-3.113-2.654-3.047-4.654c0.069-2.086,1.341-3.903,3.353-4.517
+                    c2.047-0.625,4.124-1.167,6.213-1.631c5.143-1.142,10.355-1.746,15.622-1.946c11.331-0.43,22.399,1.036,33.198,4.497
+                    c5.46,1.75,10.683,4.041,15.617,6.976c0.246,0.146,0.489,0.295,0.733,0.444c2.573,1.572,2.88,4.737,1.653,6.753
+                    c-1.403,2.306-4.321,3.023-6.746,1.655c-1.368-0.772-2.72-1.576-4.119-2.289c-6.411-3.268-13.209-5.386-20.263-6.722
+                    C72.617,71.745,67.135,71.243,61.309,71.218z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="#7BA43F" d="M62.443,81.978c8.351,0.088,16.521,1.217,24.45,3.891
+                    c4.373,1.475,8.55,3.383,12.516,5.746c0.343,0.204,0.692,0.406,1.009,0.647c1.6,1.216,2.016,3.416,0.986,5.148
+                    c-0.999,1.681-3.119,2.356-4.931,1.556c-0.364-0.161-0.705-0.377-1.049-0.58c-6.722-3.985-13.976-6.453-21.687-7.633
+                    c-4.731-0.725-9.489-0.976-14.267-0.788c-6.18,0.243-12.283,1.1-18.32,2.437c-0.61,0.135-1.237,0.258-1.858,0.264
+                    c-1.869,0.02-3.447-1.306-3.775-3.103c-0.347-1.904,0.596-3.688,2.342-4.39c0.368-0.148,0.762-0.243,1.151-0.33
+                    c4.939-1.109,9.923-1.947,14.967-2.374C56.793,82.23,59.621,82.137,62.443,81.978z"/>
+                </g>
+              </g>
+              <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#010101" d="M118.806,57.375c-0.019,4.599-4.841,7.415-8.88,5.13
+                  c-2.739-1.55-5.543-2.955-8.464-4.125c-5.802-2.326-11.816-3.892-17.962-4.976c-4.278-0.755-8.589-1.254-12.923-1.515
+                  c-4.506-0.271-9.016-0.303-13.529-0.069c-5.171,0.268-10.301,0.835-15.364,1.929c-1.868,0.403-3.714,0.912-5.562,1.406
+                  c-1.133,0.303-2.249,0.341-3.378,0.011c-2.47-0.723-4.173-2.936-4.246-5.527c-0.071-2.517,1.482-4.857,3.922-5.662
+                  c1.786-0.589,3.62-1.052,5.454-1.476c4.541-1.05,9.146-1.699,13.787-2.122c4.928-0.45,9.865-0.595,14.806-0.453
+                  c12.172,0.348,24.107,2.128,35.657,6.116c4.709,1.626,9.242,3.644,13.55,6.158c1.536,0.896,2.567,2.159,2.959,3.906
+                  C118.729,56.521,118.751,56.952,118.806,57.375z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#010101" d="M61.309,71.562c-7.255,0.03-14.687,0.93-21.946,3.084
+                  c-1.183,0.351-2.37,0.375-3.529-0.095c-1.886-0.764-3.113-2.654-3.047-4.654c0.069-2.086,1.341-3.903,3.353-4.517
+                  c2.047-0.625,4.124-1.167,6.213-1.631c5.143-1.142,10.355-1.746,15.622-1.946c11.331-0.43,22.399,1.036,33.198,4.497
+                  c5.46,1.75,10.683,4.041,15.617,6.976c0.246,0.146,0.489,0.295,0.733,0.444c2.573,1.572,2.88,4.737,1.653,6.753
+                  c-1.403,2.306-4.321,3.023-6.746,1.655c-1.368-0.772-2.72-1.576-4.119-2.289c-6.411-3.268-13.209-5.386-20.263-6.722
+                  C72.617,72.089,67.135,71.586,61.309,71.562z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#010101" d="M62.443,82.321c8.351,0.088,16.521,1.217,24.45,3.891
+                  c4.373,1.475,8.55,3.383,12.516,5.746c0.343,0.204,0.692,0.406,1.009,0.647c1.6,1.216,2.016,3.416,0.986,5.148
+                  c-0.999,1.681-3.119,2.356-4.931,1.556c-0.364-0.161-0.705-0.377-1.049-0.58c-6.722-3.985-13.976-6.453-21.687-7.633
+                  c-4.731-0.725-9.489-0.976-14.267-0.788c-6.18,0.243-12.283,1.1-18.32,2.437c-0.61,0.135-1.237,0.258-1.858,0.264
+                  c-1.869,0.02-3.447-1.306-3.775-3.103c-0.347-1.904,0.596-3.688,2.342-4.39c0.368-0.148,0.762-0.243,1.151-0.33
+                  c4.939-1.109,9.923-1.947,14.967-2.374C56.793,82.573,59.621,82.48,62.443,82.321z"/>
+              </g>
+            </svg>            
           </div>
 
           <div id="lastfm-title-right">
@@ -165,7 +268,28 @@
           <div id="twitter-title">
 
           <div id="twitter-title-left">
-            <img src="http://thomaswicker.com/test/img/twitter_logo.png" alt="Twitter Logo">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 141.592 140.856" enable-background="new 0 0 141.592 140.856" xml:space="preserve">
+              <g>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#09BAEE" cx="72.386" cy="69.737" r="63.256"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#09BAEE" cx="72.386" cy="60.406" r="41.294"/>
+                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#09BAEE" cx="72.386" cy="51.076" r="19.332"/>
+              </g>
+              <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.7272" d="M46.053,81.29
+                c-1.875-0.925-3.488-1.588-4.964-2.476c-3.813-2.294-6.372-5.588-7.482-9.936c-0.273-1.072-0.503-2.166-0.638-3.263
+                c-0.148-1.198,0.44-1.352,1.466-0.947c1.28,0.509,2.594,0.942,3.921,1.312c0.507,0.142,1.087,0.023,1.703-0.165
+                c-3.98-3.322-6.381-7.432-7.016-12.436c-0.453-3.561,0.202-6.994,2.325-10.647c1.17,1.327,2.143,2.557,3.246,3.659
+                c4.998,4.996,10.742,8.843,17.398,11.313c4.063,1.508,8.172,2.759,12.538,2.954c0.313,0.013,0.629,0.113,0.937,0.194
+                c1.645,0.43,1.866,0.277,1.782-1.489c-0.182-3.773-0.049-7.469,1.941-10.862c2.61-4.45,6.3-7.304,11.395-8.542
+                c5.972-1.452,11.034,0.183,15.591,3.946c1.068,0.881,1.978,1.119,3.324,0.565c2.678-1.102,5.447-1.985,8.355-3.022
+                c-0.254,1.829-1.331,3.21-2.39,4.537c-1.032,1.295-2.258,2.437-3.656,3.916c3.119,0.27,5.499-1.03,8.429-1.848
+                c-0.69,1.02-1.094,1.851-1.707,2.479c-1.667,1.711-3.355,3.415-5.168,4.967c-0.984,0.844-1.368,1.717-1.459,2.994
+                c-0.275,3.826-0.357,7.717-1.172,11.438c-1.304,5.946-3.701,11.507-7.037,16.679c-4.649,7.207-10.738,12.815-18.262,16.794
+                c-4.047,2.141-8.42,3.499-12.964,4.406c-5.694,1.138-11.399,1.219-17.078,0.518c-6.763-0.833-13.114-3.087-18.895-6.906
+                c4.338,0.017,8.618-0.173,12.786-1.435c4.145-1.253,7.995-3.032,11.685-6.058c-0.895-0.29-1.404-0.55-1.934-0.611
+                c-6.171-0.702-10.282-4.285-13.214-9.472c-0.77-1.362-0.345-1.974,1.205-2.003c1.07-0.021,2.145,0.018,3.211-0.058
+                C44.777,81.75,45.286,81.511,46.053,81.29z"/>
+              </svg>
           </div>
 
           <div id="twitter-title-right">
@@ -183,7 +307,6 @@
           </a>
         </aside>
 
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div><!-- END .social-feed -->
 
     </aside><!-- END .body-home-right -->
@@ -192,16 +315,7 @@
 
 </section><!-- END #body-home -->
 
-
-
-<!-- ################################################ LIVE RELOAD - REMOVE BEFORE PRODUCTION ########################################################################  -->
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-<!-- ################################################ LIVE RELOAD - REMOVE BEFORE PRODUCTION ########################################################################  -->
-
-
-
  <script>
-
 $(document).ready(function() {
 
   $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=thomaswicker&api_key=846eaf49b65ba6f02adc5b23be6fbd88&limit=2&format=json&callback=?", function(data) {
@@ -218,34 +332,53 @@ $(document).ready(function() {
     }); // close JSON call
 
 }); // close document ready function
-
 </script>
 
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
     <footer class="site-footer">
-  
-	<script src="http://thomaswicker.com/test/js/magic_nav.js"></script>
-    <script src="http://thomaswicker.com/test/js/application.min.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- MAGICAL SPELLS -->
+	<script src="http://thomaswicker.com/js/magic_nav.js"></script>
+    <script src="http://thomaswicker.com/js/application.min.js"></script>
+
+	<!-- BEGIN GOOGLE ANALYTICS -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-49327942-1', 'thomaswicker.com');
+	ga('send', 'pageview');
+
+	</script>
+	<!-- END GOOGLE ANALYTICS -->
 
 </footer>
 
 
 	<script type="text/javascript">
       	var loc = window.location.href;
-        if(loc=== "http://thomaswicker.com/test/") {
+        if(loc=== "http://thomaswicker.com/") {
              $("#homeBTN").addClass("current");
-         } else if (loc=== "http://thomaswicker.com/test/about/") {
+         } else if (loc=== "http://thomaswicker.com/about/") {
              $("#aboutBTN").addClass("current");
-         } else if (loc=== "http://thomaswicker.com/test/portfolio/") {
+         } else if (loc=== "http://thomaswicker.com/portfolio/") {
              $("#portfolioBTN").addClass("current");
-         } else if (loc=== "http://thomaswicker.com/test/photography/") {
+         } else if (loc=== "http://thomaswicker.com/photography/") {
              $("#photographyBTN").addClass("current");
-         } else if (loc=== "http://thomaswicker.com/test/resume/") {
+         } else if (loc=== "http://thomaswicker.com/resume/") {
              $("#resumeBTN").addClass("current");
-         } else if (loc=== "http://thomaswicker.com/test/contact/") {
+         } else if (loc=== "http://thomaswicker.com/contact/") {
              $("#contactBTN").addClass("current");
          } 
 	</script>
-
+    
+    </span>
   </body>
 
 </html>

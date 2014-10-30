@@ -11,19 +11,15 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	 <!-- ANCIENT SCROLLS -->
-	<link rel="stylesheet" href="http://thomaswicker.com/test/css/application.min.css">
+	<link rel="stylesheet" href="http://thomaswicker.com/css/application.min.css">
 
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="canonical" href="http://thomaswicker.comhttp://thomaswicker.com/test/svg/responsive/sass/codepen/2014/10/29/responsive-svg-map.html">
-
-	<!-- MAGICAL SPELLS -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+    <link rel="canonical" href="http://thomaswicker.comhttp://thomaswicker.com/svg/responsive/sass/codepen/2014/10/29/responsive-svg-map.html">
 
 </head>
 
   <body>
+
+  <span id="main-container">
 
       <div class="social-media-box">
     <ul class="social-media-box-container">
@@ -33,12 +29,12 @@
       <li><a href="https://github.com/thomaswicker" target="blank"><i class="fa fa-github-alt"></i></a></li>
       <li><a href="http://www.codepen.io/thomasjwicker" target="blank"><i class="fa fa-codepen"></i></a></li>
       <li><a href="http://instagram.com/thomasjwicker" target="blank"><i class="fa fa-instagram"></i></a></li>
-    </ul>
-  </div><!-- END social-media-box -->
+    </ul><!-- END .social-media-box-container -->
+  </div><!-- END .social-media-box -->
       <section class="superhero row">
 
     <div class="pixel-me sm-12-12 md-4-12 lg-3-12 xl-3-12">
-      <img src="http://thomaswicker.com/test/img/pixel_me.png" alt="Pixel Icon of Thomas Wicker">
+      <img src="http://thomaswicker.com/img/pixel_me.png" alt="Pixel Icon of Thomas Wicker">
     </div><!-- END pixel-me -->
     
     <div class="my-info sm-12-12 md-8-12 lg-8-12 xl-8-12">
@@ -46,6 +42,8 @@
       <h2>Front End Developer/Designer</h2>
       <p>UI/UX designer, front-end developer, HTML & CSS ninja, entrepreneur, fine artist, photographer, father. Extreme passion for new tech: #html5, #css3, #sass, #jquery, #javascript, #rails</p>
     </div><!-- END my-info -->
+
+    <div class="last-updated"><span>Last Updated: </span>30 Oct 2014</div>
 
   </section><!-- END superhero -->
       <header class="nav-header main-header sm-12-12 md-12-12 lg-12-12 xl-12-12" role="navigation">
@@ -58,13 +56,14 @@
         </a>
         <section class="main-nav">
            <ul class="left">
-            <li class="" id="homeBTN"><a href="http://thomaswicker.com/test">Home</a></li>
-            <li class="" id="aboutBTN"><a href="http://thomaswicker.com/test/about">About</a></li>
-            <li class="" id="portfolioBTN"><a href="http://thomaswicker.com/test/portfolio">Portfolio</a></li>
-            <li class="" id="photographyBTN"><a href="http://thomaswicker.com/test/photography">Photography</a></li>
-            <li class="" id="resumeBTN"><a href="http://thomaswicker.com/test/resume">Resume</a></li>
-            <li class="" id="contactBTN"><a href="http://thomaswicker.com/test/contact">Contact</a></li>
+            <li class="" id="homeBTN"><a href="http://thomaswicker.com">Home</a></li>
+            <li class="" id="aboutBTN"><a href="http://thomaswicker.com/about">About</a></li>
+            <li class="" id="portfolioBTN"><a href="http://thomaswicker.com/portfolio">Portfolio</a></li>
+            <li class="" id="photographyBTN"><a href="http://thomaswicker.com/photography">Photography</a></li>
+            <li class="" id="resumeBTN"><a href="http://thomaswicker.com/resume">Resume</a></li>
+            <li class="" id="contactBTN"><a href="http://thomaswicker.com/contact">Contact</a></li>
           </ul>
+          
       </section> 
       </nav>
    </header>
@@ -73,7 +72,7 @@
 
 	<div id="body-posts-inner" class="all-12-12">
 
-		<a class="btn secondary mini" href="http://thomaswicker.com/test">Back to Home</a>
+		<a class="btn secondary mini" href="http://thomaswicker.com">Back to Home</a>
 
 		<div class="post">
 
@@ -118,30 +117,48 @@
 
 
     <footer class="site-footer">
-  
-	<script src="http://thomaswicker.com/test/js/magic_nav.js"></script>
-    <script src="http://thomaswicker.com/test/js/application.min.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- MAGICAL SPELLS -->
+	<script src="http://thomaswicker.com/js/magic_nav.js"></script>
+    <script src="http://thomaswicker.com/js/application.min.js"></script>
+
+	<!-- BEGIN GOOGLE ANALYTICS -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-49327942-1', 'thomaswicker.com');
+	ga('send', 'pageview');
+
+	</script>
+	<!-- END GOOGLE ANALYTICS -->
 
 </footer>
 
 
 	<script type="text/javascript">
       	var loc = window.location.href;
-        if(loc=== "http://thomaswicker.com/test/") {
+        if(loc=== "http://thomaswicker.com/") {
              $("#homeBTN").addClass("current");
-         } else if (loc=== "http://thomaswicker.com/test/about/") {
+         } else if (loc=== "http://thomaswicker.com/about/") {
              $("#aboutBTN").addClass("current");
-         } else if (loc=== "http://thomaswicker.com/test/portfolio/") {
+         } else if (loc=== "http://thomaswicker.com/portfolio/") {
              $("#portfolioBTN").addClass("current");
-         } else if (loc=== "http://thomaswicker.com/test/photography/") {
+         } else if (loc=== "http://thomaswicker.com/photography/") {
              $("#photographyBTN").addClass("current");
-         } else if (loc=== "http://thomaswicker.com/test/resume/") {
+         } else if (loc=== "http://thomaswicker.com/resume/") {
              $("#resumeBTN").addClass("current");
-         } else if (loc=== "http://thomaswicker.com/test/contact/") {
+         } else if (loc=== "http://thomaswicker.com/contact/") {
              $("#contactBTN").addClass("current");
          } 
 	</script>
-
+    
+    </span>
   </body>
 
 </html>

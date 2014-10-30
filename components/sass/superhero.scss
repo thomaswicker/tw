@@ -39,27 +39,6 @@ $superhero-contact: rgba(241,96,63,0.85);
         background-image: url('../img/bg_code_contact.jpg');
     }
 
-    #download-resume-btns {
-        float: left;
-        margin: 5px 0px 0px 40px;
-    
-        @include mq(sm) {
-            float: none;
-            width: 300px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    
-        button {
-            margin: 0px 5px 0px 0px;
-        }
-
-        a {
-            text-decoration: none;
-            margin-right: 0px;
-        }
-    }
-
     @include mq(sm) {
 		height: 340px;
 	}
@@ -202,10 +181,30 @@ $superhero-contact: rgba(241,96,63,0.85);
     }
 }
 
+.last-updated {
+    position: absolute;
+    right: 60px;
+    top: 180px;
+    z-index: 100000;
+    color: $white;
+    width: auto;
+    height: auto;
+    @include font($font-1, italic, .7rem, $font-weight-normal);
+    color: $light-gray;
+
+    span {
+        color: $light-gray;
+    }
+
+    @include mq(sm) {
+        display: none;
+    }
+}
+
 .social-media-box {
     position: fixed;
     width: 47px;
-    top: 30px;
+    top: 45px;
     right: 0px;
     border-bottom: 1px solid $light-gray;
     padding: 0px 0px 10px 0px;

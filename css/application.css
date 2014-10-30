@@ -8162,25 +8162,6 @@ html, body {
 .superhero.contact {
   background-image: url("../img/bg_code_contact.jpg");
 }
-.superhero #download-resume-btns {
-  float: left;
-  margin: 5px 0px 0px 40px;
-}
-@media only screen and (min-width: 0em) and (max-width: 40em) {
-  .superhero #download-resume-btns {
-    float: none;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-.superhero #download-resume-btns button {
-  margin: 0px 5px 0px 0px;
-}
-.superhero #download-resume-btns a {
-  text-decoration: none;
-  margin-right: 0px;
-}
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   .superhero {
     height: 340px;
@@ -8325,10 +8306,33 @@ html, body {
   }
 }
 
+.last-updated {
+  position: absolute;
+  right: 60px;
+  top: 180px;
+  z-index: 100000;
+  color: #ffffff;
+  width: auto;
+  height: auto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: #bcbcbc;
+}
+.last-updated span {
+  color: #bcbcbc;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  .last-updated {
+    display: none;
+  }
+}
+
 .social-media-box {
   position: fixed;
   width: 47px;
-  top: 30px;
+  top: 45px;
   right: 0px;
   border-bottom: 1px solid #bcbcbc;
   padding: 0px 0px 10px 0px;
@@ -8496,7 +8500,7 @@ html, body {
   height: 50px;
   text-align: center;
 }
-#archives-container #archives-title #archives-title-left img {
+#archives-container #archives-title #archives-title-left svg {
   width: 40px;
 }
 #archives-container #archives-title #archives-title-middle {
@@ -8517,7 +8521,14 @@ html, body {
   width: 110px;
   height: 50px;
   text-align: center;
-  padding: 0px 0px 0px 0px;
+  padding: 5px 0px 0px 0px;
+}
+#archives-container #archives-title #archives-title-right a.btn {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.7rem;
+  text-decoration: none;
 }
 
 #lastfm-container {
@@ -8539,7 +8550,7 @@ html, body {
   height: 50px;
   text-align: center;
 }
-#lastfm-container #lastfm-title #lastfm-title-left img {
+#lastfm-container #lastfm-title #lastfm-title-left svg {
   width: 40px;
 }
 #lastfm-container #lastfm-title #lastfm-title-right {
@@ -8619,8 +8630,8 @@ html, body {
   height: 50px;
   text-align: center;
 }
-.social-feed #twitter-title #twitter-title-left img {
-  width: 40px;
+.social-feed #twitter-title #twitter-title-left svg {
+  width: 40px !important;
 }
 .social-feed #twitter-title #twitter-title-right {
   float: left;
@@ -8821,8 +8832,11 @@ html, body {
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   .item img {
-    width: 100%;
-    border-bottom: 5px solid #ffffff;
+    float: left;
+    width: calc(50% - 10px);
+    min-width: 110px;
+    border: 5px solid #000000;
+    background-color: #000000;
   }
 }
 
@@ -8948,7 +8962,7 @@ html, body {
   float: left;
   min-height: 2465px;
   width: 20px;
-  background-image: url("http://www.thomaswicker.com/test/img/photo_strip_dot.png");
+  background-image: url("http://www.thomaswicker.com/img/photo_strip_dot.png");
   background-repeat: repeat-y;
 }
 
@@ -8962,7 +8976,7 @@ html, body {
   float: left;
   min-height: 2465px;
   width: 20px;
-  background-image: url("http://www.thomaswicker.com/test/img/photo_strip_dot.png");
+  background-image: url("http://www.thomaswicker.com/img/photo_strip_dot.png");
   background-repeat: repeat-y;
 }
 
@@ -9554,11 +9568,42 @@ CUSTOMISATIONS
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   #body-resume-inner {
-    width: 90%;
+    width: 85%;
   }
   #body-resume-inner h2 {
     font-size: 1.4rem !important;
   }
+}
+
+#download-resume {
+  margin-top: 15px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  font-weight: bold !important;
+}
+
+#download-resume-btns {
+  float: left;
+  margin: 0px 0px 0px 0px;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #download-resume-btns {
+    float: none;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#download-resume-btns button {
+  margin: 0px 3px 0px 0px;
+  padding: 0px;
+}
+#download-resume-btns a {
+  width: auto;
+  text-decoration: none;
+  margin-right: 0px;
 }
 
 #my-resume-container-details {
@@ -9705,6 +9750,14 @@ CUSTOMISATIONS
   margin-top: 20px;
 }
 
+.resume-experience-block {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 10px 0px 25px 0px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
 #my-resume-container-skills {
   float: left;
 }
@@ -9719,9 +9772,8 @@ CUSTOMISATIONS
   font-size: 1.7rem;
 }
 #my-resume-container-skills #skills-categories .legend {
-  border: 1px solid #bcbcbc;
   height: 43px;
-  padding: 10px 0px 10px 15px;
+  padding: 2px 0px 10px 0px;
   margin: 10px 0px 0px 0px;
   width: 500px;
 }
@@ -10385,6 +10437,13 @@ CUSTOMISATIONS
 }
 .post-list li div.highlight {
   margin-bottom: 30px;
+}
+.post-list li a#read-more {
+  text-decoration: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.7rem;
 }
 .post-list li .post-meta {
   color: #bcbcbc;

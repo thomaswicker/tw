@@ -7,8 +7,8 @@ permalink: portfolio/
   <div class="modules">
     <button class="closeBTN btn primary full" data-modal-close>CLOSE PREVIEW</button>
     <article></article>
-  </div>
-</div>
+  </div><!-- END .modules -->
+</div><!-- END #details -->
 
 <section id="body-portfolio" class="sm-12-12 md-12-12 lg-12-12 xl-12-12">
   <div id="body-portfolio-inner" class="sm-12-12 md-12-12 lg-12-12 xl-12-12">
@@ -18,78 +18,53 @@ permalink: portfolio/
         <div id ="container" class="projects"></div>
       </ul>
     </div>
-  </div><!-- END body-portfolio-inner -->
+  </div><!-- END #body-portfolio-inner -->
 
-</section><!-- END body-portfolio -->
+</section><!-- END #body-portfolio -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
 
 <script src="{{ site.baseurl }}/js/behance.js"></script>
 
 <script type="text/javascript">
 
-var username = "thomaswicker";
+  var username = "thomaswicker";
 
-function loadProject(projectID) {
- behanceAPI.getProjectDetails(projectID, function(loadModules) {
-  var moduleHTML = "";
+  function loadProject(projectID) {
+   behanceAPI.getProjectDetails(projectID, function(loadModules) {
+    var moduleHTML = "";
 
-  for(var i=0; i<loadModules.modules.length; i++) {
-   if(loadModules.modules[i].src!=undefined) {
-    moduleHTML += "<img src='" + loadModules.modules[i].src + "'>";
+    for(var i=0; i<loadModules.modules.length; i++) {
+     if(loadModules.modules[i].src!=undefined) {
+      moduleHTML += "<img src='" + loadModules.modules[i].src + "'>";
+    }
   }
-}
-$(".modules article").html(moduleHTML);
-});
+  $(".modules article").html(moduleHTML);
+  });
 }
 
 $(document).ready(function() {
-// Set behance api key
-behanceAPI.setKey(behancekey);
+  // Set behance api key
+  behanceAPI.setKey(behancekey);
 
-// Get projects
-behanceAPI.getProjects("thomaswicker", function(projectlist) {
-	var projectHTML = "";
-	for(var i=0; i<projectlist.length; i++) {
-		var project = projectlist[i];
-    		projectHTML += "<a href='#' class='item' data-modal-open onclick='loadProject(" + project.id + ")'><img src='" + project.covers[202] + "'></a>";
-  }
-  $(".projects").html(projectHTML);
+  // Get projects
+  behanceAPI.getProjects("thomaswicker", function(projectlist) {
+  	var projectHTML = "";
 
-  $("[data-modal-open]").on("click", function(){
-  $("#details").addClass("active-modal");
+  	for(var i=0; i<projectlist.length; i++) {
+  		var project = projectlist[i];
+      		projectHTML += "<a href='#' class='item' data-modal-open onclick='loadProject(" + project.id + ")'><img src='" + project.covers[202] + "'></a>";
+    }
+    $(".projects").html(projectHTML);
+
+    $("[data-modal-open]").on("click", function(){
+      $("#details").addClass("active-modal");
+    });
+
+    $("[data-modal-close]").on("click", function(){
+      $("#details").removeClass("active-modal");
+      $("#details article").empty();
+    });
+  });
 });
-
-  $("[data-modal-close]").on("click", function(){
-  $("#details").removeClass("active-modal");
-  $("#details article").empty();
-});
-
-
-
-});
-});
-</script>
-
-<script>
-$(document).ready(function() {
-
-// $(".item").on("click", function(){
-//   $("#details").css("display", "block");
-// });
-});
-
-
-// function closeModal() {
-//   $("#details").removeClass("active-modal");
-// }
-
-// $("[data-modal-close], #details").on("click", function(){
-//   closeModal();
-// });
-
-// $(document).keyup(function(e) {
-//   if (e.keyCode == 27) {
-//     closeModal();
-//   }
-// });
-
 </script>

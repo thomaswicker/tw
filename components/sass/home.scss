@@ -93,7 +93,7 @@
 			height: 50px;
 			text-align: center;
 
-			img {
+			svg {
 				width: 40px;
 			}
 		}
@@ -115,7 +115,12 @@
 			width: 110px;
 			height: 50px;
 			text-align: center;
-			padding: 0px 0px 0px 0px;
+			padding: 5px 0px 0px 0px;
+
+			a.btn {
+				@include font($font-1, normal, .7rem, $font-weight-semibold);
+				text-decoration: none;			
+			}
 		}
 	}
 }	
@@ -139,7 +144,7 @@
 			height: 50px;
 			text-align: center;
 
-			img {
+			svg {
 				width: 40px;
 			}
 		}
@@ -220,8 +225,8 @@
 			height: 50px;
 			text-align: center;
 
-			img {
-				width: 40px;
+			svg {
+				width: 40px !important;
 			}
 		}
 
