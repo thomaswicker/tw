@@ -1,75 +1,109 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {% include socialmedia-portfolio.html %}
-    {% include superhero-portfolio.html %}
-    {% include nav.html %}
-    
-        {{ content }}
+  {% include socialmedia-portfolio.html %}
+  {% include superhero-portfolio.html %}
+  {% include nav.html %}
+  
+    {{ content }}
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- BEGIN GOOGLE ANALYTICS -->
-    <script>
+  <!-- BEGIN GOOGLE ANALYTICS -->
+  <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-49327942-1', 'thomaswicker.com');
     ga('send', 'pageview');
+  </script>
+  <!-- END GOOGLE ANALYTICS -->
 
-    </script>
-    <!-- END GOOGLE ANALYTICS -->
-    <!-- MAGICAL SPELLS -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
-    <script src="{{ site.baseurl }}/js/behance.js"></script>
-    <script src="{{ site.baseurl }}/bower_components/masonry/dist/masonry.pkgd.min.js"></script>
-    <script src="{{ site.baseurl }}/js/jquery.magnific-popup.min.js"></script>
-    <script src="{{ site.baseurl }}/js/magic_nav.js"></script>
-    <script src="{{ site.baseurl }}/js/application.min.js"></script>
+  <!-- MAGICAL SPELLS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+  <script src="{{ site.baseurl }}/js/application.min.js"></script>
 
-    <script>
-    $(window).load(function() {
+  <script type="text/javascript">
 
-           //JS BELOW IS FOR MASONRY INITIALIZATION
-          $('.masonry').masonry({
-               itemSelector : '.item',
-               isAnimated: true,
-               animationOptions: {
-                    duration: 700,
-                    easing: 'linear',
-                    queue: false
-               }
-          });
+    var username = "thomaswicker";
+
+    function loadProject(projectID) {
+      behanceAPI.getProjectDetails(projectID, function(loadModules) {
+        var moduleHTML = "";
+
+        for(var i=0; i<loadModules.modules.length; i++) {
+          if(loadModules.modules[i].src!=undefined) {
+            moduleHTML += "<img src='" + loadModules.modules[i].src + "'>";
+          }
+        }
+        $(".modules article").html(moduleHTML);
+      });
+    }
+
+    $(document).ready(function() {
+    // Set behance api key
+    behanceAPI.setKey(behancekey);
+
+    // Get projects
+    behanceAPI.getProjects("thomaswicker", function(projectlist) {
+      var projectHTML = "";
+
+      for(var i=0; i<projectlist.length; i++) {
+        var project = projectlist[i];
+        projectHTML += "<a href='#' class='item' data-modal-open onclick='loadProject(" + project.id + ")'><img src='" + project.covers[202] + "'></a>";
+      }
+      $(".projects").html(projectHTML);
+
+      $("[data-modal-open]").on("click", function(){
+        $("#details").addClass("active-modal");
       });
 
-    </script>
+      $("[data-modal-close]").on("click", function(){
+        $("#details").removeClass("active-modal");
+        $("#details article").empty();
+      });
+    });
+  });
+  </script>
 
-  	<script type="text/javascript">
-        	var loc = window.location.href;
-          if(loc=== "{{ site.baseurl }}/") {
-               $("#homeBTN").addClass("current");
-           } else if (loc=== "{{ site.baseurl }}/about/") {
-               $("#aboutBTN").addClass("current");
-           } else if (loc=== "{{ site.baseurl }}/portfolio/") {
-               $("#portfolioBTN").addClass("current");
-           } else if (loc=== "{{ site.baseurl }}/photography/") {
-               $("#photographyBTN").addClass("current");
-           } else if (loc=== "{{ site.baseurl }}/resume/") {
-               $("#resumeBTN").addClass("current");
-           } else if (loc=== "{{ site.baseurl }}/contact/") {
-               $("#contactBTN").addClass("current");
-           } 
-  	</script>
+  <script>
+    $(window).load(function() {
+          //JS BELOW IS FOR MASONRY INITIALIZATION
+          $('.masonry').masonry({
+           itemSelector : '.item',
+           isAnimated: true,
+           animationOptions: {
+            duration: 700,
+            easing: 'linear',
+            queue: false
+          }
+        });
+      });
+  </script>
 
-  </body>
+  <script type="text/javascript">
+     var loc = window.location.href;
+     if(loc=== "{{ site.baseurl }}/") {
+       $("#homeBTN").addClass("current");
+     } else if (loc=== "{{ site.baseurl }}/about/") {
+       $("#aboutBTN").addClass("current");
+     } else if (loc=== "{{ site.baseurl }}/portfolio/") {
+       $("#portfolioBTN").addClass("current");
+     } else if (loc=== "{{ site.baseurl }}/photography/") {
+       $("#photographyBTN").addClass("current");
+     } else if (loc=== "{{ site.baseurl }}/resume/") {
+       $("#resumeBTN").addClass("current");
+     } else if (loc=== "{{ site.baseurl }}/contact/") {
+       $("#contactBTN").addClass("current");
+     } 
+  </script>
+
+</body>
 
 </html>
