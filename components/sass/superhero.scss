@@ -1,6 +1,11 @@
-/* ========================================================
-   BEGIN SUPERHERO SCSS
-   ======================================================== */
+/*
+  ____  _   _ ____  _____ ____  _   _ _____ ____   ___  
+ / ___|| | | |  _ \| ____|  _ \| | | | ____|  _ \ / _ \ 
+ \___ \| | | | |_) |  _| | |_) | |_| |  _| | |_) | | | |
+  ___) | |_| |  __/| |___|  _ <|  _  | |___|  _ <| |_| |
+ |____/ \___/|_|   |_____|_| \_\_| |_|_____|_| \_\\___/ 
+                                                                                                                                                                                                                                                                                                                                                             
+*/
 
 $superhero-home: rgba(42,152,215,0.75);
 $superhero-about: rgba(160,110,175,0.75);
@@ -62,11 +67,17 @@ $superhero-contact: rgba(241,96,63,0.85);
       	width: 35%;
 	}
 
-    @include mq(sm) {
-        width: 33%;
+	@media only screen and (min-device-width: 401px) and (max-device-width: 640px) { 
+        width: 30%;
 		text-align: right;
         margin: 0em 0em 0em 0em;
 	}
+
+	@media only screen and (min-device-width: 0px) and (max-device-width: 400px) { 
+	    width: 33%;
+		text-align: right;
+        margin: 0em 0em 0em 0em;
+	}	
 	
 	img {
 		padding: .6em 0em 0em 0em;
@@ -81,7 +92,19 @@ $superhero-contact: rgba(241,96,63,0.85);
 			margin: .4em 0em 0em 0em;
 		}
 
-	    @include mq(sm) {
+		@media only screen and (min-device-width: 401px) and (max-device-width: 640px) { 
+			width: 80px;
+			text-align: center;
+			margin: .1em 0em 0em 0em;
+		}
+
+		@media only screen and (min-device-width: 401px) and (max-device-width: 640px) and (orientation: landscape) { 
+			width: 130px;
+			text-align: center;
+			margin: .4em 0em 0em 0em;
+		}
+
+		@media only screen and (min-device-width: 0px) and (max-device-width: 400px) { 
 			width: 78px;
 			text-align: center;
 	        margin: 0em 0em 0em 0em;
@@ -99,22 +122,29 @@ $superhero-contact: rgba(241,96,63,0.85);
 	box-sizing: border-box;
 
 	@include mq(md) {
-        margin: -1em 0em 0em 0em;
       	width: 65%;
+        margin: -1em 0em 0em 0em;
 	}
 
-    @include mq(sm) {
+	@media only screen and (min-device-width: 401px) and (max-device-width: 640px) { 
+		width: 70%;
+		text-align: left;
+        margin: 0em 0em 0em 0em;
+	}
+
+	@media only screen and (min-device-width: 0px) and (max-device-width: 400px) { 
 		width: 67%;
 		text-align: left;
         margin: 0em 0em 0em 0em;
 	}
 
-	h1 {
+	.header-home {
 		padding: 1.2em 0em 0em 1em;
 		font-size: 2.2rem;
 		font-family: $font-1;
 		font-weight: 600;    		
 		color: $white;
+		text-transform: uppercase;
 
         @include mq(md) {
 			margin: .2em 0em .25em 0em;
@@ -122,10 +152,12 @@ $superhero-contact: rgba(241,96,63,0.85);
             font-size: 2rem;
 		}
 
-		@media only screen and (min-device-width: 401px) and (max-device-width: 640px) { 
-		    margin: 0em 0em .25em 0em;
-            padding: 1.6em 0em 0em 1.2em;
-		    font-size: 1.4rem;
+		@media only screen and (min-device-width: 401px) and (max-device-width: 640px) {
+			width: 120%;
+		    margin: 0em 0em 0em .5em;
+            padding: 1.2em 0em .2em 0em;
+		    font-size: 1.6rem;
+		   	text-align: left;
 		}
 
 		@media only screen and (min-device-width: 0px) and (max-device-width: 400px) { 
@@ -135,38 +167,39 @@ $superhero-contact: rgba(241,96,63,0.85);
 		}
 	}
 
-	h1.notHome {
-		padding: 1.2em 0em 0em 1em !important;
+	.header-not-home {
+		padding: 1.2em 0em 0em 1em;
 		font-size: 2.2rem;
 		font-family: $font-1;
 		font-weight: 600;    		
 		color: $white;
+		text-transform: uppercase;
 
         @include mq(md) {
-			padding: 1.2em 0em 0em .8em !important;
+			padding: 1.2em 0em 0em .8em;
             font-size: 2.2rem;
 		}
 
-		@media only screen and (min-device-width: 569px) and (max-device-width: 736px) and (orientation : portrait) { 
-			padding: 1.2em 0em 0em .6em !important;
-			font-size: 2.2rem;
-
-            span {
-            	display: none;
-            }
+		@media only screen and (min-device-width: 401px) and (max-device-width: 640px) {
+			width: 120%;
+		    margin: 0em 0em 0em .5em;
+            padding: 1.1em 0em .2em .4em;
+		    font-size: 1.9rem;
+		   	text-align: left;
 		}
 
-		@media only screen and (min-device-width: 0px) and (max-device-width: 568px) and (orientation : portrait) { 
-			padding: 1.3em 0em 0em .5em;
-			font-size: 1.8rem;
+		@media only screen and (min-device-width: 0px) and (max-device-width: 400px) { 
+		    margin: 0em 0em .25em 0em;
+            padding: 1.6em 0em 0em .4em;
+		    font-size: 1.1rem;
 
-            span {
-            	display: none;
-            }
+		    span {
+		    	display: none;
+		    }
 		}
 	}
 
-	h2 {
+	.title-home {
 		height: .8rem;
 		font-size: 1.1rem;
 		font-family: $font-1;
@@ -178,21 +211,34 @@ $superhero-contact: rgba(241,96,63,0.85);
 
         @include mq(md) {
           font-size: .85rem;
-      }
-        @include mq(sm) {
-          margin: 0em 0em 0em 0em;
-          padding: 0em 0em 0em 2em;
-          font-size: .85rem;
-          font-weight: 300;
-          line-height: 1.3rem;
+      	}
 
-          span {
-          	display: none;
-          }
-        }
+		@media only screen and (min-device-width: 401px) and (max-device-width: 640px) { 
+		    margin: 0em 0em .25em .6em;
+            padding: 0em 0em .2em .4em;		
+            font-size: 1rem;
+			color: $white;
+
+            span {
+            	display: none;
+            }
+		}
+
+		@media only screen and (min-device-width: 0px) and (max-device-width: 400px) { 
+         	margin: 0em 0em 0em 0em;
+        	padding: 0em 0em 0em 2em;
+        	font-size: .85rem;
+        	font-weight: 300;
+        	line-height: 1.3rem;
+			color: $white;
+
+			span {
+				display: none;
+			}
+		}
 	}
 
-	p {
+	.quote-home {
    		padding: .7em 1em 0em 2.3em;
 		font-size: 1rem;
 		font-family: $font-1;
@@ -208,12 +254,25 @@ $superhero-contact: rgba(241,96,63,0.85);
             line-height: 1.3rem;
 		}
 
-        @include mq(sm) {
+		@media only screen and (min-device-width: 401px) and (max-device-width: 640px) { 
+			display: none;
+		}
+
+		@media only screen and (min-device-width: 401px) and (max-device-width: 640px) and (orientation : landscape) { 
+			display: block;
+			font-size: 1rem;
+   			font-weight: 300;
+		    margin: .3em 0em .25em .6em;
+            padding: .2em 0em .2em .4em;	
+            line-height: 1.3rem;
+		}
+
+		@media only screen and (min-device-width: 0px) and (max-device-width: 400px) {
 			display: none;
 		}
 	}
 
-    p.quote {
+    .quote-not-home {
         margin: -.5em 0em .5em 0em;
         padding: .7em 1em 0em 2.3em;
         font-size: 1rem;
@@ -259,17 +318,16 @@ $superhero-contact: rgba(241,96,63,0.85);
 
 .last-updated {
     position: absolute;
-    right: 60px;
-    top: 180px;
+    right: 10px;
+    top: 10px;
     z-index: 100000;
-    color: $white;
     width: auto;
     height: auto;
     @include font($font-1, italic, .7rem, $font-weight-normal);
     color: $light-gray;
 
     span {
-        color: $light-gray;
+        color: darken($light-gray, 10%);
     }
 
     @include mq(sm) {

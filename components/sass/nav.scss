@@ -1,26 +1,28 @@
-/* ========================================================
-   BEGIN NAV SCSS
-   ======================================================== */
-#nav {
-
-}
+/*
+  _   _    ___     __
+ | \ | |  / \ \   / /
+ |  \| | / _ \ \ / / 
+ | |\  |/ ___ \ V /  
+ |_| \_/_/   \_\_/   
+                                                                                                                                                                                     
+*/
 
 .nav-header {
-  background: rgba(lighten($black, 10%), 0.9);
+	background: rgba(lighten($black, 10%), 0.9);
 }
 
 .sticky {  
-    position: fixed !important;  
-    top: 0px !important;
-    left: 0px !important;  
-    z-index: 10000000;  
-    border-top: 0;  
+	position: fixed !important;  
+	top: 0px !important;
+	left: 0px !important;  
+	z-index: 10000000;  
+	border-top: 0;  
 }  
 
 .main-header {
 	position: absolute;
 	top: 205px;
-    z-index: 100000000;  
+	z-index: 100000000;  
 
 	@include mq(sm) {
 		top: 110px;
@@ -39,7 +41,7 @@
 	}
 
 	ul li a{
-	    font-size: .95rem;
+		font-size: .95rem;
 		font-family: $font-2;
 		font-weight: 300;
 		color: $white;
@@ -48,6 +50,78 @@
 }
 
 /* ========================================================
-   END NAV SCSS
+   POTION NAV OVERRIDES
    ======================================================== */
-   
+
+
+#menu-icon {
+	display: none;
+	@include border-box;
+
+	@include mq(sm) {
+		display: block;
+		position: absolute;
+		top: 6px;
+		right: 13px;
+		width: 20%;
+		height: 30px;
+		padding: 7px 0px 0px 0px;
+		background-color: transparent;
+		border: 1px solid $color-primary;
+		text-decoration: none;
+		color: $color-primary;
+		text-transform: uppercase;
+		text-align: center;
+
+		span {
+			float: none;
+			width: auto;
+			margin: 0px;
+			border: none;
+		}
+
+		#menu-btn {
+			display: block;
+		}
+
+		#open-btn {
+			display: none;
+		}
+
+		&:hover {
+			background-color: $color-primary;
+			color: $white;
+
+			span {
+				border: none;
+			}
+
+			#menu-btn {
+				display: block;
+			}
+
+			#open-btn {
+				display: none;
+			}
+		}
+	}
+}
+
+.toggled {
+	-webkit-transition: background-color .25s, -webkit-transform .25s;
+	transition: background-color .25s, transform .25s;
+	background-color: $black !important;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-o-transform: none;
+	transform: none;
+}
+
+.toggled_spans {
+	-webkit-transition: none;
+	transition: none;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-o-transform: none;
+	transform: none;
+}
