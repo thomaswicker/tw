@@ -8,6 +8,10 @@
   z-index: 102;
   background-color: $white;
   padding-bottom: 75px;
+
+	@include mq(sm) {
+		top: 110px;
+	}
 }
 
 #body-about-inner {

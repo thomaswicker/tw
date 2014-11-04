@@ -46,144 +46,213 @@ $superhero-contact: rgba(241,96,63,0.85);
     }
 
     @include mq(sm) {
-		height: 340px;
+		height: 160px;
+	}
+}
+
+.pixel-me {
+	float: left;
+	width: 25%;
+	height: auto;
+	text-align: right;
+	padding-bottom: 50px;
+
+	@include mq(md) {
+        margin: 0em 0em 0em -1.0em;
+      	width: 35%;
 	}
 
-    .pixel-me {
-    	text-align: right;
+    @include mq(sm) {
+        width: 33%;
+		text-align: right;
+        margin: 0em 0em 0em 0em;
+	}
+	
+	img {
+		padding: .6em 0em 0em 0em;
+		width: 155px;
+
+        @include mq(lg) {
+			width: 155px;
+        }
+
+        @include mq(md) {
+			width: 150px;
+			margin: .4em 0em 0em 0em;
+		}
+
+	    @include mq(sm) {
+			width: 78px;
+			text-align: center;
+	        margin: 0em 0em 0em 0em;
+		}
+	}
+}
+
+.my-info {
+   	float: left;
+	width: 75%;
+	height: auto;
+	text-align: left;
+	padding-bottom: 50px;
+	padding-right: 75px;
+	box-sizing: border-box;
+
+	@include mq(md) {
+        margin: -1em 0em 0em 0em;
+      	width: 65%;
+	}
+
+    @include mq(sm) {
+		width: 67%;
+		text-align: left;
+        margin: 0em 0em 0em 0em;
+	}
+
+	h1 {
+		padding: 1.2em 0em 0em 1em;
+		font-size: 2.2rem;
+		font-family: $font-1;
+		font-weight: 600;    		
+		color: $white;
+
+        @include mq(md) {
+			margin: .2em 0em .25em 0em;
+			padding: 1.5em 0em 0em 1em;
+            font-size: 2rem;
+		}
+
+		@media only screen and (min-device-width: 401px) and (max-device-width: 640px) { 
+		    margin: 0em 0em .25em 0em;
+            padding: 1.6em 0em 0em 1.2em;
+		    font-size: 1.4rem;
+		}
+
+		@media only screen and (min-device-width: 0px) and (max-device-width: 400px) { 
+		    margin: 0em 0em .25em 0em;
+            padding: 1.6em 0em 0em .4em;
+		    font-size: 1.1rem;
+		}
+	}
+
+	h1.notHome {
+		padding: 1.2em 0em 0em 1em !important;
+		font-size: 2.2rem;
+		font-family: $font-1;
+		font-weight: 600;    		
+		color: $white;
+
+        @include mq(md) {
+			padding: 1.2em 0em 0em .8em !important;
+            font-size: 2.2rem;
+		}
+
+		@media only screen and (min-device-width: 569px) and (max-device-width: 736px) and (orientation : portrait) { 
+			padding: 1.2em 0em 0em .6em !important;
+			font-size: 2.2rem;
+
+            span {
+            	display: none;
+            }
+		}
+
+		@media only screen and (min-device-width: 0px) and (max-device-width: 568px) and (orientation : portrait) { 
+			padding: 1.3em 0em 0em .5em;
+			font-size: 1.8rem;
+
+            span {
+            	display: none;
+            }
+		}
+	}
+
+	h2 {
+		height: .8rem;
+		font-size: 1.1rem;
+		font-family: $font-1;
+  		font-weight: 400;
+		color: $white;
+		text-transform: uppercase;
+   		margin: -.2em 0em 0em 0em;
+        padding: 0em 0em .5em 2.5em;
+
+        @include mq(md) {
+          font-size: .85rem;
+      }
+        @include mq(sm) {
+          margin: 0em 0em 0em 0em;
+          padding: 0em 0em 0em 2em;
+          font-size: .85rem;
+          font-weight: 300;
+          line-height: 1.3rem;
+
+          span {
+          	display: none;
+          }
+        }
+	}
+
+	p {
+   		padding: .7em 1em 0em 2.3em;
+		font-size: 1rem;
+		font-family: $font-1;
+		font-weight: 400;
+		line-height: 1.5rem;
+		color: $white;
+
+        @include mq(md) {
+			font-size: .9rem;
+   			font-weight: 300;
+            margin: .2em 0em .4em 2.35em;
+            padding: 0em 3em 0em 0em;
+            line-height: 1.3rem;
+		}
 
         @include mq(sm) {
-			text-align: center;
+			display: none;
 		}
+	}
 
-    	img {
-    		padding: .6em 0em 0em 0em;
-    		width: 155px;
+    p.quote {
+        margin: -.5em 0em .5em 0em;
+        padding: .7em 1em 0em 2.3em;
+        font-size: 1rem;
+        font-family: $font-1;
+        font-weight: 400;
+        line-height: 1.3rem;
+        color: $white;
 
-            @include mq(lg) {
-               
-            }
+        @include mq(md) {
+            font-size: .85rem;
+            font-weight: 300;
+            margin: .2em 0em .4em 2em;
+            padding: 0em 2em 0em 0em;
+            line-height: 1.1rem;
+        }
 
-            @include mq(md) {
-    			width: 150px;
-    			margin: .4em 0em 0em 0em;
-			}
-
-            @include mq(sm) {
-                width: 145px;
-                margin: .2em 0em 0em 0em;
-            }
-    	}
+        @include mq(sm) {
+            display: none;
+        }
     }
 
-    .my-info {
-    	text-align: left;
+    button {
+        margin: .1em 0em 0em 2.85em;
 
-		@include mq(sm) {
-    		text-align: center;
-            margin: -.75em 0em 0em 0em;
-            color: $white !important;
-		}
-
-    	h1 {
-    		padding: 1.2em 0em 0em 1em;
-    		font-size: 2.2rem;
-			font-family: $font-1;
-			font-weight: 600;    		
-			color: $white;
-
-            @include mq(md) {
-    			margin: .2em 0em .25em 0em;
-                font-size: 2rem;
-			}
-
-            @include mq(sm) {
-			    margin: -2.5em 0em .25em 0em;
-                padding: 1.2em 0em 0em 0em;
-			    font-size: 1.7rem;
-                font-weight: 500;
-			}
-    	}
-
-    	h2 {
-    		height: .8rem;
-    		font-size: 1.1rem;
-    		font-family: $font-1;
-      		font-weight: 400;
-    		color: $white;
-    		text-transform: uppercase;
-            padding: 0em 0em 0em 2em;
-
-            @include mq(sm) {
-              margin: 0em 0em 0em 0em;
-              padding: 0em 0em 0em 0em;
-              font-size: .9rem;
-              font-weight: 300;
-            }
-    	}
-
-    	p {
-       		padding: .7em 1em 0em 2.3em;
-    		font-size: 1rem;
-    		font-family: $font-1;
-    		font-weight: 400;
-    		line-height: 1.5rem;
-    		color: $white;
-
-            @include mq(md) {
-    			font-size: .9rem;
-       			font-weight: 300;
-                margin: .2em 0em .4em 2.35em;
-                padding: 0em 2em 0em 0em;
-                line-height: 1.3rem;
-			}
-
-            @include mq(sm) {
-				display: none;
-			}
-    	}
-
-        p.quote {
-            margin: -.5em 0em .5em 0em;
-            padding: .7em 1em 0em 2.3em;
-            font-size: 1rem;
-            font-family: $font-1;
-            font-weight: 400;
-            line-height: 1.3rem;
+        a {
+            text-decoration: none;
             color: $white;
+            text-transform: uppercase;
+        }      
+    }
 
-            @include mq(md) {
-                font-size: .9rem;
-                font-weight: 300;
-                margin: .2em 0em .4em 2.35em;
-                padding: 0em 2em 0em 0em;
-                line-height: 1.3rem;
-            }
+    small {
+        @include font($font-1, italic, .8rem, $font-weight-normal);
+        color: $color-primary;
+        font-style: italic;
+        padding: .2em 0em 0em 2em;
 
-            @include mq(sm) {
-                display: none;
-            }
-        }
-
-        button {
-            margin: .1em 0em 0em 2.85em;
-
-            a {
-                text-decoration: none;
-                color: $white;
-                text-transform: uppercase;
-            }      
-        }
-
-        small {
-            @include font($font-1, italic, .8rem, $font-weight-normal);
-            color: $color-primary;
-            font-style: italic;
-            padding: .2em 0em 0em 2em;
-
-            @include mq(sm) {
-                display: none;
-            }
+        @include mq(sm) {
+            display: none;
         }
     }
 }
@@ -217,7 +286,7 @@ $superhero-contact: rgba(241,96,63,0.85);
     padding: 0px 0px 10px 0px;
     text-align: center;
     background: $superhero-home;
-    z-index: 200;
+    z-index: 20000000000000000;
 
     @include mq(sm) {
         display: none;

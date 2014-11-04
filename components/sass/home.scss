@@ -4,10 +4,14 @@
  
  #body-home {
 	position: absolute;
-    z-index: 101;
   	top: 250px;
  	background-color: #F4F7F8;
  	padding-bottom: 75px;
+    z-index: 10000000;  
+
+    @include mq(sm) {
+   		top: 150px;
+    }
  }
 
 #body-home-inner {
@@ -165,8 +169,8 @@
 
 .lastfm-song {
 	float: left;
-	width: 100%;
-	padding: 10px 0px 10px 0px;
+	width: calc(100% - 40px);
+	padding: 10px 20px 10px 20px;
 	border-bottom: 1px solid $xlight-gray;
 	background-color: $white;	
 
@@ -182,13 +186,13 @@
 	span {
 		@include font($font-1, italic, .9rem, $font-weight-normal);
 		color: $dark-gray;
+		line-height: 1.4em;
 	}
 
 	a {
 		@include font($font-1, normal, .9rem, $font-weight-semibold);
 		color: darken($green-potion, 10%);
-		padding-left: 22px;
-
+		line-height: 1.4em;
 	}
 }
 

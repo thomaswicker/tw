@@ -1,0 +1,25 @@
+<!DOCTYPE html><html>{% include head.html %}<body>{% include socialmedia-photography.html %} {% include superhero-photography.html %} {% include nav.html %} {{ content }}<!-- MAGICAL SPELLS --><script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script src="{{ site.baseurl }}/js/application.min.js"></script><script>$(window).load(function() {
+          //JS BELOW IS FOR MASONRY INITIALIZATION
+          $('.masonry').masonry({
+               itemSelector : '.item',
+               isAnimated: true,
+               animationOptions: {
+                    duration: 700,
+                    easing: 'linear',
+                    queue: false
+               }
+          });
+
+          //JS BELOW IS FOR MAGNIFIC POPUP LIGHTBOX
+          $('.masonry').magnificPopup({
+              delegate: 'a',
+              type: 'image',
+              removalDelay: 300,
+              mainClass: 'mfp-fade',
+              gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1]
+              }
+          });
+      });</script>{% include footer.html %}</body></html>

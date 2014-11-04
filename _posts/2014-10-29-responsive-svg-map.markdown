@@ -18,6 +18,6 @@ Quite honestly I haven't played with SVG all that much. Most of my clients or co
 
 [Click here for the source code here on my Github... ](https://github.com/thomaswicker/jMap/ "Github LInk")
 
-<p class="codepen-demo" data-height="725" data-theme-id="3524" data-slug-hash="cibur" data-default-tab="result" data-user="thomasjwicker" class='codepen'>See the Pen <a href='http://codepen.io/thomasjwicker/pen/cibur/'>Responsive SVG & SASS Map of the US</a> by Thomas Wicker (<a href='http://codepen.io/thomasjwicker'>@thomasjwicker</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p class="codepen-demo" data-theme-id="3524" data-slug-hash="cibur" data-default-tab="result" data-user="thomasjwicker" class='codepen'>See the Pen <a href='http://codepen.io/thomasjwicker/pen/cibur/'>Responsive SVG & SASS Map of the US</a> by Thomas Wicker (<a href='http://codepen.io/thomasjwicker'>@thomasjwicker</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 

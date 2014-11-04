@@ -159,6 +159,7 @@ html {
   /* 2 */
   -ms-text-size-adjust: 100%;
   /* 2 */
+  box-sizing: border-box;
 }
 
 /* ==========================================================================
@@ -8105,11 +8106,11 @@ html, body {
 .main-header {
   position: absolute;
   top: 205px;
-  z-index: 105;
+  z-index: 100000000;
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   .main-header {
-    top: 250px;
+    top: 110px;
   }
 }
 
@@ -8171,44 +8172,76 @@ html, body {
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   .superhero {
-    height: 340px;
+    height: 160px;
   }
 }
-.superhero .pixel-me {
+
+.pixel-me {
+  float: left;
+  width: 25%;
+  height: auto;
   text-align: right;
+  padding-bottom: 50px;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .pixel-me {
+    margin: 0em 0em 0em -1.0em;
+    width: 35%;
+  }
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
-  .superhero .pixel-me {
-    text-align: center;
+  .pixel-me {
+    width: 33%;
+    text-align: right;
+    margin: 0em 0em 0em 0em;
   }
 }
-.superhero .pixel-me img {
+.pixel-me img {
   padding: .6em 0em 0em 0em;
   width: 155px;
 }
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .pixel-me img {
+    width: 155px;
+  }
+}
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .superhero .pixel-me img {
+  .pixel-me img {
     width: 150px;
     margin: .4em 0em 0em 0em;
   }
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
-  .superhero .pixel-me img {
-    width: 145px;
-    margin: .2em 0em 0em 0em;
+  .pixel-me img {
+    width: 78px;
+    text-align: center;
+    margin: 0em 0em 0em 0em;
   }
 }
-.superhero .my-info {
+
+.my-info {
+  float: left;
+  width: 75%;
+  height: auto;
   text-align: left;
+  padding-bottom: 50px;
+  padding-right: 75px;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .my-info {
+    margin: -1em 0em 0em 0em;
+    width: 65%;
+  }
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
-  .superhero .my-info {
-    text-align: center;
-    margin: -.75em 0em 0em 0em;
-    color: #ffffff !important;
+  .my-info {
+    width: 67%;
+    text-align: left;
+    margin: 0em 0em 0em 0em;
   }
 }
-.superhero .my-info h1 {
+.my-info h1 {
   padding: 1.2em 0em 0em 1em;
   font-size: 2.2rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -8216,37 +8249,85 @@ html, body {
   color: #ffffff;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .superhero .my-info h1 {
+  .my-info h1 {
     margin: .2em 0em .25em 0em;
+    padding: 1.5em 0em 0em 1em;
     font-size: 2rem;
   }
 }
-@media only screen and (min-width: 0em) and (max-width: 40em) {
-  .superhero .my-info h1 {
-    margin: -2.5em 0em .25em 0em;
-    padding: 1.2em 0em 0em 0em;
-    font-size: 1.7rem;
-    font-weight: 500;
+@media only screen and (min-device-width: 401px) and (max-device-width: 640px) {
+  .my-info h1 {
+    margin: 0em 0em .25em 0em;
+    padding: 1.6em 0em 0em 1.2em;
+    font-size: 1.4rem;
   }
 }
-.superhero .my-info h2 {
+@media only screen and (min-device-width: 0px) and (max-device-width: 400px) {
+  .my-info h1 {
+    margin: 0em 0em .25em 0em;
+    padding: 1.6em 0em 0em .4em;
+    font-size: 1.1rem;
+  }
+}
+.my-info h1.notHome {
+  padding: 1.2em 0em 0em 1em !important;
+  font-size: 2.2rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .my-info h1.notHome {
+    padding: 1.2em 0em 0em .8em !important;
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (min-device-width: 569px) and (max-device-width: 736px) and (orientation: portrait) {
+  .my-info h1.notHome {
+    padding: 1.2em 0em 0em .6em !important;
+    font-size: 2.2rem;
+  }
+  .my-info h1.notHome span {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 0px) and (max-device-width: 568px) and (orientation: portrait) {
+  .my-info h1.notHome {
+    padding: 1.3em 0em 0em .5em;
+    font-size: 1.8rem;
+  }
+  .my-info h1.notHome span {
+    display: none;
+  }
+}
+.my-info h2 {
   height: .8rem;
   font-size: 1.1rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 0em 0em 0em 2em;
+  margin: -.2em 0em 0em 0em;
+  padding: 0em 0em .5em 2.5em;
 }
-@media only screen and (min-width: 0em) and (max-width: 40em) {
-  .superhero .my-info h2 {
-    margin: 0em 0em 0em 0em;
-    padding: 0em 0em 0em 0em;
-    font-size: .9rem;
-    font-weight: 300;
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .my-info h2 {
+    font-size: .85rem;
   }
 }
-.superhero .my-info p {
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  .my-info h2 {
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 2em;
+    font-size: .85rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+  }
+  .my-info h2 span {
+    display: none;
+  }
+}
+.my-info p {
   padding: .7em 1em 0em 2.3em;
   font-size: 1rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -8255,20 +8336,20 @@ html, body {
   color: #ffffff;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .superhero .my-info p {
+  .my-info p {
     font-size: .9rem;
     font-weight: 300;
     margin: .2em 0em .4em 2.35em;
-    padding: 0em 2em 0em 0em;
+    padding: 0em 3em 0em 0em;
     line-height: 1.3rem;
   }
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
-  .superhero .my-info p {
+  .my-info p {
     display: none;
   }
 }
-.superhero .my-info p.quote {
+.my-info p.quote {
   margin: -.5em 0em .5em 0em;
   padding: .7em 1em 0em 2.3em;
   font-size: 1rem;
@@ -8278,28 +8359,28 @@ html, body {
   color: #ffffff;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .superhero .my-info p.quote {
-    font-size: .9rem;
+  .my-info p.quote {
+    font-size: .85rem;
     font-weight: 300;
-    margin: .2em 0em .4em 2.35em;
+    margin: .2em 0em .4em 2em;
     padding: 0em 2em 0em 0em;
-    line-height: 1.3rem;
+    line-height: 1.1rem;
   }
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
-  .superhero .my-info p.quote {
+  .my-info p.quote {
     display: none;
   }
 }
-.superhero .my-info button {
+.my-info button {
   margin: .1em 0em 0em 2.85em;
 }
-.superhero .my-info button a {
+.my-info button a {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
 }
-.superhero .my-info small {
+.my-info small {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
   font-style: italic;
   font-weight: 400;
@@ -8309,7 +8390,7 @@ html, body {
   padding: .2em 0em 0em 2em;
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
-  .superhero .my-info small {
+  .my-info small {
     display: none;
   }
 }
@@ -8346,7 +8427,7 @@ html, body {
   padding: 0px 0px 10px 0px;
   text-align: center;
   background: rgba(42, 152, 215, 0.75);
-  z-index: 200;
+  z-index: 20000000000000000;
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   .social-media-box {
@@ -8413,10 +8494,15 @@ html, body {
    ======================================================== */
 #body-home {
   position: absolute;
-  z-index: 101;
   top: 250px;
   background-color: #F4F7F8;
   padding-bottom: 75px;
+  z-index: 10000000;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-home {
+    top: 150px;
+  }
 }
 
 #body-home-inner {
@@ -8570,8 +8656,8 @@ html, body {
 
 .lastfm-song {
   float: left;
-  width: 100%;
-  padding: 10px 0px 10px 0px;
+  width: calc(100% - 40px);
+  padding: 10px 20px 10px 20px;
   border-bottom: 1px solid #dedede;
   background-color: #ffffff;
 }
@@ -8591,6 +8677,7 @@ html, body {
   font-weight: 400;
   font-size: 0.9rem;
   color: #444444;
+  line-height: 1.4em;
 }
 .lastfm-song a {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
@@ -8598,7 +8685,7 @@ html, body {
   font-weight: 500;
   font-size: 0.9rem;
   color: #6db300;
-  padding-left: 22px;
+  line-height: 1.4em;
 }
 
 .social-feed {
@@ -8665,6 +8752,11 @@ html, body {
   z-index: 102;
   background-color: #ffffff;
   padding-bottom: 75px;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-about {
+    top: 110px;
+  }
 }
 
 #body-about-inner {
@@ -8807,6 +8899,12 @@ html, body {
   z-index: 102;
   background-color: #ffffff;
   padding-bottom: 75px;
+  z-index: 10000000;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-portfolio {
+    top: 150px;
+  }
 }
 
 #body-portfolio-inner {
@@ -8848,7 +8946,7 @@ html, body {
   top: 0px;
   background: rgba(0, 0, 0, 0.8);
   overflow: scroll;
-  z-index: 120;
+  z-index: 12000000000000000000000000;
   display: none;
   padding-bottom: 175px;
 }
@@ -8866,7 +8964,7 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   top: 10%;
-  z-index: 1001;
+  z-index: 120000000000000000000000001;
   overflow: scroll;
   background-color: #ffffff;
   text-align: center;
@@ -8893,6 +8991,14 @@ html, body {
   z-index: 102;
   background-color: #ffffff;
   padding-bottom: 75px;
+  z-index: 10000000;
+  overflow-x: hidden;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-photography {
+    top: 110px;
+    background-color: #000000;
+  }
 }
 
 #body-photography-inner {
@@ -8911,6 +9017,7 @@ html, body {
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   #body-photography-inner {
     width: 100%;
+    background-color: #000000;
   }
 }
 
@@ -8945,6 +9052,7 @@ html, body {
   #body-photography-right {
     padding-left: 0px;
     padding-top: 50px;
+    background-color: #000000;
   }
 }
 
@@ -8987,6 +9095,11 @@ html, body {
   color: none !important;
   background-color: #ffffff;
 }
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  .masonry {
+    background-color: #000000;
+  }
+}
 .masonry .item {
   float: left;
   width: 25%;
@@ -9004,7 +9117,7 @@ html, body {
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   .masonry .item {
-    width: 100%;
+    width: 200%;
   }
 }
 
@@ -9553,6 +9666,13 @@ CUSTOMISATIONS
   z-index: 102;
   background-color: #ffffff;
   padding-bottom: 75px;
+  z-index: 10000000;
+  overflow-x: hidden;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-resume {
+    top: 150px;
+  }
 }
 
 #body-resume-inner {
@@ -9561,6 +9681,7 @@ CUSTOMISATIONS
   margin-right: auto;
   position: relative;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   #body-resume-inner {
@@ -9592,7 +9713,7 @@ CUSTOMISATIONS
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   #download-resume-btns {
     float: none;
-    width: 300px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -9616,6 +9737,11 @@ CUSTOMISATIONS
   color: #000000;
   border-bottom: 1px dotted #2a98c6;
 }
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #my-resume-container-details {
+    padding: 5px 0px 20px 0px;
+  }
+}
 
 #my-resume-container-details-left {
   float: left;
@@ -9625,7 +9751,7 @@ CUSTOMISATIONS
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   #my-resume-container-details-left {
     text-align: center;
-    padding: 50px 0px 25px 0px;
+    padding: 20px 0px 25px 0px;
   }
 }
 #my-resume-container-details-left #my-info-contact p, #my-resume-container-details-left #my-info-contact a {
@@ -9740,6 +9866,7 @@ CUSTOMISATIONS
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   #my-resume-container-details-right #my-objective h2 {
+    margin: 5px 0px 0px 0px;
     font-family: "Lato", sans-serif, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -9945,6 +10072,7 @@ CUSTOMISATIONS
     font-weight: 400;
     font-size: 1.1rem;
     margin: 20px 0px 0px 0px;
+    height: auto;
   }
   #my-resume-container-experience #my-experience h3 span {
     display: none;
@@ -9966,7 +10094,7 @@ CUSTOMISATIONS
     font-style: normal;
     font-weight: 400;
     font-size: 0.85rem;
-    margin: -15px 0px 10px 0px;
+    margin: 5px 0px 10px 0px;
     line-height: 1.3rem;
   }
 }
@@ -10119,6 +10247,12 @@ CUSTOMISATIONS
   z-index: 102;
   background-color: #ffffff;
   padding-bottom: 45px;
+  z-index: 10000000;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-contact {
+    top: 150px;
+  }
 }
 
 #body-contact-inner {
@@ -10184,11 +10318,17 @@ CUSTOMISATIONS
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   .body-contact-left button {
     width: 100%;
+    font-size: 1.2rem;
   }
 }
 .body-contact-left button a {
   color: #ffffff;
   text-decoration: none;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  .body-contact-left button a {
+    font-size: 1.2rem;
+  }
 }
 .body-contact-left a {
   color: #2a98c6;
@@ -10278,6 +10418,7 @@ CUSTOMISATIONS
   width: 60%;
   padding: 7px 5px 7px 8px;
   border: 1px solid #bcbcbc;
+  border-radius: 0px;
 }
 .body-contact-right .form-group input:focus {
   box-shadow: 0px 0px 6px #2a98c6;
@@ -10300,6 +10441,7 @@ CUSTOMISATIONS
   min-height: 80px;
   padding: 7px 5px 7px 8px;
   border: 1px solid #bcbcbc;
+  border-radius: 0px;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .body-contact-right .form-group textarea {
@@ -10313,7 +10455,7 @@ CUSTOMISATIONS
 }
 
 .panel-success {
-  width: 100%;
+  width: 95%;
   background-color: #8CE600;
   padding: 10px 15px 10px 15px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
@@ -10321,6 +10463,12 @@ CUSTOMISATIONS
   font-weight: 400;
   font-size: 1rem;
   color: #ffffff;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  .panel-success {
+    width: 85%;
+    line-height: 1.2rem;
+  }
 }
 
 /* ========================================================
@@ -10384,7 +10532,7 @@ CUSTOMISATIONS
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   .post-list li {
     border-left: 1px solid #dedede;
-    padding: 45px 35px 30px 35px;
+    padding: 45px 25px 30px 25px;
   }
 }
 .post-list li p {

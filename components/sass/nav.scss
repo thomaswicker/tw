@@ -20,10 +20,10 @@
 .main-header {
 	position: absolute;
 	top: 205px;
-	z-index: 105;
+    z-index: 100000000;  
 
 	@include mq(sm) {
-		top: 250px;
+		top: 110px;
 	}
 }
 
