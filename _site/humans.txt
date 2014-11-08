@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+Author/Designer/Developer: Thomas Wicker
+Twitter: thomasjwicekr
+Github: thomaswicker
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, SASS, MY CUSTOM CSS FRAMEWORK "POTION"
+    CSSReset.css, Normalize.css, jQuery, Modernizr

@@ -11,11 +11,13 @@ var gulp = require('gulp'),
     cache = require('gulp-cache'),
     plumber = require('gulp-plumber'),
     browserSync = require('browser-sync'),
+    minifyHTML = require('gulp-minify-html'),
     cp = require('child_process');
 
 //Source variables
 var sassSources = ['components/sass/application.scss'];
 var jsSources = ['components/js/*.js'];
+var htmlSources = ['_site/**/*.html'];
 
 gulp.task('styles', function() {
   return gulp.src(sassSources)
@@ -29,6 +31,15 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.reload({stream:true}))
     .pipe(notify({ message: 'Styles task complete' }));
+});
+
+gulp.task('html', function() {
+  var opts = {comments:false, spare:false, quotes: false, empty: false};
+
+  return gulp.src(htmlSources)
+    .pipe(minifyHTML(opts))
+    .pipe(gulp.dest('_site/'))
+    .pipe(notify({ message: 'HTML minification complete' }));
 });
 
 gulp.task('scripts', function() {
@@ -51,15 +62,14 @@ gulp.task('clean', function() {
 
 
 //Build the Jekyll Site
-gulp.task('jekyll-build', function (done) {
+gulp.task('jekyll-build', ['styles', 'html'], function (done) {
     browserSync.notify('Building Jekyll');
     return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
-
 //Rebuild Jekyll & do page reload
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+gulp.task('jekyll-rebuild', ['jekyll-build', 'html'], function () {
     browserSync.reload();
 });
 
@@ -80,8 +90,9 @@ gulp.task('watch', function() {
   gulp.watch(jsSources, ['scripts']);
   // Watch html files
   gulp.watch(['index.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+
 });
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'browser-sync', 'watch');
+    gulp.start('styles', 'scripts', 'browser-sync', 'html', 'watch');
 });

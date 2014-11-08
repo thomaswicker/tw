@@ -3,7 +3,7 @@ layout: post
 title:  "What I Learned About GulpJS"
 date:   2014-10-21 13:14:49
 published: true
-categories: javascript gulp
+categories: javascript
 tags:
 - javascript
 - gulp
@@ -18,7 +18,7 @@ Some time back.. before the age of my SASS enlightment, I was writng in pure CSS
 
 I am a frequent listener of the [Shoptalk Show](http://www.shoptalkshow.com/ "Shoptalk Show") and during one of those episodes head them discuss an app called [Codekit](https://incident57.com/codekit/ "Codekit App") which could do compilation/minification of SASS, JS, etc. I downloaded it and fell in love quickly. I purchased a license and began integrating it heavily into all my projects. It was a beautiful and clean UI, solid functionality and for the most part unobtrussive to my workflow.  
 
-I used [Codekit](https://incident57.com/codekit/ "Codekit App") for almost a year before I decided to feed my inner geek and give GruntJS a shot. I was getting more comfortable with Javascript and just starting to play with command line. I sat down one night and spun my wheels for several hours researching on Stack Overflow and reading blog posts about how to set it all up. After about 2 more nights of hammering away I finally produced a decent grunt.js file that I could use with my projects. Albeit there were a few hiccups switching off of [Codekit](https://incident57.com/codekit/ "Codekit App"), I made it work. The switch made handing off files to other developers easier as they didn't have to have a [Codekit](https://incident57.com/codekit/ "Codekit App") license, retain the same [Codekit](https://incident57.com/codekit/ "Codekit App") config, etc. They could just Git my files and run Grunt. I continuing using Grunt for about 6 months until I heard about a new kid on the block, [Gulp](http://www.gulpjs.com "GulpJS"). 
+I used [Codekit](https://incident57.com/codekit/ "Codekit App") for almost a year before I decided to feed my inner geek and give GruntJS a shot. I was getting more comfortable with Javascript and just starting to play with command line. I sat down one night and spun my wheels for several hours researching on Stack Overflow and reading blog posts about how to set it all up. After about 2 more nights of hammering away I finally produced a decent grunt.js file that I could use with my projects. Albeit there were a few hiccups switching off of [Codekit](https://incident57.com/codekit/ "Codekit App"), I made it work. The switch made handing off files to other developers easier as they didn't have to have a [Codekit](https://incident57.com/codekit/ "Codekit App") license, retain the same [Codekit](https://incident57.com/codekit/ "Codekit App") config, etc. They could just Git my files and run [Grunt](http://gruntjs.com "Grunt"). I continuing using Grunt for about 6 months until I heard about a new kid on the block, [Gulp](http://www.gulpjs.com "GulpJS"). 
 
 > Gulp.js is a task runner that can greatly speed up your front-end development process. The purpose of a task runner is to automate tedious tasks that you have to do over and over again in the course of a project.  
 

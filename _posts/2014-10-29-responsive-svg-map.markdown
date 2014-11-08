@@ -3,7 +3,7 @@ layout: post
 title:  "Playing with Responsive SVG"
 date:   2014-10-29 15:22:40
 published: true
-categories: svg responsive sass codepen
+categories: svg
 tags:
 - svg
 - responsive

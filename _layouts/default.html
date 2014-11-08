@@ -5,18 +5,19 @@
 
 <body>
 
- {% include socialmedia.html %}
- {% include superhero.html %}
+ {% include socialmedia/socialmedia.html %}
+ {% include superhero/superhero.html %}
  {% include nav.html %}
 
    {{ content }}
 
   <!-- MAGICAL SPELLS -->
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
   <script src="{{ site.baseurl }}/js/application.min.js"></script>
 
   <!-- LASTFM API JS -->
-  <script>
+  <script >
     $(document).ready(function() {
 
      $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=thomaswicker&api_key=846eaf49b65ba6f02adc5b23be6fbd88&limit=2&format=json&callback=?", function(data) {

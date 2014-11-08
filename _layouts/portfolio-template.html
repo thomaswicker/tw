@@ -5,8 +5,8 @@
 
 <body>
 
-  {% include socialmedia-portfolio.html %}
-  {% include superhero-portfolio.html %}
+  {% include socialmedia/socialmedia-portfolio.html %}
+  {% include superhero/superhero-portfolio.html %}
   {% include nav.html %}
   
     {{ content }}
@@ -14,48 +14,6 @@
   <!-- MAGICAL SPELLS -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
   <script src="{{ site.baseurl }}/js/application.min.js"></script>
-
-  <script>
-    var username = "thomaswicker";
-
-    function loadProject(projectID) {
-      behanceAPI.getProjectDetails(projectID, function(loadModules) {
-        var moduleHTML = "";
-
-        for(var i=0; i<loadModules.modules.length; i++) {
-          if(loadModules.modules[i].src!=undefined) {
-            moduleHTML += "<img src='" + loadModules.modules[i].src + "'>";
-          }
-        }
-        $(".modules article").html(moduleHTML);
-      });
-    }
-
-    $(document).ready(function() {
-    // Set behance api key
-    behanceAPI.setKey(behancekey);
-
-    // Get projects
-    behanceAPI.getProjects("thomaswicker", function(projectlist) {
-      var projectHTML = "";
-
-      for(var i=0; i<projectlist.length; i++) {
-        var project = projectlist[i];
-        projectHTML += "<a href='#' class='item' data-modal-open onclick='loadProject(" + project.id + ")'><img src='" + project.covers[202] + "'></a>";
-      }
-      $(".projects").html(projectHTML);
-
-      $("[data-modal-open]").on("click", function(){
-        $("#details").addClass("active-modal");
-      });
-
-      $("[data-modal-close]").on("click", function(){
-        $("#details").removeClass("active-modal");
-        $("#details article").empty();
-      });
-    });
-  });
-  </script>
 
   <script>
     $(window).load(function() {
