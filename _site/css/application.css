@@ -8447,17 +8447,8 @@ html, body {
   line-height: 1.5rem;
   color: #ffffff;
 }
-.my-info .quote-home .quote-left {
-  font-family: "Times New Roman", Georgia, Serif;
-  font-size: 1.9rem;
-  display: inline-block;
-  color: #ffffff;
-}
-.my-info .quote-home .quote-right {
-  font-family: "Courier";
-  font-size: 1.9rem;
-  display: inline-block;
-  color: #ffffff;
+.my-info .quote-home span {
+  color: #2a98c6;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .my-info .quote-home {

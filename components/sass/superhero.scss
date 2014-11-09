@@ -246,18 +246,8 @@ $superhero-contact: rgba(241,96,63,0.85);
 		line-height: 1.5rem;
 		color: $white;
 
-		.quote-left {
-			font-family: "Times New Roman", Georgia, Serif;
-			font-size: 1.9rem;
-			display: inline-block;
-			color: $white;
-		}
-
-		.quote-right {
-			font-family: "Courier";
-			font-size: 1.9rem;
-			display: inline-block;
-			color: $white;
+		span {
+			color: $color-primary;
 		}
 
         @include mq(md) {
