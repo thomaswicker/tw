@@ -8404,11 +8404,11 @@ html, body {
   height: .8rem;
   font-size: 1.1rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   color: #ffffff;
   text-transform: uppercase;
   margin: -.2em 0em 0em 0em;
-  padding: 0em 0em .5em 2.5em;
+  padding: 0em 0em .5em 2.1em;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .my-info .title-home {
@@ -8440,11 +8440,23 @@ html, body {
   }
 }
 .my-info .quote-home {
-  padding: .7em 1em 0em 2.3em;
+  padding: .7em 3em 0em 2.3em;
   font-size: 1rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.5rem;
+  color: #ffffff;
+}
+.my-info .quote-home .quote-left {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 1.9rem;
+  display: inline-block;
+  color: #ffffff;
+}
+.my-info .quote-home .quote-right {
+  font-family: "Courier";
+  font-size: 1.9rem;
+  display: inline-block;
   color: #ffffff;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
@@ -8888,6 +8900,7 @@ html, body {
   z-index: 102;
   background-color: #ffffff;
   padding-bottom: 75px;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   #body-about {
@@ -8902,6 +8915,7 @@ html, body {
   padding: 35px 0px 35px 0px;
   position: relative;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   #body-about-inner {
@@ -9036,22 +9050,11 @@ html, body {
   background-color: #ffffff;
   padding-bottom: 75px;
   z-index: 10000000;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   #body-portfolio {
     top: 150px;
-  }
-}
-
-.masonry {
-  margin: 0px !important;
-  padding: 0px !important;
-  color: none !important;
-  background-color: #ffffff;
-}
-@media only screen and (min-width: 0em) and (max-width: 40em) {
-  .masonry {
-    background-color: #000000;
   }
 }
 
@@ -9062,11 +9065,7 @@ html, body {
   padding: 0px 0px 35px 0px;
   position: relative;
   background-color: #ffffff;
-}
-@media only screen and (min-width: 0em) and (max-width: 40em) {
-  #body-portfolio-inner {
-    padding: 44px 0px 35px 0px;
-  }
+  overflow-x: hidden;
 }
 #body-portfolio-inner .masonry {
   float: left;
@@ -9075,6 +9074,7 @@ html, body {
   padding: 0px !important;
   color: none !important;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
   #body-portfolio-inner .masonry {
@@ -9089,8 +9089,6 @@ html, body {
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   #body-portfolio-inner .masonry {
     width: 100%;
-    padding-left: 0px;
-    background-color: #000000;
   }
 }
 #body-portfolio-inner .masonry .item {
@@ -9138,26 +9136,48 @@ html, body {
 #body-portfolio-inner .masonry .item h4 {
   float: left;
   width: 90%;
-  padding: 0px 50px 20px 30px;
+  padding: 0px 50px 0px 30px;
+  margin-top: -5px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 0.9rem;
   color: #2a98c6;
   line-height: 1.4rem;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   #body-portfolio-inner .masonry .item h4 {
-    font-size: .9rem;
+    font-size: .8rem;
   }
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   #body-portfolio-inner .masonry .item h4 {
-    font-size: .9rem;
+    font-size: .8rem;
+  }
+}
+#body-portfolio-inner .masonry .item h5 {
+  float: left;
+  width: 90%;
+  padding: 0px 50px 20px 30px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #bcbcbc;
+  line-height: 1.4rem;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  #body-portfolio-inner .masonry .item h5 {
+    font-size: .75rem;
+  }
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-portfolio-inner .masonry .item h5 {
+    font-size: .75rem;
   }
 }
 #body-portfolio-inner .masonry .item a {
-  font-size: .85rem;
+  font-size: .8rem;
   text-decoration: none;
 }
 #body-portfolio-inner .masonry .item .buttons {
@@ -9165,21 +9185,13 @@ html, body {
   width: 100%;
   padding: 0px 20px 20px 20px;
 }
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-portfolio-inner .masonry .item .buttons {
+    padding: 20px 20px 20px 20px;
+  }
+}
 #body-portfolio-inner .masonry .item .image {
   padding: 20px;
-}
-
-.item img {
-  min-width: 220px;
-}
-@media only screen and (min-width: 0em) and (max-width: 40em) {
-  .item img {
-    float: left;
-    width: calc(50% - 10px);
-    min-width: 110px;
-    border: 5px solid #000000;
-    background-color: #000000;
-  }
 }
 
 #details {
@@ -9256,6 +9268,7 @@ html, body {
   padding: 0px 0px 35px 0px;
   position: relative;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   #body-photography-inner {
@@ -9365,7 +9378,7 @@ html, body {
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   .masonry .item {
-    width: 200%;
+    width: 100%;
   }
 }
 
@@ -10398,7 +10411,7 @@ CUSTOMISATIONS
 }
 #my-resume-container-experience #my-references .ref-card {
   float: left;
-  width: 100%;
+  width: 98%;
   border: 1px solid #2a98c6;
   background-color: transparent;
   background-color: rgba(42, 152, 198, 0.25);
@@ -10506,6 +10519,7 @@ CUSTOMISATIONS
   background-color: #ffffff;
   padding-bottom: 45px;
   z-index: 10000000;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   #body-contact {
@@ -10520,6 +10534,7 @@ CUSTOMISATIONS
   padding: 0px 0px 35px 0px;
   position: relative;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
   #body-contact-inner {
@@ -10746,20 +10761,22 @@ CUSTOMISATIONS
   z-index: 102;
   background-color: #ffffff;
   padding-bottom: 75px;
+  overflow-x: hidden;
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  #body-posts {
+    top: 110px;
+  }
 }
 
 #body-posts-inner {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  padding: 35px 0px 35px 0px;
   position: relative;
   background-color: #ffffff;
-  margin-top: 40px;
-}
-#body-posts-inner a.btn {
-  float: right;
-  display: inline;
-  text-decoration: none;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   #body-posts-inner {
@@ -10768,11 +10785,17 @@ CUSTOMISATIONS
 }
 @media only screen and (min-width: 0em) and (max-width: 40em) {
   #body-posts-inner {
-    width: 90%;
+    width: 85%;
+    padding: 65px 0px 35px 0px;
   }
   #body-posts-inner h2 {
     font-size: 1.4rem !important;
   }
+}
+#body-posts-inner a.btn {
+  float: right;
+  display: inline;
+  text-decoration: none;
 }
 
 .codepen-demo {
@@ -10791,7 +10814,7 @@ CUSTOMISATIONS
   font-weight: 400;
   font-size: 0.9rem;
   line-height: 1.4rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .post-list p a {
   color: #2a98c6;
@@ -10881,6 +10904,26 @@ CUSTOMISATIONS
     border-left: 1px solid #dedede;
     padding: 45px 25px 30px 25px;
   }
+}
+
+.post-bulleted-list {
+  margin: 0px 0px 20px 0px;
+}
+.post-bulleted-list li {
+  margin: 0px 0px 0px 20px;
+  padding: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  background-color: none;
+  list-style: initial !important;
+  text-decoration: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
 }
 
 .post-header .post-meta {
@@ -11018,6 +11061,31 @@ CUSTOMISATIONS
   }
 }
 
+.post-img-full {
+  float: left;
+  clear: both;
+  width: 90%;
+  margin: 20px 25px 20px 30px;
+}
+.post-img-full.img-xs {
+  width: 50px;
+}
+.post-img-full.img-sm {
+  width: 100px;
+}
+.post-img-full.img-md {
+  width: 150px;
+}
+.post-img-full.img-lg {
+  width: 200px;
+}
+.post-img-full.img-xl {
+  width: 250px;
+}
+.post-img-full.img-jumbo {
+  width: 300px;
+}
+
 /* ========================================================
    END POSTS SCSS
    ======================================================== */
@@ -11035,6 +11103,7 @@ CUSTOMISATIONS
   top: 250px;
   background-color: #ffffff;
   padding-bottom: 75px;
+  overflow-x: hidden;
 }
 
 #body-archives-inner {
@@ -11043,6 +11112,7 @@ CUSTOMISATIONS
   margin-right: auto;
   position: relative;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 #body-archives-inner h2.main-title {
   margin-top: 40px;

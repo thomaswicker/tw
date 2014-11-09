@@ -13,6 +13,7 @@
 	z-index: 102;
 	background-color: $white;
 	padding-bottom: 75px;
+	overflow-x: hidden;
 
 	@include mq(sm) {
 		top: 110px;
@@ -26,6 +27,7 @@
 	padding: 35px 0px 35px 0px; 
 	position: relative;
 	background-color: $white;
+	overflow-x: hidden;
 
 	@include mq(md) {
 		width: 88%;

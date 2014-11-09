@@ -62,7 +62,7 @@ gulp.task('clean', function() {
 
 
 //Build the Jekyll Site
-gulp.task('jekyll-build', ['styles', 'html'], function (done) {
+gulp.task('jekyll-build', ['html'], function (done) {
     browserSync.notify('Building Jekyll');
     return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
         .on('close', done);
