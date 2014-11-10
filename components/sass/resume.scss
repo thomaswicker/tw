@@ -1,0 +1,563 @@
+/*
+  ____  _____ ____  _   _ __  __ _____ 
+ |  _ \| ____/ ___|| | | |  \/  | ____|
+ | |_) |  _| \___ \| | | | |\/| |  _|  
+ |  _ <| |___ ___) | |_| | |  | | |___ 
+ |_| \_\_____|____/ \___/|_|  |_|_____|
+                                                                                                                                                                                                                                                                                                                                             
+*/
+
+#body-resume {
+	position: absolute;
+	top: 250px;
+	z-index: 102;
+	background-color: $white;
+	padding-bottom: 75px;
+    z-index: 10000000;  
+	overflow-x: hidden; 
+
+    @include mq(sm) {
+   		top: 150px;
+    }
+}
+
+#body-resume-inner {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-color: $white;
+	overflow-x: hidden; 
+
+	@include mq(md) {
+		width: 88%;
+	}
+
+	@include mq(sm) {
+		width: 85%;
+
+		h2 {
+			font-size: 1.4rem !important;
+		}
+	}
+}
+
+#download-resume {
+	margin-top: 15px;
+	@include font($font-1, normal, 1rem, $font-weight-bold);
+	font-weight: bold !important;
+}
+
+#download-resume-btns {
+    float: left;
+    margin: 0px 0px 0px 0px;
+
+    @include mq(sm) {
+        float: none;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button {
+        margin: 0px 3px 0px 0px;
+        padding: 0px;
+    }
+
+    a {
+    	width: auto;
+        text-decoration: none;
+        margin-right: 0px;
+    }
+}
+
+#my-resume-container-details {
+	float: left;
+	padding: 20px 0px 40px 0px; 
+	margin: 0px 0px 0px 0px;
+	font-family: $font-1;
+	font-size: 12px;
+	color: $black;
+	border-bottom: 1px dotted $color-primary;
+
+	@include mq(sm) {
+		padding: 5px 0px 20px 0px; 
+	}
+}
+
+#my-resume-container-details-left {
+	float: left;
+	min-height: 170px;
+	padding: 30px 0px 0px 0px; 
+
+	@include mq(sm) {
+		text-align: center;
+		padding: 20px 0px 25px 0px; 
+	}
+
+	#my-info-contact {
+		p, a {
+			float: left;
+			width: 100%;
+			@include font($font-1, normal, .85rem, $font-weight-normal);
+		}
+
+		a {
+			line-height: 1.2rem;
+			text-decoration: none;
+			color: $color-primary;
+
+			@include mq(sm) {
+				font-size: 1rem;
+				line-height: 1.4rem;
+			}
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		button {
+			margin-top: 10px;
+			font-size: .4rem;
+			padding: 8px 11px 8px 11px;
+
+			@include mq(md) {
+				font-size: .1rem;
+				padding: 6px 9px 6px 9px;
+			}
+
+			@include mq(sm) {
+				margin-top: 15px;
+				width: 100%;
+			}
+
+			a {
+				text-decoration: none;
+				color: $white;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+
+		.name-block {
+			@include font($font-1, normal, $font-size-md, $font-weight-bold);
+			margin-bottom: .25em;
+
+			@include mq(sm) {
+				font-size: 1.5rem;
+			}
+		}
+
+
+		.title-block {
+			@include font($font-1, italic, .9rem, $font-weight-normal);
+			margin-bottom: .55em;
+
+			@include mq(sm) {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+#my-resume-container-details-right {
+	float: left;
+	min-height: 170px;
+	@include font($font-1, normal, $font-size-sm, $font-weight-normal);
+	line-height: 1.3em;
+
+	@include mq(sm) {
+		@include font($font-1, normal, .9rem, $font-weight-normal);
+		border-top: 1px dotted $color-primary;
+		height: auto;
+	}
+
+	#my-objective {
+		padding: 35px 0px 0px 0px;
+
+		@include mq(lg) {
+			padding: 35px 0px 0px 40px;
+		}
+
+		@include mq(md) {
+			padding: 35px 0px 0px 60px;
+		}
+
+		h2 {
+			@include font($font-2, normal, $font-size-xl, $font-weight-light);
+			margin: -10px 0px 0px 0px;
+			
+			@include mq(sm) {
+				margin: 5px 0px 0px 0px;
+				@include font($font-2, normal, $font-size-lg, $font-weight-light);
+			}
+		}
+
+		p {
+			float: left;
+			margin-top: 20px;
+		}
+	}
+}
+
+.resume-experience-block {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 10px 0px 25px 0px;
+	border-bottom: 1px solid lighten($light-gray, 10%);
+}
+
+#my-resume-container-skills {
+	float: left;
+
+	#skills-categories {
+		float: left;
+		width: 100%;
+
+		h2 {
+			@include font($font-2, normal, $font-size-lg, $font-weight-light);
+		}
+
+		.legend {
+			height: 43px;
+			padding: 2px 0px 10px 0px;
+			margin: 10px 0px 0px 0px;
+			width: 500px;
+
+			@include mq(sm) {
+				width: 300px;
+				height: 100px;
+			}
+
+			.legend-block-1 {
+				float: left;
+				width: 150px;
+
+				@include mq(sm) {
+					margin-bottom: 10px;
+				}
+
+				div {
+					float: left;
+					width: 20px;
+					height: 20px;
+					@include border-radius(50%);
+					background-color: #8ACE39;
+				}
+				
+				p {
+					float: left;
+					padding: 4px 0px 0px 8px;
+					@include font($font-1, normal, $font-size-sm, $font-weight-normal);
+				}
+			}
+
+			.legend-block-2 {
+				float: left;
+				width: 225px;
+				
+				@include mq(sm) {
+					margin-bottom: 10px;
+				}
+				
+				div {
+					float: left;
+					width: 20px;
+					height: 20px;
+					@include border-radius(50%);
+					background-color: #FFCC00;
+				}
+				
+				p {
+					float: left;
+					padding: 4px 0px 0px 8px;
+					@include font($font-1, normal, $font-size-sm, $font-weight-normal);
+				}
+			}
+
+			.legend-block-3 {
+				float: left;
+				width: 90px;
+
+				div {
+					float: left;
+					width: 20px;
+					height: 20px;
+					@include border-radius(50%);
+					background-color: #007EC3;
+				}
+				
+				p {
+					float: left;
+					padding: 4px 0px 0px 8px;
+					@include font($font-1, normal, $font-size-sm, $font-weight-normal);
+				}
+			}
+
+			.legend-title {
+				float: left;
+				color: $black;
+				padding: 0px 0px 0px 8px;
+				font-size: 1em;
+			}
+
+			.skills-top {
+				@include font($font-1, normal, $font-size-sm, $font-weight-normal);
+				color: $black;
+				padding: 0px 0px 3px 0px;
+				margin: -11px 0px 0px 0px;
+			}
+
+			.skills-bottom {
+			}
+		}
+	}
+
+	#skills-block {
+		float: left;
+		width: 100%;
+		border-bottom: 1px dotted $color-primary;
+		padding-bottom: 30px;
+
+		#skills-block-left {
+			float: left;
+			padding-right: 25px;
+
+			@include mq(sm) {
+				padding-right: 0px; 
+			}
+		}
+
+		#skills-block-right {
+			float: left;
+			padding-left: 25px;
+
+			@include mq(sm) {
+				padding-left: 0px; 
+			}
+		}
+
+		.skills-top {
+			float: left;
+			width: 100%;
+			margin-bottom: 5px;
+		}
+		
+		.skills-bottom {
+			float: left;
+			width: 100%;
+			margin-bottom: 15px;
+
+			.progress {
+
+			}
+		}
+	}
+}
+
+#my-resume-container-experience {
+	float: left;
+
+
+	#my-experience {
+		float: left;
+		height: auto;
+		border-right: 1px dotted $color-primary;
+		padding: 15px 50px 0px 0px;
+
+		@include mq(sm) {
+			border-right: none;
+			padding: 0px 0px 25px 0px;
+		}
+
+		h2 {
+			float: left;
+			width: 100%;
+			color: $black;
+			line-height: 1.3em;
+			@include font($font-2, normal, $font-size-lg, $font-weight-light);
+
+		}
+
+		h3 {
+			float: left;
+			width: 100%;
+			height: 42px;
+			@include font($font-1, normal, $font-size-md, $font-weight-normal);
+			line-height: 1.3em;
+			color: $color-primary;
+			margin: 20px 0px 0px 0px;
+
+			@include mq(sm) {
+				@include font($font-1, normal, 1.1rem, $font-weight-normal);
+				margin: 20px 0px 0px 0px;
+				height: auto;
+
+				span {
+					display: none;
+				}
+			}
+		}
+
+		h4 {
+			float: left;
+			width: 100%;
+			@include font($font-1, italic, $font-size-sm, $font-weight-normal);
+			text-decoration: underline;
+			color: $black;
+
+			@include mq(sm) {
+				@include font($font-1, normal, .85rem, $font-weight-normal);
+				margin: 5px 0px 10px 0px;
+				line-height: 1.3rem;
+
+			}
+
+			a {
+				color: $black;
+			}
+		}
+
+		h5 {
+			float: left;
+			width: 100%;
+			@include font($font-1, normal, .9em, $font-weight-normal);
+			color: #bbbbbb;
+			margin: 0px 0px 15px 0px;
+		}
+
+		p {
+			float: left;
+			width: 100%;
+			@include font($font-1, normal, .9em, $font-weight-normal);
+			color: $black;
+			padding: 6px 0px 6px 0px;
+			line-height: 1.1rem;
+		}
+	}
+
+	#my-references {
+		float: left;
+		padding: 0px 40px 0px 25px;
+
+		@include mq(sm) {
+			border-top: 1px dotted $color-primary;
+			padding: 0px 30px 0px 0px;
+		}
+
+		h2 {
+			float: left;
+			width: 100%;
+			color: $black;
+			margin: 15px 0px 0px 0px;
+			line-height: 1.3em;
+			@include font($font-2, normal, $font-size-lg, $font-weight-light);
+		}
+
+		.ref-card {
+			float: left;
+			width: 98%;
+			border: 1px solid $color-primary;
+			background-color: transparent;
+			background-color: rgba($color-primary, 0.25);
+			padding: 20px;
+			color: $black;
+			margin: 12px 0px 12px 0px;
+
+			.ref-card-top {
+				float: left;
+				width: 100%;
+
+				.ref-card-top-left {
+					float: left;
+  					width: 90px;
+
+  					img {
+  						width: 70px;
+  						margin-top: -5px;
+  					}
+				}
+
+				.ref-card-top-right {
+					float: left;
+  					width: calc(100% - 110px);
+
+  					p {
+  						float: left;
+  						clear: right;
+  						width: 100%;
+  						color: $black;
+  						font-family: $font-1;
+  					}
+
+  					.ref-card-p1 {
+						@include font($font-2, normal, 1.1rem, $font-weight-bold);
+  						padding: 0px 0px 5px 0px;
+  					}
+
+  					.ref-card-p2 {
+  						@include font($font-1, normal, $font-size-sm, $font-weight-normal);
+  	  					padding: 0px 0px 5px 0px;
+  					}
+
+  					.ref-card-p3 {
+  						@include font($font-1, italic, .85rem, $font-weight-normal);
+  					}
+				}
+			}
+
+			.ref-card-bottom {
+				float: left;
+				width: 100%;
+				@include font($font-1, normal, .9rem, $font-weight-normal);
+				line-height: 1.3em;
+				padding-top: 10px;
+			}
+		}
+	}
+}
+
+.progress {
+	background: #e9e5e2;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#e9e5e2));
+	background-image: -webkit-linear-gradient(top, #dddddd, #e9e5e2);
+	background-image: -moz-linear-gradient(top, #dddddd, #e9e5e2);
+	background-image: -ms-linear-gradient(top, #dddddd, #e9e5e2);
+	background-image: -o-linear-gradient(top, #dddddd, #e9e5e2);
+	background-image: linear-gradient(top, #dddddd, #e9e5e2);  
+	height: 9px; 
+}
+
+.adobe, .html, .css, .sass, .jquery, .javascript, .angular, .commandline, .haml, .rails, .git, .terminal, .php, .nodejs, .zurb, .wordpress, .ui, .ux, .rwd, .mobile, .rapidproto {
+	 -webkit-transition: width 4s ease !important;
+	 -moz-transition: width 4s ease !important;
+	 -o-transition: width 4s ease !important;
+	 transition: width 4s ease !important;
+ }
+
+.progress-frontend {
+	height: 9px; 
+	background-color: #8ACE39;
+}
+
+.progress-backend {
+	height: 9px; 
+	background-color: #FFCC00;
+}
+
+.progress-uiux {
+	height: 9px; 
+	background-color: #007EC3;
+}
+
+
+
+
+/* ========================================================
+   END RESUME PAGE SCSS
+   ======================================================== */
+   

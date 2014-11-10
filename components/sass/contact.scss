@@ -1,0 +1,238 @@
+/*
+   ____ ___  _   _ _____  _    ____ _____ 
+  / ___/ _ \| \ | |_   _|/ \  / ___|_   _|
+ | |  | | | |  \| | | | / _ \| |     | |  
+ | |__| |_| | |\  | | |/ ___ \ |___  | |  
+  \____\___/|_| \_| |_/_/   \_\____| |_|  
+                                                                                                                                          
+*/
+   
+#body-contact {
+  position: absolute;
+  top: 250px;
+  z-index: 102;
+  background-color: $white;
+  padding-bottom: 45px;
+  z-index: 10000000;  
+  overflow-x: hidden;
+
+  @include mq(sm) {
+	top: 150px;
+  }  
+}
+
+#body-contact-inner {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 0px 35px 0px; 
+  position: relative;
+  background-color: $white;
+  overflow-x: hidden;
+
+  @include mq(lg) {
+ 	width: 85%;
+  }
+
+  @include mq(md) {
+ 	width: 95%;
+  }
+
+  @include mq(sm) {
+ 	width: 95%;
+  }
+}
+
+.body-contact-left {
+	float: left;
+	padding: 35px 10px 0px 10px;
+
+	@include mq(sm) {
+		padding: 65px 10px 0px 10px;
+		text-align: center;
+	}
+
+	h4 {
+		margin: 17px 0px 8px 0px;
+		font-size: 1rem;
+		font-weight: $font-weight-bold;
+	
+		@include mq(md) {
+			font-size: 1.1rem;
+		}
+
+		@include mq(sm) {
+			font-size: 1.3rem;
+		}
+	}
+
+	p {
+		line-height: 1.2rem;
+
+		@include mq(sm) {
+			font-size: 1.1rem;
+		}
+	}
+
+	button {
+		margin: 15px 0px 0px 0px;
+
+		@include mq(sm) {
+			width: 100%;
+			font-size: 1.2rem;
+		}
+
+		a {
+			color: $white;
+			text-decoration: none;
+
+			@include mq(sm) {
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	a {
+		color: $color-primary;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.google-map {
+		float: left;
+		width: 100%;
+		margin: 30px 0px 0px 0px;
+
+		iframe {
+			width: 250px;
+			height: 250px;
+			background-color: $white;
+			padding: 7px;
+			-moz-box-shadow: 0px 0px 6px #444;
+			-webkit-box-shadow: 0px 3px 6px #444;
+			box-shadow: 0px 0px 6px #444;
+
+			@include mq(md) {
+				width: 180px;
+				height: 180px;			 	
+			}
+
+			@include mq(sm) {
+				width: 90%;
+			}
+		}
+	}
+}
+
+.body-contact-right {
+	float: left;
+	padding: 45px 10px 0px 50px;
+
+	@include mq(lg) {
+		padding: 45px 10px 0px 100px;
+	}
+
+	@include mq(md) {
+		padding: 45px 50px 0px 40px;
+	}
+
+	@include mq(sm) {
+		padding: 35px 20px 30px 20px;
+	}
+
+	.contact-header {
+		margin: 0px 0px 10px 0px;
+		@include font($font-2, normal, $font-size-xl, $font-weight-light);
+
+		@include mq(sm) {
+			font-size: 1.4rem;		
+		}
+	}
+
+	.contact-blurb {
+		font-size: .9rem;
+		line-height: 1.2rem;
+		margin: 0px 0px 20px 0px;
+	}
+
+	.contact-button-container {
+		float: left;
+		margin: 20px 0px 20px 0px;	
+	}
+
+	.form-group {
+		float: left;
+		width: 100%;
+		margin: 10px 0px 10px 0px;
+
+		label {
+			float: left;
+			clear: both;
+			margin: 0px 0px 5px 0px;
+			color: $dark-gray;
+		}
+
+		input {
+			float: left;
+			clear: both;
+			width: 60%;
+			padding: 7px 5px 7px 8px;
+			border: 1px solid $light-gray;
+			border-radius: 0px;
+
+			&:focus {
+				-moz-box-shadow: 0px 0px 6px $color-primary;
+				-webkit-box-shadow: 0px 3px 6px $color-primary;
+				box-shadow: 0px 0px 6px $color-primary;
+				border: none;
+			}
+
+			@include mq(md) {
+				width: 90%;
+			}
+
+			@include mq(sm) {
+				width: 90%;
+			}
+		}
+
+		textarea  {
+			float: left;
+			clear: both;
+			width: 60%;
+			min-height: 80px;
+			padding: 7px 5px 7px 8px;
+			border: 1px solid $light-gray;
+			border-radius: 0px;
+
+			@include mq(md) {
+				width: 90%;
+			}
+
+			@include mq(sm) {
+				width: 95%;
+			}
+		}
+	}
+}
+
+.panel-success {
+	width: 95%;
+	background-color: $green-potion;
+	padding: 10px 15px 10px 15px;
+	@include font($font-1, normal, $font-size-sm, $font-weight-normal);
+	color: $white;
+
+	@include mq(sm) {
+		width: 85%;
+		line-height: 1.2rem;
+	}
+}
+
+/* ========================================================
+   END CONTACT PAGE SCSS
+   ======================================================== */
+   

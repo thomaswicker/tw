@@ -1,0 +1,134 @@
+/*
+     _    ____   ____ _   _ _____     _______ ____  
+    / \  |  _ \ / ___| | | |_ _\ \   / / ____/ ___| 
+   / _ \ | |_) | |   | |_| || | \ \ / /|  _| \___ \ 
+  / ___ \|  _ <| |___|  _  || |  \ V / | |___ ___) |
+ /_/   \_\_| \_\\____|_| |_|___|  \_/  |_____|____/ 
+                                                                                                  
+*/
+ 
+#body-archives {
+	position: absolute;
+    z-index: 101;
+  	top: 250px;
+ 	background-color: $white;
+ 	padding-bottom: 75px;
+ 	overflow-x: hidden;
+ }
+
+#body-archives-inner {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-color: $white;
+	overflow-x: hidden;
+
+	h2.main-title {
+		margin-top: 40px;
+		@include font($font-2, normal, $font-size-xl, $font-weight-light);
+
+		@include mq(sm) {
+			margin-top: 80px;
+			@include font($font-2, normal, $font-size-lg, $font-weight-light);
+		}
+	}
+
+	@include mq(md) {
+		width: 90%;
+	}
+
+	@include mq(sm) {
+		width: 85%;
+	}
+
+	a.btn-home {
+		float: right;
+		display: inline;
+		text-decoration: none;
+		margin-top: 30px;
+	}
+
+	li.post-content {
+		padding: 20px 0px 30px 0px;
+		background-color: $white;
+		border-bottom: 1px dotted $light-gray;
+
+		a.post-title {
+			display: block;
+			width: 100%;
+			@include font($font-2, normal, 1.45rem, $font-weight-light);
+			text-transform: uppercase;
+			margin-bottom: 5px;
+			line-height: 1.5rem;
+
+			@include mq(sm) {
+				@include font($font-2, normal, 1.15rem, $font-weight-light);
+				line-height: 1.5rem;
+				margin-bottom: 10px;
+			}
+		}
+
+		small.post-date {
+			display: block;
+			width: 100%;
+			@include font($font-1, normal, 1rem, $font-weight-normal);
+			color: darken($light-gray, 10%);
+			margin-bottom: 15px;
+		}
+
+		p.post-body {
+			display: block;
+			width: 100%;
+			@include font($font-1, normal, .95rem, $font-weight-normal);
+			line-height: 1.4rem;
+		}
+
+		a.post-link {
+			@include font($font-1, normal, .75rem, $font-weight-normal);
+			padding: 8px 10px 8px 10px;
+			text-decoration: none;
+		}
+
+		pre {
+			background-color: lighten($blue-potion, 49%);
+
+			code {
+				padding: 25px 20px 20px 30px;
+				color: darken($blue-potion, 25%);
+				font-weight: $font-weight-semibold;
+				font-size: .9em;
+				border: none;
+				text-wrap: unrestricted;
+			}
+		}
+
+		img {
+			@include mq(sm) {
+				max-width: 80px !important;
+			}
+		}
+
+		blockquote {
+			p {
+				@include font($font-2, normal, $font-size-md, $font-weight-light);
+				line-height: 2.0rem;
+				border-left: 5px solid $light-gray;
+				padding-left: 30px;
+			}
+		}
+
+		div.highlight {
+			margin-bottom: 30px;
+		}
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+/* ========================================================
+   END ARCHIVES PAGE SCSS
+   ======================================================== */
+   

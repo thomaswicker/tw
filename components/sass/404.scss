@@ -1,0 +1,127 @@
+/*
+  _  _    ___  _  _   
+ | || |  / _ \| || |  
+ | || |_| | | | || |_ 
+ |__   _| |_| |__   _|
+    |_|  \___/   |_|  
+                                                                        
+*/
+   
+#body-404 {
+	position: absolute;
+	top: 250px;
+	z-index: 102;
+	background-color: white;
+	padding-bottom: 75px;
+
+	@include mq(sm) {
+		top: 110px;
+	}
+}
+
+#link404 {
+	float:left;
+	margin-top: 15px;
+}
+
+#body-404-inner {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 35px 0px 35px 0px; 
+	position: relative;
+	background-color: white;
+
+	@include mq(md) {
+		width: 58%;
+	}
+
+	@include mq(sm) {
+		width: 85%;
+		padding: 65px 0px 35px 0px; 
+	}
+
+	a {
+		text-decoration: none;
+		color: $color-primary;
+  		transition: background 0.4s ease;
+
+		&:hover {
+			text-decoration: underline;
+			color: lighten($color-primary, 15%);
+		}
+	}
+
+	h1 {
+		@include font($font-2, normal, 7rem, $font-weight-light);
+		margin: 20px 0px 20px 0px;
+
+		@include mq(sm) {
+			@include font($font-2, normal, 5rem, $font-weight-light);
+		}
+	}
+
+	h2 {
+		@include font($font-2, normal, $font-size-xl, $font-weight-light);
+		margin: 20px 0px 20px 0px;
+
+		@include mq(sm) {
+			@include font($font-2, normal, $font-size-lg, $font-weight-light);
+		}
+	}
+
+	h3 {
+		float: left;
+		width: 100%;
+		margin: 20px 0px 10px 0px;
+		font-size: 1.3rem;
+		color: $black;
+		font-weight: $font-weight-semibold;
+
+		@include mq(md) {
+			font-size: 1.1rem;
+		}
+
+		@include mq(sm) {
+			font-size: 1.3rem;
+		}
+	}
+
+	blockquote {
+		font-size: 1.6rem !important;
+		font-weight: $font-weight-light !important;
+		margin: 0px 0px 10px 0px;
+		padding: 0px 0px 0px 20px;
+		line-height: 2.2rem;
+		border-left: 3px solid $light-gray;
+	}
+
+	p {
+		float: left;
+		display: block;
+		margin: 10px 0px 10px 0px;
+		line-height: 1.2rem;
+	}
+
+	p.sorry {
+		font-weight: bold;
+		font-size: 1.2em;
+		font-style: italic;
+	}
+
+	ul {
+		float: left;
+		width: 100%;
+		list-style-type: disc;
+		line-height: 1.4rem;
+
+		li {
+			margin: 0px 0px 0px 20px;
+		}
+		
+		&.rule-bottom {
+			padding-bottom: 30px;
+			border-bottom: 1px dotted $color-primary;
+		}
+	}
+}

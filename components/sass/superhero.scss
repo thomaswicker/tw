@@ -140,9 +140,7 @@ $superhero-contact: rgba(241,96,63,0.85);
 
 	.header-home {
 		padding: 1.2em 0em 0em 1em;
-		font-size: 2.2rem;
-		font-family: $font-1;
-		font-weight: 600;    		
+		@include font($font-1, normal, 2.2rem, $font-weight-bold);	
 		color: $white;
 		text-transform: uppercase;
 

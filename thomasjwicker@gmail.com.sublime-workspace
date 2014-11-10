@@ -1,0 +1,691 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"impor",
+				"important"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"state",
+				"stateMapContents"
+			],
+			[
+				"sta",
+				"stateMapContents"
+			],
+			[
+				"stateMa",
+				"stateMapContents"
+			],
+			[
+				"stat",
+				"stateDataID"
+			],
+			[
+				"color",
+				"color-primary"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"del",
+				"deloitte-mid-gray"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"delo",
+				"deloitte-mid-gray"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"colo",
+				"color-primary"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"light",
+				"light-gray"
+			],
+			[
+				"fon",
+				"font-size"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "components/sass/portfolio.scss",
+			"settings":
+			{
+				"buffer_size": 2151,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "portfolio/index.html",
+			"settings":
+			{
+				"buffer_size": 1195,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/portfolio-template.html",
+			"settings":
+			{
+				"buffer_size": 2052,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "404.html",
+			"settings":
+			{
+				"buffer_size": 531,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "components/sass/404.scss",
+			"settings":
+			{
+				"buffer_size": 2072,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 653,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/thomaswicker/Dropbox/Sites/tw",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/portfolio",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/superhero",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_layouts",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_posts",
+		"/Users/thomaswicker/Dropbox/Sites/tw/about",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/js",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/base",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/global",
+		"/Users/thomaswicker/Dropbox/Sites/tw/portfolio",
+		"/Users/thomaswicker/Dropbox/Sites/tw/PSDs"
+	],
+	"file_history":
+	[
+		"/Users/thomaswicker/Dropbox/Sites/tw/_layouts/default.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/nav.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/about/index.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/superhero/superhero-resume.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/application.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/superhero.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/superhero-resume.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/superhero-portfolio.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/superhero-photography.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_layouts/photography-template.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_layouts/portfolio-template.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_layouts/resume-template.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/socialmedia/socialmedia.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/socialmedia/socialmedia-about.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/socialmedia/socialmedia-resume.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/socialmedia/socialmedia-portfolio.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/socialmedia/socialmedia-photography.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/socialmedia/socialmedia-contact.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/robots.txt",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/superhero/superhero-portfolio.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/superhero/superhero-photography.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/superhero/superhero-contact.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/superhero/superhero-about.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/superhero/superhero.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/superhero-about.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/superhero-contact.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_layouts/about-template.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_layouts/archives-template.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_layouts/contact-template.html",
+		"/Users/thomaswicker/Dropbox/Sites/529-jMap/svg/CA.svg",
+		"/Users/thomaswicker/Dropbox/Sites/529-jMap/participating-schools.json",
+		"/Users/thomaswicker/Downloads/Materials/web-app-boilerplate/js/app/app.js",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/modules/_nav.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/posts.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/IMAGE_pixel_me_photography.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/IMAGE_pixel_me_portfolio.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/IMAGE_pixel_me_about.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/IMAGE_pixel_me_home.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/IMAGE_me_and_the_girls_taped.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/superhero.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/photography.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/resume.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/portfolio.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/core.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/home.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/nav.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/archives.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/about.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/me_and_the_girls_taped.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/js/application.js",
+		"/Users/thomaswicker/Dropbox/Sites/tw/contact-success/index.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_posts/2014-10-29-responsive-svg-map.markdown",
+		"/Users/thomaswicker/Dropbox/Sites/tw/contact/index.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/contact.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/base/_normalize.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/base/_reset.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/index.html",
+		"/Volumes/MacHD/Users/thomaswicker/Dropbox/Sites/tw/_site/index.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_plugins/jekyll-press-plugin.rb",
+		"/Users/thomaswicker/Dropbox/Sites/tw/resume/index.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/gulpfile2.js",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_site/index.html",
+		"/Users/thomaswicker/Downloads/gist88be2e6f7e373b4482d8-f9a21d5fa6f8ca4ae4af719fb26d5121c03eccd0/gulpfile.js",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_site/resume/index.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/.htaccess",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/head.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/footer.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/global/_vars.scss",
+		"/Users/thomaswicker/Dropbox/Sites/regis/Deloitte/components/scss/_colors.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/gulpfile.js",
+		"/Users/thomaswicker/Dropbox/Sites/tw/photography/index.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_site/sftp-config.json",
+		"/Users/thomaswicker/Dropbox/Sites/tw/.gitignore",
+		"/Users/thomaswicker/Dropbox/Sites/tw/sftp-config.json",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_site/portfolio/index.html",
+		"/Users/thomaswicker/Dropbox/Sites/regis/Deloitte/hub_with_alert.html",
+		"/Users/thomaswicker/Dropbox/Sites/regis/Deloitte/components/scss/application.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/socialmedia.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/socialmedia-resume.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/socialmedia-portfolio.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/socialmedia-about.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/socialmedia-contact.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/socialmedia-photography.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/portfolio/index.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/archives/index.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/footer-portfolio.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_posts/2014-10-21-what-I-have-learned-about-gulp.markdown",
+		"/Users/thomaswicker/Dropbox/Sites/tw/testcontact.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/processForm.php",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_config.yml",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_includes/header.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_plugins/json.rb",
+		"/Users/thomaswicker/Dropbox/Sites/potion-css/sass/global/_vars.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/js/application.min.js",
+		"/Users/thomaswicker/Dropbox/Sites/west/wp-content/themes/west_theme/components/js/west_JS.js",
+		"/Users/thomaswicker/Dropbox/Sites/west/wp-content/themes/west_theme/professional-profles-single-page.php",
+		"/Users/thomaswicker/Dropbox/Sites/west/wp-content/themes/west_theme/components/js/retina.js",
+		"/Users/thomaswicker/Dropbox/Sites/west/wp-content/themes/west_theme/personnel-page.php",
+		"/Users/thomaswicker/Library/Application Support/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/Users/thomaswicker/Dropbox/Sites/west/wp-content/themes/west_theme/components/scss/professional-profiles.scss",
+		"/Users/thomaswicker/Dropbox/Sites/west/wp-content/themes/west_theme/footer-profiles.php",
+		"/Users/thomaswicker/Dropbox/Sites/west/wp-content/themes/west_theme/gulpfile.js",
+		"/Users/thomaswicker/Dropbox/Sites/west/wp-content/themes/west_theme/header.php",
+		"/Users/thomaswicker/Dropbox/Sites/west/wp-content/themes/west_theme/functions.php",
+		"/Users/thomaswicker/Dropbox/Sites/jMap/participating-schools.json",
+		"/Users/thomaswicker/Dropbox/Sites/jMap/participating-schools-2.json",
+		"/Users/thomaswicker/Dropbox/Sites/jMap/index.html",
+		"/Users/thomaswicker/Dropbox/Sites/jMap/indexb.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_posts/2014-10-12-new-post.markdown",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_posts/2014-10-12-welcome-to-jekyll.markdown",
+		"/Users/thomaswicker/Dropbox/Sites/gulpjs/gulpfile.js",
+		"/Users/thomaswicker/Dropbox/Sites/tw/_layouts/post.html",
+		"/Users/thomaswicker/Dropbox/Sites/tw/components/sass/base/_helpers.scss",
+		"/Users/thomaswicker/Dropbox/Sites/tw/js/script.js",
+		"/Users/thomaswicker/Dropbox/Sites/tw/js/behance.js",
+		"/Users/thomaswicker/Dropbox/Sites/tw/package.json",
+		"/Users/thomaswicker/Desktop/test/Gemfile"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/thomaswicker/Dropbox/Sites/tw",
+			"/Users/thomaswicker/Dropbox/Sites/west/wp-content/themes/west_theme"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"{% include header",
+			"{% include head",
+			"cp",
+			"1.3",
+			"checked",
+			"Two",
+			"75%",
+			"my-info",
+			"googleapis.com",
+			"link",
+			"END resume-experience",
+			"END resume",
+			"####",
+			"reload",
+			"download-resume-btns",
+			"20%)",
+			"bootstrap.min.js",
+			"bootstrap",
+			"#",
+			"main",
+			"highlight",
+			"autoprefixer",
+			"\"Codekit\"",
+			"Codekit"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "components/sass/portfolio.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2151,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								726,
+								726
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "portfolio/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								473,
+								454
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_layouts/portfolio-template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2052,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								444,
+								444
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "404.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 531,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								250,
+								250
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "components/sass/404.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2072,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								985,
+								985
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"incomplete_sync": null,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 653,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								500,
+								500
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"project": "thomasjwicker@gmail.com.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"_layouts/contact-template.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 407.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

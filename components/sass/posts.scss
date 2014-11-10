@@ -1,0 +1,357 @@
+/*
+  ____   ___  ____ _____ ____  
+ |  _ \ / _ \/ ___|_   _/ ___| 
+ | |_) | | | \___ \ | | \___ \ 
+ |  __/| |_| |___) || |  ___) |
+ |_|    \___/|____/ |_| |____/ 
+                                                                                                                                                                                                                                                                                                                                     
+*/
+
+#body-posts {
+	position: absolute;
+	top: 250px;
+	z-index: 102;
+	background-color: $white;
+	padding-bottom: 75px;
+	overflow-x: hidden;
+
+	@include mq(sm) {
+		top: 110px;
+	}
+}
+
+#body-posts-inner {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 35px 0px 35px 0px; 
+	position: relative;
+	background-color: $white;
+	overflow-x: hidden;
+
+	@include mq(md) {
+		width: 88%;
+	}
+
+	@include mq(sm) {
+		width: 85%;
+		padding: 65px 0px 35px 0px; 
+
+		h2 {
+			font-size: 1.4rem !important;
+		}
+	}
+
+	a.btn {
+		float: right;
+		display: inline;
+		text-decoration: none;
+	}
+}
+
+.codepen-demo {
+	padding: 10px 0px 60px 0px;
+}
+
+// ######################## Post Styles for Home Page and/or Excerpts ######################## //
+
+.post-list {
+	float: left;
+	padding: 0px 0px 0px 0px;
+
+	p {
+		display: block;
+		width: 100%;
+		@include font($font-1, normal, .9rem, $font-weight-normal);
+		line-height: 1.4rem;
+		margin-bottom: 20px;
+
+		a {
+			color: $blue-potion;
+			text-decoration: none;
+			font-weight: $font-weight-bold;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	pre {
+		background-color: lighten($blue-potion, 49%);
+
+		code {
+			padding: 25px 20px 20px 30px;
+			color: darken($blue-potion, 25%);
+			font-weight: $font-weight-semibold;
+			font-size: .9em;
+			border: none;
+			text-wrap: unrestricted;
+		}
+	}
+
+	img {
+		@include mq(sm) {
+			max-width: 80px !important;
+		}
+	}
+
+	blockquote {
+		p {
+			@include font($font-2, normal, $font-size-md, $font-weight-light);
+			line-height: 2.0rem;
+			border-left: 5px solid $light-gray;
+			padding-left: 30px;
+		}
+	}
+
+	div.highlight {
+		margin-bottom: 30px;
+	}
+
+	a#read-more {
+		text-decoration: none;
+		@include font($font-1, normal, .7rem, $font-weight-semibold);
+	}
+
+	.post-meta {
+		color: $light-gray;
+		@include font($font-1, normal, .9rem, $font-weight-semibold);
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+
+	.post-link {
+		color: $blue-potion;
+		@include font($font-2, normal, $font-size-lg, $font-weight-light);
+		text-decoration: none;
+
+		@include mq(sm) {
+			@include font($font-2, normal, $font-size-md, $font-weight-light);
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.post-list > li {
+	margin: 0px 0px 40px 0px;
+	padding: 30px 35px 30px 35px;
+	border-top: 1px solid $xlight-gray;
+	border-left: 5px solid $color-primary;
+	border-right: 1px solid $xlight-gray;
+	border-bottom: 1px solid $xlight-gray;
+	background-color: $white;
+	list-style: none;
+	text-decoration: none;
+
+	@include mq(sm) {
+		border-left: 1px solid $xlight-gray;
+		padding: 45px 25px 30px 25px;
+	}
+}
+
+.post-bulleted-list {
+	margin: 0px 0px 20px 0px;
+
+	li {
+		margin: 0px 0px 0px 20px;
+		padding: 0px;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+		background-color: none;
+		list-style: initial !important;
+		text-decoration: none;
+		@include font($font-1, normal, .9rem, 300);
+		line-height: 1.4rem;
+	}
+}
+
+
+// ######################## Post Styles for Single Post Page ######################## //
+
+.post-header {
+	.post-meta {
+		color: $light-gray;
+		@include font($font-1, normal, .9rem, $font-weight-semibold);
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+}
+.post-content {
+	margin-bottom: 30px;
+
+	h2, h3, h4, h5, h6 {
+		margin-top: 30px;
+	}
+
+	pre {
+		background-color: lighten($blue-potion, 49%);
+
+		code {
+			padding: 25px 20px 20px 30px;
+			color: darken($blue-potion, 25%);
+			font-weight: $font-weight-semibold;
+			font-size: .9em;
+			border: none;
+		}
+	}
+
+	blockquote {
+		p {
+			@include font($font-2, normal, $font-size-md, $font-weight-light);
+			line-height: 2.0rem;
+			border-left: 5px solid $light-gray;
+			padding-left: 30px;
+		}
+	}
+
+	p {
+		display: block;
+		width: 100%;
+		@include font($font-1, normal, .9rem, $font-weight-normal);
+		line-height: 1.4rem;
+		margin-bottom: 20px;
+
+		a {
+			@include font($font-2, normal, .9rem, $font-weight-bold);
+			color: $blue-potion;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	div.highlight {
+		margin-bottom: 30px;
+	}
+}
+
+.post-title {
+	color: $blue-potion;
+	@include font($font-2, normal, $font-size-lg, $font-weight-light);
+	text-decoration: none;	
+}
+
+.post-img-left {
+	float: left;
+	margin: 20px 25px 20px 30px;
+
+	@include mq(sm) {
+		margin: 10px 5px 10px 5px;
+	}
+
+	&.img-xs {
+		width: 50px;
+	}
+
+	&.img-sm {
+		width: 100px;
+	}
+
+	&.img-md {
+		width: 150px;
+	}
+
+	&.img-lg {
+		width: 200px;
+	}
+
+	&.img-xl {
+		width: 250px;
+	}
+
+	&.img-jumbo {
+		width: 300px;
+	}
+
+	&.img-xs, &.img-xs, &.img-md, &.img-lg, &.img-lg, &.img-jumbo {
+	
+		@include mq(sm) {
+			width: auto;
+		}
+	} 
+}
+
+.post-img-right {
+	float: right;
+	margin: 20px 25px 20px 30px;
+
+	@include mq(sm) {
+		margin: 10px 5px 10px 5px;
+	}
+
+	&.img-xs {
+		width: 50px;
+	}
+
+	&.img-sm {
+		width: 100px;
+	}
+
+	&.img-md {
+		width: 150px;
+	}
+
+	&.img-lg {
+		width: 200px;
+	}
+
+	&.img-xl {
+		width: 250px;
+	}
+
+	&.img-jumbo {
+		width: 300px;
+	}
+
+	&.img-xs, &.img-xs, &.img-md, &.img-lg, &.img-lg, &.img-jumbo {
+	
+		@include mq(sm) {
+			width: auto;
+		}
+	} 
+}
+
+.post-img-full {
+	float: left;
+	clear: both;
+	width: 90%;
+	margin: 20px 25px 20px 30px;
+
+	&.img-xs {
+		width: 50px;
+	}
+
+	&.img-sm {
+		width: 100px;
+	}
+
+	&.img-md {
+		width: 150px;
+	}
+
+	&.img-lg {
+		width: 200px;
+	}
+
+	&.img-xl {
+		width: 250px;
+	}
+
+	&.img-jumbo {
+		width: 300px;
+	}
+
+}
+
+/* ========================================================
+   END POSTS SCSS
+   ======================================================== */
+   

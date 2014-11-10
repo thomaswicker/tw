@@ -8,7 +8,7 @@ $(document).ready(function() {
   $('.sass').css('width', '95%');
   $('.jquery').css('width', '70%');
   $('.javascript').css('width', '55%');
-  $('.bootstrap').css('width', '100%');
+  $('.nodejs').css('width', '40%');
   $('.wordpress').css('width', '85%');
   $('.ui').css('width', '100%');
   $('.ux').css('width', '95%');
@@ -18,7 +18,7 @@ $(document).ready(function() {
   $('.commandline').css('width', '65%');
   $('.git').css('width', '85%');
   $('.zurb').css('width', '100%');
-  $('.rails').css('width', '50%');
+  $('.rails').css('width', '40%');
   $('.php').css('width', '50%');
   $('.angular').css('width', '60%');
 
