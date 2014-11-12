@@ -153,6 +153,10 @@ nav {
         color: $dark-gray;
         font-weight: $font-weight-bold;
         padding: 15px 20px 18px 20px;
+
+        @include mq(sm) {
+            padding: 0px;
+        }
       }
     }
 
@@ -162,7 +166,7 @@ nav {
       padding: 15px 20px 15px 20px;
       text-decoration: none;
       text-transform: uppercase;
-      @include font($font-2, normal, .8rem, $font-weight-semibold);  
+      @include font($font-2, normal, .8rem, 200);  
       text-decoration: none;
 
       @include mq(sm) {
