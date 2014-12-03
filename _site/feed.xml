@@ -6,9 +6,53 @@
 </description>
     <link>http://thomaswicker.comhttp://thomaswicker.com/</link>
     <atom:link href="http://thomaswicker.comhttp://thomaswicker.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 12 Nov 2014 15:57:27 -0700</pubDate>
-    <lastBuildDate>Wed, 12 Nov 2014 15:57:27 -0700</lastBuildDate>
+    <pubDate>Tue, 02 Dec 2014 18:56:05 -0700</pubDate>
+    <lastBuildDate>Tue, 02 Dec 2014 18:56:05 -0700</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Potion - A SASS/AngularJS Framework</title>
+        <description>&lt;div class=&quot;post-img-right img-md&quot;&gt;
+	&lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewbox=&quot;0 0 73.462 75.958&quot; enable-background=&quot;new 0 0 73.462 75.958&quot; xml:space=&quot;preserve&quot;&gt;
+    &lt;g&gt;
+      &lt;path fill=&quot;none&quot; stroke=&quot;#717375&quot; stroke-width=&quot;4&quot; stroke-miterlimit=&quot;10&quot; d=&quot;M7.121,57.755
+        c-1.597,4.139-2.523,12.74,8.063,12.737H56.29c0,0,15.716,0.628,9.18-15.037l-1.223-2.34L46.12,25.996V7.774H26.626v17.798
+        L9.367,53.178C9.367,53.178,8.193,54.976,7.121,57.755z&quot; /&gt;
+      &lt;path fill=&quot;#717375&quot; d=&quot;M48.047,8.569H25.163c-1.049,0-1.907-0.858-1.907-1.907v0c0-1.049,0.858-1.907,1.907-1.907h22.884
+        c1.049,0,1.907,0.858,1.907,1.907v0C49.954,7.711,49.096,8.569,48.047,8.569z&quot; /&gt;
+      &lt;path fill=&quot;#6ABD45&quot; d=&quot;M55.959,65.144l-36.143,0.051c0,0-10.087,0.742-5.049-9.8l14.791-24.399l15.89,4.15l13.014,19.508
+        c0,0,4.294,6.557,0.207,9.725C58.668,64.379,57.398,65.144,55.959,65.144z&quot; /&gt;
+      &lt;circle fill=&quot;#FFFFFF&quot; cx=&quot;44.271&quot; cy=&quot;53.269&quot; r=&quot;3.062&quot; /&gt;
+      &lt;circle fill=&quot;#FFFFFF&quot; cx=&quot;30.815&quot; cy=&quot;44.139&quot; r=&quot;1.553&quot; /&gt;
+      &lt;circle fill=&quot;#FFFFFF&quot; cx=&quot;29.262&quot; cy=&quot;55.443&quot; r=&quot;2.174&quot; /&gt;
+    &lt;/g&gt;
+  &lt;/svg&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Finally… FINALLY! Over the last month, I had a small window to wrap up something I have been chipping away at for over a year, my own custom SASS/AngularJS framework. I’ve been working on it for over a year in my &lt;em&gt;‘free time’&lt;/em&gt; and I use that word with great emphasis on the word &lt;em&gt;time&lt;/em&gt;. Between client projects, open source, the day job and most importantly my family… time is really a valuable commodity for me. Potion is a culmination of years building client projects from ground up, repeatedly finding code snippets for small modules and rewriting code over and over. &lt;/p&gt;
+
+&lt;p&gt;I’ve used other frameworks like &lt;a href=&quot;http://foundation.zurb.com&quot; title=&quot;Zurb Foundation&quot;&gt;Zurb Foundation&lt;/a&gt;, &lt;a href=&quot;http://getbootstrap.com&quot; title=&quot;Bootstrap&quot;&gt;Bootstrap&lt;/a&gt; and &lt;a href=&quot;http://purecss.io&quot; title=&quot;PureCSS&quot;&gt;PureCSS&lt;/a&gt;.. however none of them really delivered exactly what I was looking for. Some included a lot of extra fluff that just bloated the code and some simply did not align with my preferred coding standards and best practices. So what’s the solution? Well write my own framework of course!&lt;/p&gt;
+
+&lt;p&gt;At it’s core, Potion is built on top of SASS and makes heavy use of a modular approach to it’s architecture. All components can stand alone on their own and all of them can be injected via Angular into any page. This makes for a very light, speedy and customizable framework to use underneath any project or app. &lt;/p&gt;
+
+&lt;p&gt;This framework is certainly still in it’s infancy but I plan to curate and grow it over the upcoming months. Check it out on my &lt;a href=&quot;https://github.com/thomaswicker/potion-css&quot; title=&quot;Github&quot;&gt; Github &lt;/a&gt;, or you can install it and try it out for yourself through Bower and command line.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+  bower install potion
+&lt;/code&gt; &lt;/p&gt;
+</description>
+        <pubDate>Tue, 02 Dec 2014 05:30:20 -0700</pubDate>
+        <link>http://thomaswicker.comhttp://thomaswicker.com/potion/2014/12/02/potion-framework/</link>
+        <guid isPermaLink="true">http://thomaswicker.comhttp://thomaswicker.com/potion/2014/12/02/potion-framework/</guid>
+        
+        <category>potion</category>
+        
+        <category>frameworks</category>
+        
+        
+        <category>potion</category>
+        
+      </item>
     
       <item>
         <title>Page Speed Matters!</title>
