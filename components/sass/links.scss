@@ -1,0 +1,116 @@
+/*
+  _     ___ _   _ _  ______  
+ | |   |_ _| \ | | |/ / ___| 
+ | |    | ||  \| | ' /\___ \ 
+ | |___ | || |\  | . \ ___) |
+ |_____|___|_| \_|_|\_\____/ 
+                                                                                                                                                                                                                                                                                                                                  
+*/
+
+#body-links {
+	position: absolute;
+	top: 250px;
+	z-index: 102;
+	background-color: $white;
+	padding-bottom: 75px;
+	overflow-x: hidden;
+
+	@include mq(sm) {
+		top: 110px;
+	}
+}
+
+#body-links-inner {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 35px 0px 35px 0px; 
+	position: relative;
+	background-color: $white;
+	overflow-x: hidden;
+
+	@include mq(md) {
+		width: 88%;
+	}
+
+	@include mq(sm) {
+		width: 85%;
+		padding: 65px 0px 35px 0px; 
+	}
+
+	h2 {
+		@include font($font-2, normal, 1.2rem, $font-weight-light);
+		background-color: #40b89f;
+		color: $white;
+		padding: .4em .6em .4em .6em;
+		text-align: center;
+		border-bottom: 2px solid #40b89f;
+
+		@include mq(sm) {
+			@include font($font-2, normal, 1.1rem, $font-weight-light);
+		}
+	}
+}
+
+.links-container {
+	margin-bottom: 1.8em;
+	padding-bottom: 1em;
+  transform: translateZ(0);
+	box-shadow: 0 3px 5px rgba(#000, .16),
+    				0 3px 5px rgba(#000, .23) ;
+ }
+
+#links-container-left {
+	float: left;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#links-container-right {
+	float: left;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.reading-list {
+
+  li {
+    padding: .5em 1.2em .5em 1.2em;
+		color: $dark-gray;
+  	transition: background 0.3s ease;
+
+		&:nth-child(even) {
+			background-color: lighten($light-gray, 22%);
+		}
+
+    &:hover {
+			background-color: $light-gray;
+
+			a {
+				color: $white;
+				text-decoration: none;	
+			}
+    }
+
+    a {
+    	display: block;
+    	width: 100%;
+    	min-height: 22px;
+			color: $dark-gray;
+			text-decoration: none;
+      font-family: $font-1;
+      font-size: 1rem;
+      line-height: 1.3rem;
+
+      &:hover {
+      	text-decoration: none;	
+      }
+    }
+  }
+}
+
+
+/* ========================================================
+   END LINKS PAGE SCSS
+   ======================================================== */
+   

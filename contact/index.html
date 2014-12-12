@@ -17,8 +17,8 @@ permalink: contact/
 			<h4>Telephone</h4>
 			<a href="tel:7209846998">720.984.6998</a></p>
 			
-			<button class="btn primary mini">
-				<a href="mailto:design@thomaswicker.com">Email Me</a>
+			<button class="btn btn-primary btn-mini">
+				<a href="mailto:design@thomaswicker.com"><span>Email Me</span></a>
 			</button>
 
 			<div class="google-map">
@@ -33,33 +33,33 @@ permalink: contact/
 
 				<h2 class="contact-header">Send me an Email</h2>
 				
-				<p class="contact-blurb">Whether it's design or development, websites, ui/ux, apps, or photography — I'd love to work with you. I'm always pursuing the next opportunity for either full time or contact work. Just hit me up with the form below and include as many details as you can about your project — it will help me get back to you sooner.</p>
+				<p class="body-text margin bottom md">Whether it's design or development, websites, ui/ux, apps, or photography — I'd love to work with you. I'm always pursuing the next opportunity for either full time or contact work. Just hit me up with the form below and include as many details as you can about your project — it will help me get back to you sooner.</p>
 				
 				<input type="hidden" name="_next" value="http://thomaswicker.com/contact-success/">
 				
 				<div class="form-group"> 
-					<label id="formLabel" for="name">Name:</label>
-					<input type="text" class="form-control" name="name" id="name" placeholder="Enter your name"  title="Please enter your name."/>
+					<label id="nameLabel" for="name">Name:</label>
+					<input id="name" type="text" class="form-control" name="name" placeholder="Enter your name"  title="Please enter your name."/>
 				</div>
 
 				<div class="form-group">
-					<label class="formLabel" for="phone"/>Phone:</label>
-					<input name="phone" type='tel' id="phone"  placeholder="Enter your phone #" title="Please enter a valid phone number.">
+					<label id="phoneLabel" class="formLabel" for="phone"/>Phone:</label>
+					<input id="phone" name="phone" type='tel' class="form-control" placeholder="Enter your phone #" title="Please enter a valid phone number.">
 				</div>
 
 				<div class="form-group">
-					<label id="formLabel" for="email"/>Email:</label>
-					<input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" title="Please enter a valid email address."/>
+					<label id="emailLabel" for="email"/>Email:</label>
+					<input id="email" type="email" class="form-control" name="email" placeholder="Enter your email" title="Please enter a valid email address."/>
 				</div>
 
 				<div class="form-group">
-					<label class="formLabel" for="comments" id="comments">Comments:</label>
-					<textarea class="form-control" name="comments" id="comments"></textarea>
+					<label id="commentsLabel" class="formLabel" for="comments">Comments:</label>
+					<textarea id="comments" class="form-control" name="comments" ></textarea>
 				</div>
 
 				<div class="contact-button-container">
-					<button type="submit" name="submit" value="Send" class="btn earth small">Send</button>
-					<button type="reset" name="reset" value="Reset" class="btn wind small">Reset</button>
+					<button type="submit" name="submit" value="Send" class="btn btn-secondary btn-small"><span>Send</span></button>
+					<button type="reset" name="reset" value="Reset" class="btn btn-gray btn-small"><span>Reset</span></button>
 				</div>
 
 			</form>

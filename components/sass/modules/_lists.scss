@@ -10,26 +10,28 @@
                                                                                                                                                                                                                                           
 */
 
-/**
- * Remove vertical spacing from nested lists.
- */
-
-li {
-
-}
-
-/**
- * Have a numbered `ul` without the semantics implied by using an `ol`.
- */
 /*ul*/.numbered-list{
     list-style-type: decimal;
 }
 
-.bulleted-list{
+.nobullet-list {
+
+    li {
+        padding: .1em .4em .1em .4em;
+
+        a {
+            font-family: $font-1;
+            font-size: 1rem;
+            line-height: 1.3rem;
+        }
+    }
+}
+
+.bullet-list {
 
 }
 
-.bulleted-list{
+.bullet-list {
     list-style:none;
     margin-left:0;
     border-top-width:1px;
@@ -40,7 +42,7 @@ li {
     }
 }
 
-.bulleted-list_link{
+.bullet-list_link {
     display: block;
     padding: $base-spacing-unit;
     margin: $base-spacing-unit;

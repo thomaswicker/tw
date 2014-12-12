@@ -252,7 +252,7 @@
 				p {
 					float: left;
 					padding: 4px 0px 0px 8px;
-					@include font($font-1, normal, $font-size-sm, $font-weight-normal);
+					@include font($font-1, normal, $font-size-tiny, $font-weight-normal);
 				}
 			}
 
@@ -275,7 +275,7 @@
 				p {
 					float: left;
 					padding: 4px 0px 0px 8px;
-					@include font($font-1, normal, $font-size-sm, $font-weight-normal);
+					@include font($font-1, normal, $font-size-tiny, $font-weight-normal);
 				}
 			}
 
@@ -294,7 +294,7 @@
 				p {
 					float: left;
 					padding: 4px 0px 0px 8px;
-					@include font($font-1, normal, $font-size-sm, $font-weight-normal);
+					@include font($font-1, normal, $font-size-tiny, $font-weight-normal);
 				}
 			}
 

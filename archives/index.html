@@ -8,7 +8,7 @@ permalink: archives/
 
   	<div id="body-archives-inner">
 
-  		<a class="btn btn-home secondary mini" href="{{ site.baseurl }}">Back to Home</a>
+  		<a class="btn btn-home btn-secondary btn-mini" href="{{ site.baseurl }}"><span>Back to Home</span></a>
 
 	 	<h2 class="main-title">Post Archives</h2>
 		<ul>
@@ -27,7 +27,7 @@ permalink: archives/
 		    	<a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
 		    	<small class="post-date">{{ post.date | date: "%b %-d, %Y" }}</small>
 		    	<p class="post-body">{{ post.content | strip_html | truncatewords: 150 }}</p>
-          		<a class="post-link btn mini secondary"href="{{ post.url }}">Read more...</a>
+          		<a class="post-link btn btn-mini btn-secondary"href="{{ post.url }}">Read more...</a>
 		    </li>
 		  {% endfor %}
 		</ul>

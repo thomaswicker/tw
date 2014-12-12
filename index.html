@@ -18,7 +18,7 @@ layout: default
           </h2>
 
           <p>{{ post.content | truncatewords: 350 }}</p>
-          <a id="read-more" class="btn mini secondary" href="{{ post.url }}">Read more...</a>
+          <a id="read-more" class="btn btn-mini btn-secondary" href="{{ post.url }}"><span>Read more...</span></a>
         </li>
         {% endfor %}
       </ul><!-- END .post-list -->
@@ -52,7 +52,7 @@ layout: default
 
 
           <div id="archives-title-right">
-            <a class="btn fire mini" href="{{ site.baseurl }}/archives">Archives</a>
+            <a class="btn btn-red btn-mini" href="{{ site.baseurl }}/archives"><span>Archives</span></a>
           </div><!-- END .archives-title-left -->
 
         </div><!-- END .archives-title -->

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+  {% include socialmedia/socialmedia-links.html %}
+  {% include superhero/superhero-links.html %}
+  {% include nav.html %}
+
+      {{ content }}
+
+  <!-- MAGICAL SPELLS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+  <script src="{{ site.baseurl }}/js/application.min.js"></script>
+
+  {% include footer.html %}
+
+</body>
+
+</html>

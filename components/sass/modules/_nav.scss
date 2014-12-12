@@ -166,7 +166,7 @@ nav {
       padding: 15px 20px 15px 20px;
       text-decoration: none;
       text-transform: uppercase;
-      @include font($font-2, normal, .8rem, 200);  
+      @include font($font-2, normal, .8rem, 400);  
       text-decoration: none;
 
       @include mq(sm) {

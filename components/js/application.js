@@ -7,7 +7,7 @@ $(document).ready(function() {
   $('.css').css('width', '100%');
   $('.sass').css('width', '95%');
   $('.jquery').css('width', '70%');
-  $('.javascript').css('width', '55%');
+  $('.javascript').css('width', '70%');
   $('.nodejs').css('width', '40%');
   $('.wordpress').css('width', '85%');
   $('.ui').css('width', '100%');
@@ -26,15 +26,25 @@ $(document).ready(function() {
   var navHeader = $(".nav-header");
 
     if(window.location.href.indexOf("about") > -1) {
+       $("#aboutBTN").addClass('current');
        navHeader.css("border-bottom-color", "#A06EAF");
     } else if(window.location.href.indexOf("portfolio") > -1) {
+       $("#portfolioBTN").addClass('current');
        navHeader.css("border-bottom-color", "#85B95E");
     } else if(window.location.href.indexOf("photography") > -1) {
+       $("#photographyBTN").addClass('current');
        navHeader.css("border-bottom-color", "#AA1F23");
     } else if(window.location.href.indexOf("resume") > -1) {
+       $("#resumeBTN").addClass('current');
        navHeader.css("border-bottom-color", "#FDBE12");
+    } else if(window.location.href.indexOf("links") > -1) {
+       $("#linksBTN").addClass('current');
+       navHeader.css("border-bottom-color", "#40b89f");
     } else if(window.location.href.indexOf("contact") > -1) {
+       $("#contactBTN").addClass('current');
        navHeader.css("border-bottom-color", "#F1603F");
+    } else {
+       $("#homeBTN").addClass('current');
     }
 
     //stickynav
