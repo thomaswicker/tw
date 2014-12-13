@@ -297,6 +297,14 @@
 
 	&.img-md {
 		width: 150px;
+
+		@include mq(md) {
+			display: none;
+		}
+
+		@include mq(sm) {
+			display: none;
+		}
 	}
 
 	&.img-lg {

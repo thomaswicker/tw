@@ -169,6 +169,12 @@ nav {
       @include font($font-2, normal, .8rem, 400);  
       text-decoration: none;
 
+      @include mq(md) {
+         text-decoration: none;
+         display: block;
+         padding: 15px 10px 15px 10px;
+      }
+
       @include mq(sm) {
          text-decoration: none;
          display: block;

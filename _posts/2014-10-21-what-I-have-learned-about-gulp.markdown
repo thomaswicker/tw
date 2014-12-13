@@ -10,7 +10,7 @@ tags:
 ---
 
 
-<div class="post-img-right img-md">
+<div class="post-img-right img-md potion-logo-on-post">
 	<img src="/images/gulp_logo.png">
 </div>
 
