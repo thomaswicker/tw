@@ -3,10 +3,11 @@ layout: post
 title:  "Potion - A SASS/AngularJS Framework"
 date:   2014-12-02 12:30:20
 published: true
-categories: potion
+categories: posts-opensource
 tags:
 - potion
 - frameworks
+- opensource
 ---
 
 

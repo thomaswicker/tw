@@ -90,13 +90,9 @@
 		}
 	}
 
-	img {
-		@include mq(sm) {
-			max-width: 80px !important;
-		}
-	}
-
 	blockquote {
+		padding-right: 30px;
+
 		p {
 			@include font($font-2, normal, $font-size-md, $font-weight-light);
 			line-height: 2.0rem;
@@ -216,6 +212,7 @@
 		@include font($font-1, normal, .9rem, $font-weight-normal);
 		line-height: 1.4rem;
 		margin-bottom: 20px;
+		padding-right: 30px;
 
 		a {
 			@include font($font-2, normal, .9rem, $font-weight-bold);
@@ -333,6 +330,10 @@
 	width: 90%;
 	margin: 20px 25px 20px 30px;
 
+	@include mq(sm) {
+		margin: 10px 0px 10px 0px;
+	}
+
 	&.img-xs {
 		width: 50px;
 	}
@@ -356,6 +357,17 @@
 	&.img-jumbo {
 		width: 300px;
 	}
+
+	&.img-xs, &.img-xs, &.img-md, &.img-lg, &.img-lg, &.img-jumbo {
+		
+		@include mq(md) {
+			width: auto;
+		}
+
+		@include mq(sm) {
+			width: auto;
+		}
+	} 
 
 }
 

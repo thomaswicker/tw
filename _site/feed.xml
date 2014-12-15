@@ -6,9 +6,36 @@
 </description>
     <link>http://thomaswicker.comhttp://thomaswicker.com/</link>
     <atom:link href="http://thomaswicker.comhttp://thomaswicker.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 12 Dec 2014 18:44:21 -0700</pubDate>
-    <lastBuildDate>Fri, 12 Dec 2014 18:44:21 -0700</lastBuildDate>
+    <pubDate>Mon, 15 Dec 2014 15:55:48 -0700</pubDate>
+    <lastBuildDate>Mon, 15 Dec 2014 15:55:48 -0700</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Expanding the Library</title>
+        <description>&lt;div&gt;
+  &lt;img class=&quot;post-img-full img-jumbo&quot; src=&quot;/images/abookapart.jpg&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This year… it’s not to “lose weight”, it’s not to “excercise more”… this year’s resolution is to simply READ MORE! I have a decent sized e-book library and even larger bookshelf of print that I have gradually collected over the years. It’s that pesky time issue that always seems to get in the way of everything and this certainly goes for time to sit down and read a book. Between client work, open source, family and the day job… reading has unfortunately slid down my list of importance. &lt;/p&gt;
+
+&lt;p&gt;As a Christmas present to myself this year, I purchased the entire &lt;a href=&quot;http://www.abookapart.com&quot; title=&quot;A Book Apart&quot;&gt;A Book Apart&lt;/a&gt; series. I’m starting with &lt;a href=&quot;http://www.abookapart.com/products/responsible-responsive-design&quot; title=&quot;Responsible Responsive Design&quot;&gt;Responsible Responsive Design&lt;/a&gt; by Scott Jehl, and plan to work my way down the list.  A few of these I have started on but never finished, some I’ve read through before… but my resolution this year is to read them word by word, page by page… all 13.  &lt;/p&gt;
+
+&lt;p&gt;With some travel to New Orleans coming up this week, it’s the perfect time to dig in!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 15 Dec 2014 05:22:20 -0700</pubDate>
+        <link>http://thomaswicker.comhttp://thomaswicker.com/posts-learning/2014/12/15/expanding-the-library/</link>
+        <guid isPermaLink="true">http://thomaswicker.comhttp://thomaswicker.com/posts-learning/2014/12/15/expanding-the-library/</guid>
+        
+        <category>books</category>
+        
+        <category>learning</category>
+        
+        <category>reading</category>
+        
+        
+        <category>posts-learning</category>
+        
+      </item>
     
       <item>
         <title>Potion - A SASS/AngularJS Framework</title>
@@ -42,15 +69,17 @@
 &lt;/code&gt; &lt;/p&gt;
 </description>
         <pubDate>Tue, 02 Dec 2014 05:30:20 -0700</pubDate>
-        <link>http://thomaswicker.comhttp://thomaswicker.com/potion/2014/12/02/potion-framework/</link>
-        <guid isPermaLink="true">http://thomaswicker.comhttp://thomaswicker.com/potion/2014/12/02/potion-framework/</guid>
+        <link>http://thomaswicker.comhttp://thomaswicker.com/posts-opensource/2014/12/02/potion-framework/</link>
+        <guid isPermaLink="true">http://thomaswicker.comhttp://thomaswicker.com/posts-opensource/2014/12/02/potion-framework/</guid>
         
         <category>potion</category>
         
         <category>frameworks</category>
         
+        <category>opensource</category>
         
-        <category>potion</category>
+        
+        <category>posts-opensource</category>
         
       </item>
     
@@ -104,8 +133,8 @@
 &lt;p&gt;With these tools, you can set up automated tasks to do all of those tasks for you before deployment.&lt;/p&gt;
 </description>
         <pubDate>Wed, 05 Nov 2014 07:22:21 -0700</pubDate>
-        <link>http://thomaswicker.comhttp://thomaswicker.com/optimizations/2014/11/05/page-speed-optimizations/</link>
-        <guid isPermaLink="true">http://thomaswicker.comhttp://thomaswicker.com/optimizations/2014/11/05/page-speed-optimizations/</guid>
+        <link>http://thomaswicker.comhttp://thomaswicker.com/posts-responsiveweb/2014/11/05/page-speed-optimizations/</link>
+        <guid isPermaLink="true">http://thomaswicker.comhttp://thomaswicker.com/posts-responsiveweb/2014/11/05/page-speed-optimizations/</guid>
         
         <category>speed</category>
         
@@ -114,7 +143,7 @@
         <category>minification</category>
         
         
-        <category>optimizations</category>
+        <category>posts-responsiveweb</category>
         
       </item>
     
@@ -132,8 +161,8 @@
 
 </description>
         <pubDate>Wed, 29 Oct 2014 09:22:40 -0600</pubDate>
-        <link>http://thomaswicker.comhttp://thomaswicker.com/svg/2014/10/29/responsive-svg-map/</link>
-        <guid isPermaLink="true">http://thomaswicker.comhttp://thomaswicker.com/svg/2014/10/29/responsive-svg-map/</guid>
+        <link>http://thomaswicker.comhttp://thomaswicker.com/posts-svg/2014/10/29/responsive-svg-map/</link>
+        <guid isPermaLink="true">http://thomaswicker.comhttp://thomaswicker.com/posts-svg/2014/10/29/responsive-svg-map/</guid>
         
         <category>svg</category>
         
@@ -144,7 +173,7 @@
         <category>codepen</category>
         
         
-        <category>svg</category>
+        <category>posts-svg</category>
         
       </item>
     
@@ -339,15 +368,15 @@
 
 </description>
         <pubDate>Tue, 21 Oct 2014 07:14:49 -0600</pubDate>
-        <link>http://thomaswicker.comhttp://thomaswicker.com/javascript/2014/10/21/what-I-have-learned-about-gulp/</link>
-        <guid isPermaLink="true">http://thomaswicker.comhttp://thomaswicker.com/javascript/2014/10/21/what-I-have-learned-about-gulp/</guid>
+        <link>http://thomaswicker.comhttp://thomaswicker.com/posts-code/2014/10/21/what-I-have-learned-about-gulp/</link>
+        <guid isPermaLink="true">http://thomaswicker.comhttp://thomaswicker.com/posts-code/2014/10/21/what-I-have-learned-about-gulp/</guid>
         
         <category>javascript</category>
         
         <category>gulp</category>
         
         
-        <category>javascript</category>
+        <category>posts-code</category>
         
       </item>
     

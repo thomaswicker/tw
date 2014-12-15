@@ -3,7 +3,7 @@ layout: post
 title:  "Page Speed Matters!"
 date:   2014-11-05 14:22:21
 published: true
-categories: optimizations
+categories: posts-responsiveweb
 tags:
 - speed
 - optimizations

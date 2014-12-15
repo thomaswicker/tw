@@ -12973,10 +12973,8 @@ CUSTOMISATIONS
   border: none;
   text-wrap: unrestricted;
 }
-@media only screen and (min-width: 0em) and (max-width: 40em) {
-  .post-list img {
-    max-width: 80px !important;
-  }
+.post-list blockquote {
+  padding-right: 30px;
 }
 .post-list blockquote p {
   font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
@@ -13108,6 +13106,7 @@ CUSTOMISATIONS
   font-size: 0.9rem;
   line-height: 1.4rem;
   margin-bottom: 20px;
+  padding-right: 30px;
 }
 .post-content p a {
   font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
@@ -13215,6 +13214,11 @@ CUSTOMISATIONS
   width: 90%;
   margin: 20px 25px 20px 30px;
 }
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  .post-img-full {
+    margin: 10px 0px 10px 0px;
+  }
+}
 .post-img-full.img-xs {
   width: 50px;
 }
@@ -13232,6 +13236,16 @@ CUSTOMISATIONS
 }
 .post-img-full.img-jumbo {
   width: 300px;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .post-img-full.img-xs, .post-img-full.img-xs, .post-img-full.img-md, .post-img-full.img-lg, .post-img-full.img-lg, .post-img-full.img-jumbo {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 0em) and (max-width: 40em) {
+  .post-img-full.img-xs, .post-img-full.img-xs, .post-img-full.img-md, .post-img-full.img-lg, .post-img-full.img-lg, .post-img-full.img-jumbo {
+    width: auto;
+  }
 }
 
 /* ========================================================
